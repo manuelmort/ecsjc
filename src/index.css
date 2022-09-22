@@ -8,3 +8,7 @@
         @apply w-10 h-10 md:w-48 md:h-auto rounded-lg mx-auto
     }
 }
+*{
+    background-color:#ebf4e6;
+    ;
+}
