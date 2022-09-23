@@ -7,7 +7,7 @@ export default class NavigationBar extends React.Component {
             <div class="container mx-auto">
             <nav class="flex justify-between   text-green-800 pb-6 flex-wrap m-30 pt-6" >
                     <a  
-                        href="/" class="font-semibold text-xl  tracking-tight 
+                        href="/" class="font-semibold text-3xl  tracking-tight 
                         hover:underline underline-offset-4">
                         ECSJC</a>
                 <div class="  lg:flex text-right lg:items-center lg:w-auto">

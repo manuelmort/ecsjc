@@ -39,43 +39,51 @@ export default class Home extends React.Component {
 
         return(
             <div class="mt-1 mx-auto">
-                <div class="sac-state-gold mx-auto text-left m-0 mr-20 ml-20  ">
-                
-                    <div className="bg-transparent ">
+                <div class="m-0 w-full h-full bg-cover bg-transparent " style={{backgroundImage:"url('./leaffullscreen2.jpg')",minHeight:"500px"}}>       
 
-                        <h1 class="text-green-800 opacity-100 text-center text-4xl bg-transparent">
-                            Engineering and Computer Science Joint Council
-                        </h1>
-                        <div class ="text-left bg-transparent ">
-                            <h1 class ="text-green-800 font-semibold text-lg pt-5 bg-transparent ">
-                                Engineering & Computer Science Joint Council
+                <div class="sac-state-gold mx-auto text-left m-0 mr-20 ml-20 bg-transparent  ">
 
-                            </h1>
-                            <h2 className=" text-md text-dark bg-transparent ">ECSJC is a campus recognized organization, sponsored by ASI, which   provides a forum for networking and collaboration among student leaders in the College of Engineering and Computer Science as well as providing an avenue for the student voice.</h2>
-                                
-                            <p class="text-green-900 font-semibold text text-lg pt-5 bg-transparent">
-                                What is the purpose
-                            </p> 
-                            <p class="bg-transparent">
-                                ECSJC gives student leaders within the College of Engineering and Computer Science the opportunity to share ideas, plan joint events (e.g. ECS Expo), and discuss student issues.
-                            </p>
-                            <p class="text-green-800 opacity-100 font-semibold text-lg pt-5 bg-transparent">
-                                Who can join ECSJC
-                            </p>
-                            <p class="bg-transparent">
-                            
-                                ECSJC members are selected officers from clubs recognized by the College of Engineering and Computer Science and SO&L.
-                            </p>
+                    <div className="bg-transparent grid lg:grid-cols-2 ">
+                        <div class="bg-transparent">
 
                         
+                            <h1 class="text-green-300 opacity-100 text-center text-4xl bg-transparent mt-20 pt-5 p-2">
+                                Engineering and Computer Science Joint Council
+                            </h1>
+                        </div>
+                        <div class="bg-transparent mt-10">
+                            <div class ="text-left bg-transparent ">
+  
+                                <h1 class ="text-green-300 font-semibold text-lg pt-5 bg-transparent ">
+                                        Engineering & Computer Science Joint Council
+
+                                </h1>
+                                <h2 className=" text-md text-dark bg-transparent text-green-100 ">ECSJC is a campus recognized organization, sponsored by ASI, which   provides a forum for networking and collaboration among student leaders in the College of Engineering and Computer Science as well as providing an avenue for the student voice.</h2>
+                                <p class="text-green-300 font-semibold text text-lg pt-5 bg-transparent">
+                                        What is the purpose
+                                </p> 
+                                <p class="bg-transparent text-green-100">
+                                        ECSJC gives student leaders within the College of Engineering and Computer Science the opportunity to share ideas, plan joint events (e.g. ECS Expo), and discuss student issues.
+                                </p>
+                                <p class="text-green-300 opacity-100 font-semibold text-lg pt-5 bg-transparent">
+                                        Who can join ECSJC
+                                </p>
+                                <p class="bg-transparent text-green-100">
+                                    
+                                        ECSJC members are selected officers from clubs recognized by the College of Engineering and Computer Science and SO&L.
+                                </p>
+
+                            
+                            </div>
                         </div>
 
                     </div>
+                </div>
                     
                     
 
                 </div>
-                <div class="bg-green-700  bg-opacity-90 mt-20">
+                <div class="bg-green-700  bg-opacity-90">
                     <p class="text-center bg-transparent text-yellow-300 p-4">Upcoming Event: ECSJC club officer meeting!</p>
                 </div>
                 
