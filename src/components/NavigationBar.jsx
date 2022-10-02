@@ -4,22 +4,22 @@ import {Link} from 'react-scroll'
 export default class NavigationBar extends React.Component {
     render() {
         return(
-            <div class="container mx-auto">
-            <nav class="flex justify-between   text-green-800 pb-6 flex-wrap m-30 pt-6" >
+            <div class="container mx-auto bg-transparent">
+            <nav class="flex justify-between bg-transparent   text-green-300 pb-6 flex-wrap m-30 pt-6" >
                     <a  
-                        href="/" class="font-semibold text-3xl  tracking-tight 
+                        href="/" class="font-semibold text-3xl bg-transparent tracking-tight 
                         hover:underline underline-offset-4">
                         ECSJC</a>
-                <div class="  lg:flex text-right lg:items-center lg:w-auto">
-                    <div class="text-md lg:flex-grow">
-                        <Link to="Clubs" smooth={true} class="block mt-4 p-2 rounded-md lg:inline-block hover:text-green-700 hover:bg-opacity-10 hover:bg-green-700 lg:mt-0 text-black">
+                <div class="  lg:flex text-right  bg-transparent lg:items-center lg:w-auto">
+                    <div class="text-md bg-transparent lg:flex-grow">
+                        <Link to="Clubs" smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md lg:inline-block hover:text-green-300 hover:bg-opacity-20 hover:bg-green-300 lg:mt-0 text-green-200">
                             Clubs
                         </Link>
-                        <Link to="Calendar"  smooth={true} class="block mt-4 p-2 rounded-md lg:inline-block hover:text-green-700 hover:bg-opacity-10 hover:bg-green-700 lg:mt-0 text-black">
+                        <Link to="Calendar"  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md lg:inline-block hover:text-green-300 hover:bg-opacity-20 hover:bg-green-300 lg:mt-0 text-green-200">
                             Calendar
                         </Link>
                         <Link  to="Follow Us" spy={true} smooth={true}
-                            class="block mt-4 p-2 rounded-md lg:inline-block hover:text-green-700 hover:bg-opacity-10 hover:bg-green-700 lg:mt-0 text-black">
+                            class="bg-transparent text-xl block mt-4 p-2 rounded-md lg:inline-block hover:text-green-300 hover:bg-opacity-20 hover:bg-green-300 lg:mt-0 text-green-200">
                             Follow Us 
                         </Link>
                     </div>

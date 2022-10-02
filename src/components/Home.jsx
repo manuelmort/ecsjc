@@ -1,6 +1,7 @@
 import React from "react";
 import ImageSlider from "./Slider/ImageSlider";
 import { SliderData } from "./Slider/SliderData";
+import NavigationBar from "./NavigationBar";
 import "./Home.css"
 import { Chrono } from "react-chrono";
 
@@ -38,8 +39,9 @@ export default class Home extends React.Component {
         ]
 
         return(
-            <div class="mt-1 mx-auto">
+            <div class=" mx-auto">
                 <div class="m-0 w-full h-full bg-cover bg-transparent " style={{backgroundImage:"url('./leaffullscreen2.jpg')",minHeight:"500px"}}>       
+                    <NavigationBar class="bg-transparent"/>
 
                 <div class="sac-state-gold mx-auto text-left m-0 mr-20 ml-20 bg-transparent  ">
 
@@ -68,7 +70,7 @@ export default class Home extends React.Component {
                                 <p class="text-green-300 opacity-100 font-semibold text-lg pt-5 bg-transparent">
                                         Who can join ECSJC
                                 </p>
-                                <p class="bg-transparent text-green-100">
+                                <p class="bg-transparent text-green-100 pb-20">
                                     
                                         ECSJC members are selected officers from clubs recognized by the College of Engineering and Computer Science and SO&L.
                                 </p>
@@ -83,8 +85,8 @@ export default class Home extends React.Component {
                     
 
                 </div>
-                <div class="bg-green-700  bg-opacity-90">
-                    <p class="text-center bg-transparent text-yellow-300 p-4">Upcoming Event: ECSJC club officer meeting!</p>
+                <div class="bg-green-100  bg-opacity-70">
+                    <p class="text-center bg-transparent text-green-800 p-4">Upcoming Event: ECSJC club officer meeting!</p>
                 </div>
                 
                     <div class="invisible lg:visible ml-20 mr-20">
@@ -99,33 +101,31 @@ export default class Home extends React.Component {
                     </div>
                     <div class='grid lg:grid-cols-4 grid-cols-1 gap-4 p-10 bg-transparent'>
                         <a href="/geotech" class="bg-transparent">
-                            <button class="bg-green-800 hover:bg-green-900 rounded-md shadow-xl grow club-card"> 
-                                <p class="bg-transparent p-3 pt-3  text-zinc-100 font-bold">CalGeo</p>
-                                <div class={this.state.hidden} onMouseMove={this.showText}>
+                            <button class="bg-green-300 opacity-90 hover:bg-green-300  rounded-md shadow-xl grow club-card"> 
+                                <p class="bg-transparent p-3 pt-3  text-green-800 font-bold">CalGeo</p>
                                 
-                                    <p class="bg-transparent p-3 font-semibold text-white">California Geotechnical Engineering Association</p>
-                                    <p class="bg-transparent p-3 text-white">CSUS CalGeo's student chapter, a nonprofit, student-run organization aiming to provide members with resources to develop interests, skills, and connections in the geoprofessional workforce.</p>   
-                                </div> 
+                                <p class="bg-transparent p-3 text-green-900 font-semibold ">California Geotechnical Engineering Association</p>
+                                <p class="bg-transparent p-3 text-green-900">CSUS CalGeo's student chapter, a nonprofit, student-run organization aiming to provide members with resources to develop interests, skills, and connections in the geoprofessional workforce.</p>   
                             </button>
                         </a>
                         <a class="bg-transparent">
                             <button class="bg-amber-400 shadow-xl rounded-md hover:bg-amber-500 grow club-card">
                                 <p class="bg-transparent p-3  text-white font-bold">Concrete Canoe</p>
-                                <p class="bg-transparent p-3 text-white font-bold">ASCE National Concrete Canoe Competition (NCCC)</p>
-                                <p class="bg-transparent text-white">provides students with a practical application of the engineering principles they learn in the classroom, along with important team and project management skills they will need in their careers. </p>
+                                <p class="bg-transparent p-3  text-white font-bold">ASCE National Concrete Canoe Competition (NCCC)</p>
+                                <p class="bg-transparent flex text-white">provides students with a practical application of the engineering principles they learn in the classroom, along with important team and project management skills they will need in their careers. </p>
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button class="bg-amber-400 shadow-xl rounded-md hover:bg-amber-500 grow club-card">
-                            <p class="bg-transparent p-3 text-white font-bold">ITE</p> 
+                            <button class="bg-amber-300 shadow-xl rounded-md hover:bg-amber-200 grow club-card">
+                            <p class="bg-transparent p-3 text-green-500 font-bold">ITE</p> 
                             <p class="bg-transparent p-3 text-white font-semibold">Institute of Transportation Engineers</p>
                             <p class="bg-transparent p-3 text-white">ITE is committed to connecting students and professionals in the transportation industry.</p>
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button class="rounded-md shadow-xl bg-green-700 hover:bg-green-800 grow club-card">
-                                <p class="text-white mx-auto p-3 font-bold bg-transparent">Data Science</p>
-                                <p class="bg-transparent text-white">The Data Science Club explores the field of data science, which uses math, statistics, and computer science to extract useful knowledge from our society's increasing collection of data in order to advance scholarship and gain insights into every kind of subject matter, from art to zoology.</p>
+                            <button class="rounded-md shadow-xl bg-green-300 opacity-90 hover:bg-green-300 grow club-card">
+                                <p class="text-green-800 mx-auto p-3 font-bold bg-transparent">Data Science</p>
+                                <p class="bg-transparent text-green-900">The Data Science Club explores the field of data science, which uses math, statistics, and computer science to extract useful knowledge from our society's increasing collection of data in order to advance scholarship and gain insights into every kind of subject matter, from art to zoology.</p>
                             </button>
                         </a>
                         <a class="bg-transparent">
@@ -192,10 +192,11 @@ export default class Home extends React.Component {
                         />
                         
                     </div>
+                <div class="m-0 w-full h-full bg-cover bg-transparent " style={{backgroundImage:"url('./officerbackground.jpg')",minHeight:"500px"}}>       
 
-                <div class="grid lg:grid-cols-2 grid-cols-1  gap-4 ">
+                <div class="grid lg:grid-cols-2 grid-cols-1  gap-4 bg-transparent ">
 
-                    <div class=""><img class = "lg:rounded-md" src="./boardmembers/president.png"/>
+                    <div class="bg-transparent"><img class = "lg:rounded-md" src="./boardmembers/president.png"/>
                         <div class="text-center m-5 text-xl font-semibold">
                             President
                         </div>
@@ -218,6 +219,7 @@ export default class Home extends React.Component {
 
                     
 
+                </div>
                 </div>
 
 
