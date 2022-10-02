@@ -20,7 +20,7 @@ const ImageSlider = ({ slides }) => {
   }
   
   return (
-    <section className='slider'>
+    <section className='slider' style={{maxHeight:"600px"}}>
         <BsArrowLeftCircleFill className='left-arrow bg-transparent' onClick={prevSlide}/>
         <BsArrowRightCircleFill className='right-arrow bg-transparent' onClick={nextSlide}/>
       {SliderData.map((slide, index) => {

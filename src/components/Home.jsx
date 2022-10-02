@@ -40,10 +40,10 @@ export default class Home extends React.Component {
 
         return(
             <div class=" mx-auto">
-                <div class="m-0 w-full h-full bg-cover bg-transparent " style={{backgroundImage:"url('./leaffullscreen2.jpg')",minHeight:"500px"}}>       
+                <div class="m-0 w-full h-full bg-cover bg-transparent " style={{backgroundImage:"url('./leaffullscreen2.jpg')",minHeight:"700px"}}>       
                     <NavigationBar class="bg-transparent"/>
 
-                <div class="sac-state-gold mx-auto text-left m-0 mr-20 ml-20 bg-transparent  ">
+                <div class="sac-state-gold mx-auto text-left m-0 lg:mr-20 lg:ml-20 bg-transparent  " style ={{maxWidth:"1900px"}}>
 
                     <div className="bg-transparent grid lg:grid-cols-2 ">
                         <div class="bg-transparent">
@@ -53,7 +53,7 @@ export default class Home extends React.Component {
                                 Engineering and Computer Science Joint Council
                             </h1>
                         </div>
-                        <div class="bg-transparent mt-10">
+                        <div class="bg-transparent mt-20">
                             <div class ="text-left bg-transparent ">
   
                                 <h1 class ="text-green-300 font-semibold text-lg pt-5 bg-transparent ">
@@ -89,10 +89,11 @@ export default class Home extends React.Component {
                     <p class="text-center bg-transparent text-green-800 p-4">Upcoming Event: ECSJC club officer meeting!</p>
                 </div>
                 
-                    <div class="invisible lg:visible ml-20 mr-20">
+                <div class="invisible lg:visible ml-20 mr-20 ">
+                    <div class="">
                         <ImageSlider slides={SliderData}/>
-
                     </div>
+                </div>
                 <div class="m-0 w-full h-full bg-cover bg-transparent " style={{backgroundImage:"url('./leaffullscreen.jpg')",minHeight:"500px"}}>       
 
                 <div class="bg-transparent m-0 w-full h-full mb-20 " id="Clubs">
@@ -104,58 +105,59 @@ export default class Home extends React.Component {
                             <button class="bg-green-300 opacity-90 hover:bg-green-300  rounded-md shadow-xl grow club-card"> 
                                 <p class="bg-transparent p-3 pt-3  text-green-800 font-bold">CalGeo</p>
                                 
-                                <p class="bg-transparent p-3 text-green-900 font-semibold ">California Geotechnical Engineering Association</p>
+                                <p class="bg-transparent p-3 text-green-900 font-bold ">California Geotechnical Engineering Association</p>
                                 <p class="bg-transparent p-3 text-green-900">CSUS CalGeo's student chapter, a nonprofit, student-run organization aiming to provide members with resources to develop interests, skills, and connections in the geoprofessional workforce.</p>   
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button class="bg-amber-400 shadow-xl rounded-md hover:bg-amber-500 grow club-card">
-                                <p class="bg-transparent p-3  text-white font-bold">Concrete Canoe</p>
-                                <p class="bg-transparent p-3  text-white font-bold">ASCE National Concrete Canoe Competition (NCCC)</p>
-                                <p class="bg-transparent flex text-white">provides students with a practical application of the engineering principles they learn in the classroom, along with important team and project management skills they will need in their careers. </p>
+                            <button class="bg-amber-400 shadow-xl rounded-md hover:bg-amber-500 opacity-90 grow club-card">
+                                <p class="bg-transparent p-3  text-amber-800 font-bold">Concrete Canoe</p>
+                                <p class="bg-transparent p-3  text-amber-800 font-bold">ASCE National Concrete Canoe Competition (NCCC)</p>
+                                <p class="bg-transparent flex text-amber-800 pt-5">provides students with a practical application of the engineering principles they learn in the classroom, along with important team and project management skills they will need in their careers. </p>
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button class="bg-amber-300 shadow-xl rounded-md hover:bg-amber-200 grow club-card">
-                            <p class="bg-transparent p-3 text-green-500 font-bold">ITE</p> 
-                            <p class="bg-transparent p-3 text-white font-semibold">Institute of Transportation Engineers</p>
-                            <p class="bg-transparent p-3 text-white">ITE is committed to connecting students and professionals in the transportation industry.</p>
+                            <button class="bg-green-800 shadow-xl opacity-90 rounded-md  grow club-card">
+                            <p class="bg-transparent p-3 text-white font-bold">ITE</p> 
+                            <p class="bg-transparent p-3 text-white font-bold">Institute of Transportation Engineers</p>
+                            <p class="bg-transparent p-3 text-white pt-5">ITE is committed to connecting students and professionals in the transportation industry.</p>
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button class="rounded-md shadow-xl bg-green-300 opacity-90 hover:bg-green-300 grow club-card">
-                                <p class="text-green-800 mx-auto p-3 font-bold bg-transparent">Data Science</p>
-                                <p class="bg-transparent text-green-900">The Data Science Club explores the field of data science, which uses math, statistics, and computer science to extract useful knowledge from our society's increasing collection of data in order to advance scholarship and gain insights into every kind of subject matter, from art to zoology.</p>
+                            <button class="rounded-md shadow-xl bg-green-300 opacity-80  grow club-card">
+                                <p class="text-green-800 mx-auto p-3 font-bold bg-transparent pt-10">Data Science</p>
+
+                                <p class="bg-transparent text-green-900 pt-10"> explores the field of data science, which uses math, statistics, and computer science to extract useful knowledge from our society's increasing collection of data in order to advance scholarship and gain insights into every kind of subject matter, from art to zoology.</p>
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button class="rounded-md  shadow-xl sac-state-gold-2 hover:sac-state-gold-3 grow club-card">
-                                <p class="bg-transparent p-3 text-white font font-semibold">Hornet Racing</p>
-                                <p class="bg-transparent font-semibold p-3 text-white">Formula SAE </p>
-                                <p class="bg-transparent p-3 text-white">challenges students to combine creative engineering and design with competitive business practices to build and race a purpose-built open-wheel formula style car</p>
+                            <button class="rounded-md  shadow-xl bg-amber-400 opacity-90 hover:sac-state-gold-3 grow club-card">
+                                <p class="bg-transparent p-3 text-amber-800 font-bold">Hornet Racing</p>
+                                <p class="bg-transparent font-bold p-3 text-amber-800">Formula SAE </p>
+                                <p class="bg-transparent p-3 text-amber-800">challenges students to combine creative engineering and design with competitive business practices to build and race a purpose-built open-wheel formula style car</p>
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button class="bg-green-800  hover:bg-green-900 shadow-xl rounded-md grow club-card">
-                                <p class="bg-transparent p-3  text-zinc-100 font-bold">SWE</p>
-                                <p class="bg-transparent p-3 text-white font-semibold">Society of Women Engineers</p>
-                                <p class="bg-transparent p-3 text-white">encourage men and women to achieve his or her full potential in careers as engineers and leaders, to expand the image of the engineering profession as a positive force improving the quality of life, and demonstrate the value of diversity.</p>
+                            <button class="bg-green-800 opacity-90  shadow-xl rounded-md grow club-card">
+                                <p class="bg-transparent p-3  text-white font-bold">SWE</p>
+                                <p class="bg-transparent p-3 text-white font-bold">Society of Women Engineers</p>
+                                <p class="bg-transparent p-3 text-white pt-5 ">encourage men and women to achieve his or her full potential in careers as engineers and leaders, to expand the image of the engineering profession as a positive force improving the quality of life, and demonstrate the value of diversity.</p>
 
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button  class="bg-green-700 hover:bg-green-800 shadow-xl rounded-md text-white grow club-card">
-                            <p class="bg-transparent p-3 font-bold">NSBE</p>
-                            <p class="bg-transparent p-3 font-semibold">National Society of Black Engineers</p>
-                            <p class="bg-transparent p-3">The mission of the National Society of Black Engineers is to increase the number of culturally responsible black engineers who succeed professionally and positively impact the community.</p>
+                            <button  class="bg-amber-400 opacity-90 hover:bg-amber-500shadow-xl rounded-md text-white grow club-card">
+                            <p class="bg-transparent text-amber-800 p-3 font-bold">NSBE</p>
+                            <p class="bg-transparen text-amber-800 t p-3 font-bold">National Society of Black Engineers</p>
+                            <p class="bg-transparent text-amber-800 p-3">The mission of the National Society of Black Engineers is to increase the number of culturally responsible black engineers who succeed professionally and positively impact the community.</p>
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button class="bg-amber-400 hover:bg-amber-500 shadow-xl rounded-md text-white grow">   
-                                <p class="bg-transparent p-3 font-bold">SHPE</p>
+                            <button class="bg-green-800 opacity-90 shadow-xl rounded-md text-white grow">   
+                                <p class="bg-transparent p-3 text-white font-bold">SHPE</p>
                                 <div class="bg-transparent">
-                                    <p class="bg-transparent p-3 font-semibold">Society of Hispanic Professional Engineers</p>
-                                    <p class="bg-transparent p-3">SHPE changes lives by empowering the Hispanic community to realize its fullest potential and to impact the world through STEM awareness, access, support, and development.</p>
+                                    <p class="bg-transparent text-white p-3 font-bold">Society of Hispanic Professional Engineers</p>
+                                    <p class="bg-transparent text-white pt-5">SHPE changes lives by empowering the Hispanic community to realize its fullest potential and to impact the world through STEM awareness, access, support, and development.</p>
                                 </div>
                             </button>
                         </a>
@@ -195,25 +197,42 @@ export default class Home extends React.Component {
                 <div class="m-0 w-full h-full bg-cover bg-transparent " style={{backgroundImage:"url('./officerbackground.jpg')",minHeight:"500px"}}>       
 
                 <div class="grid lg:grid-cols-2 grid-cols-1  gap-4 bg-transparent ">
-
-                    <div class="bg-transparent"><img class = "lg:rounded-md" src="./boardmembers/president.png"/>
-                        <div class="text-center m-5 text-xl font-semibold">
-                            President
+                    
+                    
+                    <div class="bg-transparent grid grid-cols-2">
+                        <div class="bg-transparent" >
+                            <img class = "lg:rounded-md border-2" style={{maxHeight:"300px"}} src="./boardmembers/vice.png"/>
+                            
+                        </div>
+                        <div class=" text-center m-5 text-xl font-semibold">
+                                Vice President
                         </div>
                     </div>
-                    <div><img class = "lg:rounded-md" src="./boardmembers/vice.png"/>
-                        <div class="text-center m-5 text-xl font-semibold">
-                            Vice President
+                    <div class="bg-transparent grid grid-cols-2">
+                        <div class="bg-transparent" >
+                            <img class = "lg:rounded-md " style={{maxHeight:"300px"}} src="./boardmembers/vice.png"/>
+                            
+                        </div>
+                        <div class=" text-center m-5 text-xl font-semibold">
+                                Vice President
                         </div>
                     </div>
-                    <div><img  class = "lg:rounded-md" src="./boardmembers/treasurer.png"/>
-                        <div class="text-center text-xl m-5 font-semibold">
-                            Treasurer
+                    <div class="bg-transparent grid grid-cols-2 ">
+                        <div class="bg-transparent" >
+                            <img class = "lg:rounded-md " style={{maxHeight:"300px"}} src="./boardmembers/vice.png"/>
+                            
+                        </div>
+                        <div class=" text-center m-5 text-xl font-semibold">
+                                Vice President
                         </div>
                     </div>
-                    <div><img  class = "lg:rounded-md" src="./boardmembers/sec.png"/>
-                        <div class="text-center m-5 text-xl font-semibold">
-                            Secretary
+                    <div class="bg-transparent grid grid-cols-2 ">
+                        <div class="bg-transparent" >
+                            <img class = "lg:rounded-md " style={{maxHeight:"300px"}} src="./boardmembers/vice.png"/>
+                            
+                        </div>
+                        <div class=" text-center m-5 text-xl font-semibold">
+                                Vice President
                         </div>
                     </div>
 
