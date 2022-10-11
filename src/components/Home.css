@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 .sac-state-gold-2{
     background-color:rgb(187, 172, 132) ;
 }
@@ -26,7 +28,14 @@
     display: none;
   }
       
-  .club-card:hover + .hide {
-    display: block;
-    color: red;
-  }
+  
+
+
+/* Global */
+/*
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+*/
+

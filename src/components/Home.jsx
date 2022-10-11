@@ -5,6 +5,7 @@ import NavigationBar from "./NavigationBar";
 import "./Home.css"
 import { Chrono } from "react-chrono";
 
+
 export default class Home extends React.Component {
     constructor(props) {
         super(props)
@@ -18,7 +19,86 @@ export default class Home extends React.Component {
         this.setState({hidden:"visible bg-transparent"})
         console.log("text is now visible")
     }
-    
+    componentDidMount() {
+        // List of sentences
+    var _CONTENT = [ 
+        " Welcome ", 
+        "bienvenidos ",
+        " 환영! ",
+        "स्वागत हे!",
+        " مرحبا ",
+        "bienvenue ",
+        "ברוך הבא",
+        "ようこそ",
+        "'欢迎'", 
+        "chào mừng ",
+        "maligayang pagdating",
+    ];
+
+    // Current sentence being processed
+    var _PART = 0;
+
+    // Character number of the current sentence being processed 
+    var _PART_INDEX = 0;
+
+    // Holds the handle returned from setInterval
+    var _INTERVAL_VAL;
+
+    // Element that holds the text
+    var _ELEMENT = document.querySelector("#text");
+
+    // Cursor element 
+    var _CURSOR = document.querySelector("#cursor");
+
+    // Implements typing effect
+    function Type() { 
+        // Get substring with 1 characater added
+        var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+        _ELEMENT.innerHTML = text;
+        _PART_INDEX++;
+
+        // If full sentence has been displayed then start to delete the sentence after some time
+        if(text === _CONTENT[_PART]) {
+            // Hide the cursor
+            _CURSOR.style.display = 'none';
+
+            clearInterval(_INTERVAL_VAL);
+            setTimeout(function() {
+                _INTERVAL_VAL = setInterval(Delete, 60);
+            }, 1000);
+        }
+    }
+
+        // Implements deleting effect
+        function Delete() {
+            // Get substring with 1 characater deleted
+            var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX--;
+
+            // If sentence has been deleted then start to display the next sentence
+            if(text === '') {
+                clearInterval(_INTERVAL_VAL);
+
+                // If current sentence was last then display the first one, else move to the next
+                if(_PART == (_CONTENT.length - 1))
+                    _PART = 0;
+                else
+                    _PART++;
+                
+                _PART_INDEX = 0;
+
+                // Start to display the next sentence after some time
+                setTimeout(function() {
+                    _CURSOR.style.display = 'inline-block';
+                    _INTERVAL_VAL = setInterval(Type, 80);
+                }, 200);
+            }
+        }
+
+            // Start the typing effect on load
+        _INTERVAL_VAL = setInterval(Type, 100);    
+    }
     render(){
         const items =[
             {
@@ -37,37 +117,57 @@ export default class Home extends React.Component {
             contentText:""
             }
         ]
+    
+    
 
         return(
+            
             <div class=" mx-auto">
                 <div class="m-0 w-full h-full bg-cover bg-transparent " style={{backgroundImage:"url('./leaffullscreen2.jpg')",minHeight:"700px"}}>       
                     <NavigationBar class="bg-transparent"/>
 
                 <div class="sac-state-gold mx-auto text-left m-0 lg:mr-20 lg:ml-20 bg-transparent  " style ={{maxWidth:"1900px"}}>
-
+                    <div class="text-green-400 text-5xl text-center">Engineering and Computer Science Joint Council</div>
                     <div className="bg-transparent grid lg:grid-cols-2 ">
-                        <div class="bg-transparent">
+                        <div class="bg-transparent text-2xl mt-10">
 
-                        
-                            <h1 class="text-green-300 opacity-100 text-center text-4xl bg-transparent mt-20 pt-5 p-2">
-                                Engineering and Computer Science Joint Council
-                            </h1>
+                            <div class="bg-transparent-700 rounded-lg mt-20">
+                                <p class="bg-transparent text-green-300">public class <span class="text-green-500">Welcome</span>()<span>&#123;</span></p>
+                                <p class="text-white ml-10"><span class="text-lime-300">public static void </span>main(<span class="text-green-300">String</span> args[])<span class="text-green-500">&#123;</span></p>
+                                <p class="text-green-300 opacity-100 text-center  bg-transparent mt-10 pt-5 ">
+                                    
+                                    System.out.<span class="text-lime-200">println</span>("<span id="text" class="text-lime-300"></span> <span class="text-lime-300">Hornets! "</span>);
+                                     
+                                </p>
+
+                                <p class="text-white ml-10"><span class="text-green-500">&#125;</span></p>
+                                <p class="text-white"><span class="text-green-500">&#125;</span></p>
+                                <div class="text-white">
+                                <div id="container">
+                                    <div id="text"></div>
+                                    <div id="cursor"> </div>
+                                 </div>
+                                    
+                                </div>
+                            </div>
+                            
                         </div>
                         <div class="bg-transparent mt-20">
                             <div class ="text-left bg-transparent ">
-  
-                                <h1 class ="text-green-300 font-semibold text-lg pt-5 bg-transparent ">
-                                        Engineering & Computer Science Joint Council
+                                
+                                <h1 class ="text-green-300 font-semibold text-lg pt-5 bg-transparent line-1 anim-typewriter2-ecsjc">
+                                            Engineering & Computer Science Joint Council
 
-                                </h1>
+                                 </h1>
+                                
                                 <h2 className=" text-md text-dark bg-transparent text-green-100 ">ECSJC is a campus recognized organization, sponsored by ASI, which   provides a forum for networking and collaboration among student leaders in the College of Engineering and Computer Science as well as providing an avenue for the student voice.</h2>
-                                <p class="text-green-300 font-semibold text text-lg pt-5 bg-transparent">
+                                <p class="text-green-300 font-semibold text text-lg pt-5 bg-transparent line-1 anim-typewriter">
                                         What is the purpose
                                 </p> 
                                 <p class="bg-transparent text-green-100">
                                         ECSJC gives student leaders within the College of Engineering and Computer Science the opportunity to share ideas, plan joint events (e.g. ECS Expo), and discuss student issues.
                                 </p>
-                                <p class="text-green-300 opacity-100 font-semibold text-lg pt-5 bg-transparent">
+                                <p class="text-green-300 opacity-100 font-semibold text-lg pt-5 bg-transparent line-1 anim-typewriter">
                                         Who can join ECSJC
                                 </p>
                                 <p class="bg-transparent text-green-100 pb-20">
@@ -94,7 +194,7 @@ export default class Home extends React.Component {
                         <ImageSlider slides={SliderData}/>
                     </div>
                 </div>
-                <div class="m-0 w-full h-full bg-cover bg-transparent " style={{backgroundImage:"url('./leaffullscreen.jpg')",minHeight:"500px"}}>       
+                <div class="m-0 w-full h-full bg-cover bg-transparent " style={{backgroundImage:"url('./leaffullscreen2.jpg')",minHeight:"500px"}}>       
 
                 <div class="bg-transparent m-0 w-full h-full mb-20 " id="Clubs">
                     <div class="bg-transparent mx-auto text-center">
