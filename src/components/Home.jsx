@@ -22,17 +22,17 @@ export default class Home extends React.Component {
     componentDidMount() {
         // List of sentences
     var _CONTENT = [ 
-        " Welcome ", 
-        "bienvenidos ",
-        " 환영! ",
-        "स्वागत हे!",
-        " مرحبا ",
-        "bienvenue ",
-        "ברוך הבא",
-        "ようこそ",
-        "'欢迎'", 
-        "chào mừng ",
-        "maligayang pagdating",
+        " 'Welcome ", 
+        " 'Bienvenidos ",
+        " '환영! ",
+        " 'स्वागत हे! ",
+        " 'مرحبا ",
+        " 'Bienvenue ",
+        " 'ברוך הבא" ,
+        " 'ようこそ ",
+        " '欢迎 ", 
+        " 'Chào mừng ",
+        " 'Maligayang pagdating ",
     ];
 
     // Current sentence being processed
@@ -134,9 +134,9 @@ export default class Home extends React.Component {
                             <div class="bg-transparent-700 rounded-lg mt-20">
                                 <p class="bg-transparent text-green-300">public class <span class="text-green-500">Welcome</span>()<span>&#123;</span></p>
                                 <p class="text-white ml-10"><span class="text-lime-300">public static void </span>main(<span class="text-green-300">String</span> args[])<span class="text-green-500">&#123;</span></p>
-                                <p class="text-green-300 opacity-100 text-center  bg-transparent mt-10 pt-5 ">
+                                <p class="text-green-300 opacity-100 text-center  bg-transparent  pt-5 ">
                                     
-                                    System.out.<span class="text-lime-200">println</span>("<span id="text" class="text-lime-300"></span> <span class="text-lime-300">Hornets! "</span>);
+                                    System.out.<span class="text-lime-200">println</span>(<span id="text" class="text-cyan-300"></span> <span class="text-cyan-300">Hornets!' </span>);
                                      
                                 </p>
 
