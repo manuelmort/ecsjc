@@ -126,12 +126,12 @@ export default class Home extends React.Component {
                 <div class="m-0 w-full h-full bg-cover bg-transparent " style={{backgroundImage:"url('./leaffullscreen2.jpg')",minHeight:"700px"}}>       
                     <NavigationBar class="bg-transparent"/>
 
-                <div class="sac-state-gold mx-auto text-left m-0 lg:mr-20 lg:ml-20 bg-transparent  " style ={{maxWidth:"1900px"}}>
+                <div class="sac-state-gold mx-auto text-left m-0 lg:mr-20 lg:ml-20 bg-transparent " style ={{maxWidth:"1900px"}}>
                     <div class="text-green-400 text-5xl text-center">Engineering and Computer Science Joint Council</div>
                     <div className="bg-transparent grid lg:grid-cols-2 ">
                         <div class="bg-transparent text-2xl mt-10">
 
-                            <div class="bg-transparent-700 rounded-lg mt-20">
+                            <div class="bg-transparent-700 rounded-lg mt-20 m-5">
                                 <p class="bg-transparent text-green-300">public class <span class="text-green-500">Welcome</span>()<span>&#123;</span></p>
                                 <p class="text-white ml-10"><span class="text-lime-300">public static void </span>main(<span class="text-green-300">String</span> args[])<span class="text-green-500">&#123;</span></p>
                                 <p class="text-green-300 opacity-100 text-center  bg-transparent  pt-5 ">
@@ -152,7 +152,7 @@ export default class Home extends React.Component {
                             </div>
                             
                         </div>
-                        <div class="bg-transparent mt-20">
+                        <div class="bg-transparent lg:mt-20 m-5">
                             <div class ="text-left bg-transparent ">
                                 
                                 <h1 class ="text-green-300 font-semibold text-lg pt-5 bg-transparent line-1 anim-typewriter2-ecsjc">
@@ -296,7 +296,7 @@ export default class Home extends React.Component {
                     </div>
                 <div class="m-0 w-full h-full bg-cover bg-transparent " style={{backgroundImage:"url('./officerbackground.jpg')",minHeight:"500px"}}>       
 
-                <div class="grid lg:grid-cols-2 grid-cols-1  gap-4 bg-transparent ">
+                <div class="grid lg:grid-cols-2 grid-cols-1  gap-4 bg-transparent lg:m-20 ">
                     
                     
                     <div class="bg-transparent grid grid-cols-2">
@@ -305,12 +305,12 @@ export default class Home extends React.Component {
                             
                         </div>
                         <div class=" text-center m-5 text-xl font-semibold">
-                                Vice President
+                                President
                         </div>
                     </div>
                     <div class="bg-transparent grid grid-cols-2">
                         <div class="bg-transparent" >
-                            <img class = "lg:rounded-md " style={{maxHeight:"300px"}} src="./boardmembers/vice.png"/>
+                            <img class = "lg:rounded-full" style={{maxHeight:"300px"}} src="./boardmembers/vice.png"/>
                             
                         </div>
                         <div class=" text-center m-5 text-xl font-semibold">
@@ -323,7 +323,7 @@ export default class Home extends React.Component {
                             
                         </div>
                         <div class=" text-center m-5 text-xl font-semibold">
-                                Vice President
+                                Secretary
                         </div>
                     </div>
                     <div class="bg-transparent grid grid-cols-2 ">
@@ -332,7 +332,7 @@ export default class Home extends React.Component {
                             
                         </div>
                         <div class=" text-center m-5 text-xl font-semibold">
-                                Vice President
+                                Treasurer
                         </div>
                     </div>
 
