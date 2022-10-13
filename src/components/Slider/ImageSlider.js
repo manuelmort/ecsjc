@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { SliderData } from "./SliderData";
-import { BsArrowLeftCircleFill, BsArrowRightCircleFill, BsFileSlides } from "react-icons/bs"
+import { BsArrowLeftCircle, BsArrowRightCircle, BsFileSlides } from "react-icons/bs"
 import "./ImageSlider.css"
 
 const ImageSlider = ({ slides }) => {
@@ -21,8 +21,8 @@ const ImageSlider = ({ slides }) => {
   
   return (
     <section className='slider' style={{maxHeight:"600px"}}>
-        <BsArrowLeftCircleFill className='left-arrow bg-transparent' onClick={prevSlide}/>
-        <BsArrowRightCircleFill className='right-arrow bg-transparent' onClick={nextSlide}/>
+        <BsArrowLeftCircle className='left-arrow bg-transparent' onClick={prevSlide}/>
+        <BsArrowRightCircle className='right-arrow bg-transparent' onClick={nextSlide}/>
       {SliderData.map((slide, index) => {
         return (
           <div

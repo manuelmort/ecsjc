@@ -3,7 +3,12 @@
 .sac-state-gold-2{
     background-color:rgb(187, 172, 132) ;
 }
-
+#myVideo {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
 .grow {
     padding: 5px 5px 5px 5px;
     border-radius: 10px;

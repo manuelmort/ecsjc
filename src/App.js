@@ -10,7 +10,7 @@ import GeoTech from "./components/club-pages/GeoTech";
 
 function App() {
   return (
-    <div className="App mx-auto" >
+    <div className="App " >
       <Routes class="m-0">
         <Route path ='/' element={<Home/>}/>
         <Route path ='home' element={<Home/>}/>
