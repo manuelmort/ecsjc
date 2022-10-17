@@ -9,25 +9,7 @@
   height: 100vh;
   object-fit: cover;
 }
-.grow {
-    padding: 5px 5px 5px 5px;
-    border-radius: 10px;
-    height: 120px;
-    width: 100%;
-    margin: 5px 1% 5px 1%;
-    float: left;
-    position: relative;
-    transition: height 0.5s;
-    transition:  width 0.5s;
-    -webkit-transition: height 0.5s, width 0.5s;
-    text-align: center;
-    overflow: hidden;
-  }
-  .grow:hover {
-    height: 300px;
-    width: 300px;
-    z-index: 1;
-  }
+
 
   .hide {
     display: none;

@@ -102,27 +102,26 @@ export default class Home extends React.Component {
 
         return(
             
-            <div class="">
-                <video autoPlay muted loop id="myVideo" class="-z-10">
-                    <source src="./darkcreek1.mp4" class="z-0" type="video/mp4"/>
-                </video>
+            <div class="bg-transparent">
                 
-                <div class="bg-transparent z-0 ">
- 
-                    <NavigationBar class="bg-transparent "/>
+                <div class="m-0 w-full h-full bg-cover bg-transparent border-2 border-transparent <----???" style={{backgroundImage:"url('./topView.jpg')"}}>
+                    
+    
+                        <NavigationBar class="bg-transparent "/>
 
-                    <div class="sac-state-gold mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent   ">
+                    <div class="sac-state-gold mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent ">
 
-                        <div class="text-green-400 text-5xl mt-20 text-center">Engineering and Computer Science Joint Council</div>
+                            <p class="text-green-300 text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center">Engineering and Computer Science Joint Council</p>
+                        
+
+                    </div>
                     
                     
-                    </div> 
-
                 </div>
                 <div class="bg-green-100  bg-opacity-70">
                     <p class="text-center bg-transparent text-green-800 p-4">Upcoming Event: Rockclimbing!</p>
                 </div>
-                <div className="bg-transparent grid lg:grid-cols-2 bg-slate-800 opacity-80">
+                <div className="bg-transparent grid lg:grid-cols-2 bg-slate-800 opacity-90">
                         
                         <div class="bg-transparent lg:mt-20 m-5">
                             <div class ="text-left bg-transparent ml-10">
@@ -153,7 +152,7 @@ export default class Home extends React.Component {
 
                     </div>
                 
-                <div class="invisible mt-20 lg:visible ml-20 mr-20 ">
+                <div class="sm:hidden mt-20  ml-20 mr-20 ">
                     <div class="">
                         <ImageSlider slides={SliderData}/>
                     </div>
@@ -163,72 +162,58 @@ export default class Home extends React.Component {
 
                 <div class="bg-transparent m-0 w-full h-full mb-20 " id="Clubs">
                     <div class="bg-transparent mx-auto text-center">
-                        <p class="text-3xl text-green-300 opacity-90 bg-transparent pt-5">Clubs and Organizations</p>
+                        <p class="text-3xl text-green-400 opacity-90 bg-transparent pt-5">Clubs and Organizations</p>
                     </div>
                     <div class='grid lg:grid-cols-4 grid-cols-1 gap-4 p-10 bg-transparent'>
                         <a href="/geotech" class="bg-transparent">
-                            <button class="bg-green-300 opacity-80 hover:bg-green-300  rounded-md shadow-xl grow club-card"> 
-                                <p class="bg-transparent p-3 pt-3  text-green-800 font-bold">CalGeo</p>
-                                <p class="bg-transparent p-3 text-green-900 font-bold ">California Geotechnical Engineering Association</p>
-                                <p class="bg-transparent p-3 text-green-900">CSUS CalGeo's student chapter, a nonprofit, student-run organization aiming to provide members with resources to develop interests, skills, and connections in the geoprofessional workforce.</p>   
+                            <button class="bg-green-300 hover:bg-green-400 opacity-80  w-full rounded-md shadow-xl" > 
+                                <p class="bg-transparent p-3 text-green-900 font-bold ">Cal Geotech Engineering Association</p>
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button class="bg-cyan-300 shadow-xl rounded-md  opacity-80 grow club-card">
+                            <button class="bg-cyan-300 hover:bg-cyan-400 shadow-xl rounded-md w-full lg:w-80 opacity-80 ">
                                 <p class="bg-transparent p-3  text-cyan-800 font-bold">Concrete Canoe</p>
-                                <p class="bg-transparent p-3  text-cyan-800 font-bold">ASCE National Concrete Canoe Competition (NCCC)</p>
-                                <p class="bg-transparent flex text-cyan-800 pt-5">provides students with a practical application of the engineering principles they learn in the classroom, along with important team and project management skills they will need in their careers. </p>
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button class="bg-green-800 shadow-xl opacity-80 rounded-md  grow club-card">
-                            <p class="bg-transparent p-3 text-white font-bold">ITE</p> 
+                            <button class="bg-green-800 hover:bg-green-900 shadow-xl opacity-80 w-full lg:w-80 rounded-md " >
                             <p class="bg-transparent p-3 text-white font-bold">Institute of Transportation Engineers</p>
-                            <p class="bg-transparent p-3 text-white pt-5">ITE is committed to connecting students and professionals in the transportation industry.</p>
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button class="rounded-md shadow-xl bg-green-300 opacity-80  grow club-card">
-                                <p class="text-green-800 mx-auto p-3 font-bold bg-transparent pt-10">Data Science</p>
+                            <button class="rounded-md shadow-xl bg-green-300 hover:bg-green-400 w-full opacity-80 lg:w-80 " >
+                                <p class="text-green-800 mx-auto p-3 font-bold bg-transparent">Data Science</p>
 
-                                <p class="bg-transparent text-green-900 pt-10"> explores the field of data science, which uses math, statistics, and computer science to extract useful knowledge from our society's increasing collection of data in order to advance scholarship and gain insights into every kind of subject matter, from art to zoology.</p>
+
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button class="rounded-md  shadow-xl bg-cyan-300 opacity-80 hover:sac-state-gold-3 grow club-card">
+                            <button class="rounded-md  shadow-xl bg-cyan-300 hover:bg-cyan-400 w-full lg:w-80 opacity-80 " >
                                 <p class="bg-transparent p-3 text-cyan-800 font-bold">Hornet Racing</p>
-                                <p class="bg-transparent font-bold p-3 text-cyan-800">Formula SAE </p>
-                                <p class="bg-transparent p-3 text-cyan-800">challenges students to combine creative engineering and design with competitive business practices to build and race a purpose-built open-wheel formula style car</p>
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button class="bg-green-800 opacity-80  shadow-xl rounded-md grow club-card">
-                                <p class="bg-transparent p-3  text-white font-bold">SWE</p>
-                                <p class="bg-transparent p-3 text-white font-bold">Society of Women Engineers</p>
-                                <p class="bg-transparent p-3 text-white pt-5 ">encourage men and women to achieve his or her full potential in careers as engineers and leaders, to expand the image of the engineering profession as a positive force improving the quality of life, and demonstrate the value of diversity.</p>
+                            <button class="bg-green-800 hover:bg-green-900 opacity-80 lg:w-80 w-full shadow-xl rounded-md " >
+                                <p class="bg-transparent p-3  text-white font-bold">Society of Women Engineers</p>
 
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button  class="bg-cyan-300 opacity-80 hover:bg-amber-500shadow-xl rounded-md text-white grow club-card">
-                            <p class="bg-transparent text-cyan-800 p-3 font-bold">NSBE</p>
-                            <p class="bg-transparen text-cyan-800 t p-3 font-bold">National Society of Black Engineers</p>
-                            <p class="bg-transparent text-cyan-800 p-3">The mission of the National Society of Black Engineers is to increase the number of culturally responsible black engineers who succeed professionally and positively impact the community.</p>
+                            <button  class="bg-cyan-300 hover:bg-cyan-400 opacity-80 shadow-xl w-full lg:w-80 rounded-md text-white" >
+                            <p class="bg-transparen text-cyan-800  p-3 font-bold">National Society of Black Engineers</p>
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button class="bg-green-800 opacity-80 shadow-xl rounded-md text-white grow">   
-                                <p class="bg-transparent p-3 text-white font-bold">SHPE</p>
+                            <button class="bg-green-800 hover:bg-green-900 opacity-80 shadow-xl w-full lg:w-80 rounded-md text-white grow" >   
                                 <div class="bg-transparent">
-                                    <p class="bg-transparent text-white p-3 font-bold">Society of Hispanic Professional Engineers</p>
-                                    <p class="bg-transparent text-white pt-5">SHPE changes lives by empowering the Hispanic community to realize its fullest potential and to impact the world through STEM awareness, access, support, and development.</p>
+                                    <p class="bg-transparent text-white p-3 font-bold ">SHPE</p>
                                 </div>
                             </button>
                         </a>
                     </div>
                 </div>
                 </div>
-                    <div class="bg-transparent mx-auto" id="Calendar" style={{ maxWidth: "700px", height: "900px" }}>
+                    <div class="bg-transparent mx-auto opacity-90" id="Calendar" >
                         
                         <Chrono class="bg-transparent"
                             theme={{
@@ -241,70 +226,66 @@ export default class Home extends React.Component {
                             }}
                             items={[
                             {
-                            title: "Sept 22, 11:30 - 1:30PM",
+                            title: "Sept 22",
                             cardTitle: "Joint Council Welcome Back BBQ",
                             cardSubtitle:"This is a great opportunity to connect with other ECS students, meet officers of ECS clubs and organizations,  and learn about services provided by ECS Student Success Center.",
                             cardDetailedText:""
                             },
+                            
                             {
-                            title: "October 7 ",
-                            cardTitle: "Virtual Career Fair",
+                            title: "Oct 21",
+                            cardTitle: "ECS Career Fair",
+                            cardSubtitle:"This event is for ECS students and alumni seeking a career opportunity, internship, co-op or part-time experience in the field of engineering, computer science or construction management. A career fair is an opportunity for you to present yourself professionally in person to a potential employer, while showcasing your communication skills.  The keys to a successful job fair experience are preparation and follow up."
                             },
                             {
-                            title: "October 21 ",
-                            cardTitle: "In-Person Career Fair",
-                            }]}
+                                title: "Oct 28 ",
+                                cardTitle:"Feel Good Friday: Harvest Festival + Open Climb",
+                                cardSubtitle: "Come get spooky at the Challenge Center! This harvest festival event will feature arts & crafts, games, booths, and climbing! Sac State Students can leave with a painted pumpkin courtesy of SEO and Feel Good Friday. The ropes course on campus (behind Yosemite Hall) will be open to climb from 4:00 pm - 7:00 pm. This open climb is free. If you are a non-student, canned food donations to support the ASI Food Pantry and Sac State Students are encouraged!",
+                                },
+                            ]}
                             mode="VERTICAL"
                         />
                         
                     </div>
-                <div class="m-0 w-full h-full bg-cover bg-transparent " style={{backgroundImage:"url('./officerbackground.jpg')",minHeight:"500px"}}>       
+                <div class="m-0 w-full h-full bg-cover bg-transparent  bg-slate-700" >       
 
-                <div class="grid lg:grid-cols-2 grid-cols-1  gap-4 bg-transparent lg:m-20 ">
+                <div class="grid lg:grid-cols-2 grid-cols-1  bg-slate-700   ">
                     
-                    
-                    <div class="bg-transparent grid grid-cols-2">
-                        <div class="bg-transparent mx-auto " >
-                            <img class = "lg:rounded-md " style={{maxHeight:"300px",minWidth:"225px"}} src="./boardmembers/tinkywinky.webp"/>
-                            
+                    <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-10">
+                        <div class="bg-transparent lg:mx-auto " >
+                            <img class = "lg:rounded-md shadow-xl w-full lg:border-2 border-slate-400" style={{maxHeight:"350px",minWidth:"225px"}} src="./boardmembers/tinkywinky.webp"/>     
                         </div>
-                        <div class=" text-center m-5 text-xl text-green-400">
+                        <div class=" text-center m-5 text-xl text-green-300">
                                <p class="pt-10 text-cyan-200">Garima Sharma</p>
-                               <p class="text-center text-lime-400 text-lg">President</p> 
-
+                               <p class="text-center text-lime-300 text-lg">President</p> 
                         </div>
                     </div>
-                    <div class="bg-transparent grid grid-cols-2   rounded-md opacity-90">
-
-                        <div class="bg-transparent mx-auto lg:border-rounded " >
-
-                            <img class = "lg:rounded-lg  " style={{maxHeight:"300px",minWidth:"225px"}} src="./boardmembers/tej.jpeg"/>
-
+                    <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1   mt-10 rounded-md ">
+                        <div class="bg-transparent lg:border-rounded lg:mx-auto" >
+                            <img class = "lg:rounded-lg shadow-xl  w-full lg:border-2 border-slate-400" style={{maxHeight:"350px",minWidth:"225px"}} src="./boardmembers/tej.jpeg"/>
                         </div>
-                        <div class=" text-center m-5 text-xl  text-green-400">
-                               <p class="pt-10 text-cyan-200">Tejkumar Panchal</p>
-                               <p class="text-center text-lime-400 text-lg">Vice President</p> 
-
+                        <div class=" text-center m-5 text-xl  text-green-300">
+                               <p class="pt-10 text-cyan-200">Tej Panchal</p>
+                               <p class="text-center text-lime-300 text-lg">Vice President</p> 
                         </div>
                     </div>
-                    <div class="bg-transparent grid grid-cols-2 mt-20 ">
-                        <div class="bg-transparent mx-auto " >
-                            <img class = "lg:rounded-md " style={{maxHeight:"300px",minWidth:"225px"}} src="./boardmembers/heaman.png"/>
-                            
+
+                    <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
+                        <div class="bg-transparent lg:mx-auto" >
+                            <img class = "lg:rounded-md lg:border-2 w-full lg:shadow-xl border-slate-400 " style={{maxHeight:"350px",minWidth:"225px"}} src="./boardmembers/heaman.png"/>     
                         </div>
                         <div class=" text-center m-5 text-xl ">
                             <p class="pt-10 text-cyan-200">Heamandeep Kaur</p>
-                            <p class="text-center text-lime-400 ">Expo Officer</p> 
+                            <p class="text-center text-lime-300 ">Expo Chair</p> 
                         </div>
                     </div>
-                    <div class="bg-transparent grid grid-cols-2 mt-20">
-                        <div class="bg-transparent mx-auto " >
-                            <img class = "lg:rounded-md " style={{maxHeight:"300px",minWidth:"225px"}} src="./boardmembers/talal.jpeg"/>
-                            
+                    <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
+                        <div class="bg-transparent  lg:mx-auto " >
+                            <img class = "lg:rounded-md w-full shadow-xl lg:border-2  border-slate-400 " style={{maxHeight:"350px",minWidth:"225px"}} src="./boardmembers/talal.jpeg"/>    
                         </div>
-                        <div class=" text-center m-5 text-xl">
-                                <p class="pt-10 text-cyan-200">Talal Jaber</p>
-                               <p class="text-center text-lime-400 ">Treasurer</p> 
+                        <div class=" text-center m-5 text-xl ">
+                                <p class="pt-10 text-cyan-200">Tala Jaber</p>
+                               <p class="text-center text-lime-300  ">Treasurer</p> 
                         </div>
                     </div>
 
