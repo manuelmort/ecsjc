@@ -6,23 +6,48 @@ import {Routes, Route} from 'react-router-dom'
 import Footer from './components/Footer';
 import "./App.css"
 import GeoTech from "./components/club-pages/GeoTech";
+import { extend } from 'dayjs';
 
 
-function App() {
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      loading:true
+    }
+  }
+  componentDidMount() {
+    // this simulates an async action, after which the component will render the content
+    demoAsyncCall().then(() => this.setState({ loading: false }));
+  }
+  render(){
+    const { loading } = this.state;
+    
+    if(loading) { // if your component doesn't have to wait for an async action, remove this block 
+      return null; // render null when app is not ready
+    }
+
   return (
-    <div className="App " >
-      <Routes class="m-0">
-        <Route path ='/' element={<Home/>}/>
-        <Route path ='home' element={<Home/>}/>
-        <Route path="geotech" element={<GeoTech/>}/>
 
-        <Route path="warpzone" element={<Warpzone/>}/>
-      </Routes>
-      <Footer/>
-       
+      <div className="App " >
+        
+        <Routes class="m-0">
+          <Route path ='/' element={<Home/>}/>
+          <Route path ='home' element={<Home/>}/>
+          <Route path="geotech" element={<GeoTech/>}/>
+          <Route path="warpzone" element={<Warpzone/>}/>
+        </Routes>
+        <Footer/>
+        
 
-    </div>
-  );
+      </div>
+   );
+  }
 }
+function demoAsyncCall() {
+  return new Promise((resolve) => setTimeout(() => resolve(), 2500));
+}
+
+
 
 export default App;

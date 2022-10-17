@@ -32,6 +32,10 @@
   .hide {
     display: none;
   }
+
+  .non-opacity {
+    opacity: 100;
+  }
       
   
 

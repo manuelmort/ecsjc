@@ -9,9 +9,7 @@ import { Chrono } from "react-chrono";
 export default class Home extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {
-            hidden:"isible bg-transparent"
-        }
+        
         this.showText = this.showText.bind(this)
 
     }
@@ -22,7 +20,7 @@ export default class Home extends React.Component {
     componentDidMount() {
         // List of sentences
     var _CONTENT = [ 
-        " 'Welcome ", 
+        " 'ECSJC is a campus recognized organization, sponsored by ASI, which provides a forum for networking and collaboration among student leaders in the College of Engineering and Computer Science as well as providing an avenue for the student voice.", 
         " 'Bienvenidos ",
         " '환영! ",
         " 'स्वागत हे! ",
@@ -37,16 +35,12 @@ export default class Home extends React.Component {
 
     // Current sentence being processed
     var _PART = 0;
-
     // Character number of the current sentence being processed 
     var _PART_INDEX = 0;
-
     // Holds the handle returned from setInterval
     var _INTERVAL_VAL;
-
     // Element that holds the text
     var _ELEMENT = document.querySelector("#text");
-
     // Cursor element 
     var _CURSOR = document.querySelector("#cursor");
 
@@ -64,7 +58,7 @@ export default class Home extends React.Component {
 
             clearInterval(_INTERVAL_VAL);
             setTimeout(function() {
-                _INTERVAL_VAL = setInterval(Delete, 60);
+                _INTERVAL_VAL = setInterval(Delete, 10);
             }, 1000);
         }
     }
@@ -91,34 +85,20 @@ export default class Home extends React.Component {
                 // Start to display the next sentence after some time
                 setTimeout(function() {
                     _CURSOR.style.display = 'inline-block';
-                    _INTERVAL_VAL = setInterval(Type, 80);
+                    _INTERVAL_VAL = setInterval(Type, 200);
                 }, 200);
             }
         }
 
             // Start the typing effect on load
-        _INTERVAL_VAL = setInterval(Type, 100);    
+        _INTERVAL_VAL = setInterval(Type, 40);   
+         
+        
+        
     }
     render(){
-        const items =[
-            {
-            title:"September 22",
-            contentTitle:"Joint Council Welcome Back BBQ",
-            contentText:""
-            },
-            {
-            title:"",
-            contentTitle:"",
-            contentText:""
-            },
-            {
-            title:"",
-            contentTitle:"",
-            contentText:""
-            }
-        ]
-    
-    
+        
+       
 
         return(
             
@@ -127,38 +107,25 @@ export default class Home extends React.Component {
                     <source src="./darkcreek1.mp4" class="z-0" type="video/mp4"/>
                 </video>
                 
-                <div class="bg-transparent z-0">
+                <div class="bg-transparent z-0 ">
  
                     <NavigationBar class="bg-transparent "/>
 
-                    <div class="sac-state-gold mx-auto text-left m-0 lg:mr-20 lg:ml-20 bg-transparent  " style ={{maxWidth:"1900px"}}>
-                    <div class="text-green-400 text-5xl text-center">Engineering and Computer Science Joint Council</div>
-                    <div className="bg-transparent grid lg:grid-cols-2 ">
-                        <div class="bg-transparent text-2xl mt-10">
+                    <div class="sac-state-gold mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent   ">
 
-                            <div class="bg-transparent-700 rounded-lg mt-20 m-5">
-                                <p class="bg-transparent text-green-300">public class <span class="text-green-500">Welcome</span>()<span>&#123;</span></p>
-                                <p class="text-white ml-10"><span class="text-lime-300">public static void </span>main(<span class="text-green-300">String</span> args[])<span class="text-green-500">&#123;</span></p>
-                                <p class="text-green-300 opacity-100 text-center  bg-transparent  pt-5 ">
-                                    
-                                    System.out.<span class="text-lime-200">println</span>(<span id="text" class="text-cyan-300"></span> <span class="text-cyan-300">Hornets!' </span>);
-                                     
-                                </p>
+                        <div class="text-green-400 text-5xl mt-20 text-center">Engineering and Computer Science Joint Council</div>
+                    
+                    
+                    </div> 
 
-                                <p class="text-white ml-10"><span class="text-green-500">&#125;</span></p>
-                                <p class="text-white"><span class="text-green-500">&#125;</span></p>
-                                <div class="text-white">
-                                <div id="container">
-                                    <div id="text"></div>
-                                    <div id="cursor"> </div>
-                                 </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
+                </div>
+                <div class="bg-green-100  bg-opacity-70">
+                    <p class="text-center bg-transparent text-green-800 p-4">Upcoming Event: Rockclimbing!</p>
+                </div>
+                <div className="bg-transparent grid lg:grid-cols-2 bg-slate-800 opacity-80">
+                        
                         <div class="bg-transparent lg:mt-20 m-5">
-                            <div class ="text-left bg-transparent ">
+                            <div class ="text-left bg-transparent ml-10">
                                 
                                 <h1 class ="text-green-300 font-semibold text-lg pt-5 bg-transparent line-1 anim-typewriter2-ecsjc">
                                             Engineering & Computer Science Joint Council
@@ -185,19 +152,13 @@ export default class Home extends React.Component {
                         </div>
 
                     </div>
-                    
-                </div> 
-
-                </div>
-                <div class="bg-green-100  bg-opacity-70">
-                    <p class="text-center bg-transparent text-green-800 p-4">Upcoming Event: ECSJC club officer meeting!</p>
-                </div>
                 
-                <div class="invisible lg:visible ml-20 mr-20 ">
+                <div class="invisible mt-20 lg:visible ml-20 mr-20 ">
                     <div class="">
                         <ImageSlider slides={SliderData}/>
                     </div>
                 </div>
+
                 <div class="m-0 w-full h-full bg-cover bg-transparent " >       
 
                 <div class="bg-transparent m-0 w-full h-full mb-20 " id="Clubs">
@@ -303,8 +264,8 @@ export default class Home extends React.Component {
                     
                     
                     <div class="bg-transparent grid grid-cols-2">
-                        <div class="bg-transparent" >
-                            <img class = "lg:rounded-md border-2" style={{maxHeight:"300px"}} src="./boardmembers/vice.png"/>
+                        <div class="bg-transparent mx-auto " >
+                            <img class = "lg:rounded-md " style={{maxHeight:"300px",minWidth:"225px"}} src="./boardmembers/tinkywinky.webp"/>
                             
                         </div>
                         <div class=" text-center m-5 text-xl text-green-400">
@@ -313,35 +274,37 @@ export default class Home extends React.Component {
 
                         </div>
                     </div>
-                    <div class="bg-transparent grid grid-cols-2 rounded-md opacity-90">
+                    <div class="bg-transparent grid grid-cols-2   rounded-md opacity-90">
 
-                        <div class="bg-transparent mx-auto " >
+                        <div class="bg-transparent mx-auto lg:border-rounded " >
 
-                            <img class = "lg:rounded-lg border-2 border-green-600 " style={{maxHeight:"300px"}} src="./boardmembers/tej.jpeg"/>
+                            <img class = "lg:rounded-lg  " style={{maxHeight:"300px",minWidth:"225px"}} src="./boardmembers/tej.jpeg"/>
 
                         </div>
-                        <div class=" text-center m-5 text-xl text-green-400">
+                        <div class=" text-center m-5 text-xl  text-green-400">
                                <p class="pt-10 text-cyan-200">Tejkumar Panchal</p>
                                <p class="text-center text-lime-400 text-lg">Vice President</p> 
 
                         </div>
                     </div>
-                    <div class="bg-transparent grid grid-cols-2 ">
-                        <div class="bg-transparent mx-auto" >
-                            <img class = "lg:rounded-md " style={{maxHeight:"300px"}} src="./boardmembers/vice.png"/>
+                    <div class="bg-transparent grid grid-cols-2 mt-20 ">
+                        <div class="bg-transparent mx-auto " >
+                            <img class = "lg:rounded-md " style={{maxHeight:"300px",minWidth:"225px"}} src="./boardmembers/heaman.png"/>
                             
                         </div>
-                        <div class=" text-center m-5 text-xl font-semibold">
-                                Secretary
+                        <div class=" text-center m-5 text-xl ">
+                            <p class="pt-10 text-cyan-200">Heamandeep Kaur</p>
+                            <p class="text-center text-lime-400 ">Expo Officer</p> 
                         </div>
                     </div>
-                    <div class="bg-transparent grid grid-cols-2 ">
-                        <div class="bg-transparent mx-auto" >
-                            <img class = "lg:rounded-md " style={{maxHeight:"300px"}} src="./boardmembers/vice.png"/>
+                    <div class="bg-transparent grid grid-cols-2 mt-20">
+                        <div class="bg-transparent mx-auto " >
+                            <img class = "lg:rounded-md " style={{maxHeight:"300px",minWidth:"225px"}} src="./boardmembers/talal.jpeg"/>
                             
                         </div>
-                        <div class=" text-center m-5 text-xl font-semibold">
-                                Treasurer
+                        <div class=" text-center m-5 text-xl">
+                                <p class="pt-10 text-cyan-200">Talal Jaber</p>
+                               <p class="text-center text-lime-400 ">Treasurer</p> 
                         </div>
                     </div>
 
