@@ -152,7 +152,7 @@ export default class Home extends React.Component {
 
                     </div>
                 
-                <div class="sm:hidden mt-20  ml-20 mr-20 ">
+                <div class="hidden mt-20  ml-20 mr-20 ">
                     <div class="">
                         <ImageSlider slides={SliderData}/>
                     </div>
