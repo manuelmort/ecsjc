@@ -253,7 +253,7 @@ export default class Home extends React.Component {
                     
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-10">
                         <div class="bg-transparent lg:mx-auto " >
-                            <img class = "lg:rounded-md shadow-xl w-full lg:border-2 border-slate-400" style={{maxHeight:"350px",minWidth:"225px"}} src="./boardmembers/tinkywinky.webp"/>     
+                            <img class = "rounded-full shadow-xl w-40 h-40 mx-auto lg:border-2 border-slate-400" style={{maxHeight:"350px"}} src="./boardmembers/tinkywinky.webp"/>     
                         </div>
                         <div class=" text-center m-5 text-xl text-green-300">
                                <p class="pt-10 text-cyan-200">Garima Sharma</p>
@@ -262,7 +262,7 @@ export default class Home extends React.Component {
                     </div>
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1   mt-10 rounded-md ">
                         <div class="bg-transparent lg:border-rounded lg:mx-auto" >
-                            <img class = "lg:rounded-lg shadow-xl  w-full lg:border-2 border-slate-400" style={{maxHeight:"350px",minWidth:"225px"}} src="./boardmembers/tej.jpeg"/>
+                            <img class = "rounded-full shadow-xl mx-auto w-40 h-40 lg:border-2 border-slate-400" style={{maxHeight:"350px"}} src="./boardmembers/tej.png"/>
                         </div>
                         <div class=" text-center m-5 text-xl  text-green-300">
                                <p class="pt-10 text-cyan-200">Tej Panchal</p>
@@ -272,20 +272,30 @@ export default class Home extends React.Component {
 
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
                         <div class="bg-transparent lg:mx-auto" >
-                            <img class = "lg:rounded-md lg:border-2 w-full lg:shadow-xl border-slate-400 " style={{maxHeight:"350px",minWidth:"225px"}} src="./boardmembers/heaman.png"/>     
+                            <img class = "rounded-full lg:border-2 mx-auto h-40 w-40 lg:shadow-xl border-slate-400 " style={{maxHeight:"350px"}} src="./boardmembers/heaman.png"/>     
                         </div>
                         <div class=" text-center m-5 text-xl ">
                             <p class="pt-10 text-cyan-200">Heamandeep Kaur</p>
                             <p class="text-center text-lime-300 ">Expo Chair</p> 
                         </div>
                     </div>
+                    
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
                         <div class="bg-transparent  lg:mx-auto " >
-                            <img class = "lg:rounded-md w-full shadow-xl lg:border-2  border-slate-400 " style={{maxHeight:"350px",minWidth:"225px"}} src="./boardmembers/talal.jpeg"/>    
+                            <img class = "rounded-full  shadow-xl mx-auto h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} src="./boardmembers/tala.png"/>    
                         </div>
                         <div class=" text-center m-5 text-xl ">
                                 <p class="pt-10 text-cyan-200">Tala Jaber</p>
                                <p class="text-center text-lime-300  ">Treasurer</p> 
+                        </div>
+                    </div>
+                    <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
+                        <div class="bg-transparent  lg:mx-auto " >
+                            <img class = "rounded-full mx-auto shadow-xl h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} src="./boardmembers/Manny.png"/>    
+                        </div>
+                        <div class=" text-center m-5 text-xl ">
+                                <p class="pt-10 text-cyan-200">Manny Morteo</p>
+                               <p class="text-center text-lime-300  ">ECSJC Webdev</p> 
                         </div>
                     </div>
 
