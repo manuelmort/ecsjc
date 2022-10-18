@@ -22,11 +22,7 @@
   
 
 
-/* Global */
-/*
-html{
-  min-height: 100%;
-  overflow: hidden;
-}
-*/
-
+  .revealUp {
+    opacity: 0;
+    visibility: hidden;
+  }
