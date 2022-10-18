@@ -282,7 +282,7 @@ export default class Home extends React.Component {
                     
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
                         <div class="bg-transparent  lg:mx-auto " >
-                            <img class = "rounded-full  shadow-xl mx-auto h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} src="./boardmembers/tala.png"/>    
+                            <img class = "rounded-full  shadow-xl mx-auto h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} src="./boardmembers/tala3.png"/>    
                         </div>
                         <div class=" text-center m-5 text-xl ">
                                 <p class="pt-10 text-cyan-200">Tala Jaber</p>
@@ -291,7 +291,7 @@ export default class Home extends React.Component {
                     </div>
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
                         <div class="bg-transparent  lg:mx-auto " >
-                            <img class = "rounded-full mx-auto shadow-xl h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} src="./boardmembers/Manny.png"/>    
+                            <img class = "rounded-full mx-auto shadow-xl h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} src="./boardmembers/manny4.png"/>    
                         </div>
                         <div class=" text-center m-5 text-xl ">
                                 <p class="pt-10 text-cyan-200">Manny Morteo</p>
