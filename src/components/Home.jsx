@@ -21,6 +21,9 @@ export default class Home extends React.Component {
         console.log("text is now visible")
     }
     componentDidMount() {
+   
+
+
         //gsap is fucking amazing!
         gsap.registerPlugin(ScrollTrigger);
         //reveal
@@ -89,39 +92,47 @@ export default class Home extends React.Component {
                     
                     
                 </div>
-                <div class="bg-green-100  bg-opacity-70">
-                    <p class="text-center bg-transparent text-green-800 p-4 revealUp">Upcoming Meeting: Valley Suite Room 7:00 - 8:30pm, Nov. 2</p>
-                </div>
-                <div className="bg-transparent grid lg:grid-cols-2 bg-slate-800 opacity-90">
-                        
-                        <div class="bg-transparent lg:mt-20 m-5">
-                            <div class ="text-left bg-transparent ml-10">
-                                
-                                <h1 class ="text-green-300 font-semibold text-lg pt-5 bg-transparent line-1 anim-typewriter2-ecsjc revealUp">
-                                            Engineering & Computer Science Joint Council
+                <section class="panel">
 
-                                 </h1>
-                                
-                                <h2 className=" text-md text-dark bg-transparent text-green-100 revealUp">ECSJC is a campus recognized organization, sponsored by ASI, which   provides a forum for networking and collaboration among student leaders in the College of Engineering and Computer Science as well as providing an avenue for the student voice.</h2>
-                                <p class="text-green-300 font-semibold text text-lg pt-5 bg-transparent line-1 anim-typewriter revealUp">
-                                        What is the purpose
-                                </p> 
-                                <p class="bg-transparent text-green-100 revealUp">
-                                        ECSJC gives student leaders within the College of Engineering and Computer Science the opportunity to share ideas, plan joint events (e.g. ECS Expo), and discuss student issues.
-                                </p>
-                                <p class="text-green-300 opacity-100 font-semibold text-lg pt-5 bg-transparent line-1 anim-typewriter revealUp">
-                                        Who can join ECSJC
-                                </p>
-                                <p class="bg-transparent text-green-100 pb-20 revealUp">
-                                    
-                                        ECSJC members are selected officers from clubs recognized by the College of Engineering and Computer Science and SO&L.
-                                </p>
-
+                    <div class="bg-green-100  bg-opacity-70">
+                        <p class="text-center bg-transparent text-green-800 p-4 revealUp">Upcoming Meeting: Valley Suite Room 7:00 - 8:30pm, Nov. 2</p>
+                    </div>
+                    <div className="bg-transparent grid lg:grid-cols-2 bg-slate-800 opacity-90 ">
                             
+                            <div class="bg-transparent lg:mt-20 m-5">
+                                <div class ="text-left bg-transparent ml-10">
+                                    
+                                    <h1 class ="text-green-300 font-semibold text-lg pt-5 bg-transparent line-1 anim-typewriter2-ecsjc revealUp">
+                                                Engineering & Computer Science Joint Council
+
+                                    </h1>
+                                    
+                                    <h2 className=" text-md text-dark bg-transparent text-green-100 revealUp">ECSJC is a campus recognized organization, sponsored by ASI, which   provides a forum for networking and collaboration among student leaders in the College of Engineering and Computer Science as well as providing an avenue for the student voice.</h2>
+                                    <p class="text-green-300 font-semibold text text-lg pt-5 bg-transparent line-1 anim-typewriter revealUp">
+                                            What is the purpose
+                                    </p> 
+                                    <p class="bg-transparent text-green-100 revealUp">
+                                            ECSJC gives student leaders within the College of Engineering and Computer Science the opportunity to share ideas, plan joint events (e.g. ECS Expo), and discuss student issues.
+                                    </p>
+                                    <p class="text-green-300 opacity-100 font-semibold text-lg pt-5 bg-transparent line-1 anim-typewriter revealUp">
+                                            Who can join ECSJC
+                                    </p>
+                                    <p class="bg-transparent text-green-100 pb-20 revealUp">
+                                        
+                                            ECSJC members are selected officers from clubs recognized by the College of Engineering and Computer Science and SO&L.
+                                    </p>
+
+                                
+                                </div>
+                            </div>
+                            <div class="mx-auto w-full">
+                                <div class="mx-auto text-center revealUp " >
+                                    <p class="text-green-300 lg:mt-10">Upcoming Event</p>
+                                    <img src="./events/ECSJC_Flyer.jpeg" class=" lg:mx-auto lg:h-96 lg:mt-5 lg:rounded-md" />
+                                </div>
                             </div>
                         </div>
-
-                    </div>
+                </section>
                 
                 <div class="hidden mt-20  ml-20 mr-20 ">
                     <div class="">
@@ -181,6 +192,13 @@ export default class Home extends React.Component {
                                 </div>
                             </button>
                         </a>
+                        <a class="bg-transparent " href="https://csus.acm.org/">
+                            <button class="rounded-md shadow-xl bg-green-300 hover:bg-green-400 xl:w-80 w-full opacity-80 lg:w-80 " >
+                                <p class="text-green-800 mx-auto p-3 font-semibold bg-transparent">ACM</p>
+
+
+                            </button>
+                        </a>
                     </div>
                 </div>
                 </div>
@@ -215,6 +233,7 @@ export default class Home extends React.Component {
                                 },
                             ]}
                             mode="VERTICAL"
+                            hideControls="true"
                         />
                         
                     </div>
