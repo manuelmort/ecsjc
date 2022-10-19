@@ -2,11 +2,11 @@
     position: absolute;
     top: calc(50% - 4em);
     left: calc(50% - 4em);
-    width: 6em;
-    height: 6em;
-    border: 1.1em solid rgba(0, 0, 0, 0.2);
-    border-left: 1.1em solid #000000;
-    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    border: 0.5em solid rgba(15, 237, 101, 0.2);
+    border-left: 0.5em solid #2c5e37;
+    border-radius: 100%;
     animation: load8 1.1s infinite linear;
   }
   

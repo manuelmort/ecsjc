@@ -82,7 +82,7 @@ export default class Home extends React.Component {
 
                     <div class="sac-state-gold mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent ">
 
-                            <p class="text-green-300 text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center revealUp">Engineering and Computer Science Joint Council</p>
+                            <p class="text-green-200 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl revealUp">Engineering and Computer Science Joint Council</p>
                         
 
                     </div>
@@ -131,53 +131,53 @@ export default class Home extends React.Component {
 
                 <div class="m-0 w-full h-full bg-cover bg-transparent " >       
 
-                <div class="bg-transparent m-0 w-full h-full mb-20 revealUp" id="Clubs">
+                <div class="bg-transparent   mb-20 revealUp" id="Clubs">
                     <div class="bg-transparent mx-auto text-center">
-                        <p class="text-3xl text-green-400 opacity-90 bg-transparent pt-5" >Clubs and Organizations</p>
+                        <p class="text-3xl text-green-600 opacity-90 bg-transparent pt-5" >Clubs and Organizations</p>
                     </div>
-                    <div class='grid lg:grid-cols-4 grid-cols-1 gap-4 p-10 bg-transparent'>
+                    <div class='grid lg:grid-cols-4 grid-cols-1 2xl:ml-20 gap-4 p-10 bg-transparent '>
                         <a href="/geotech" class="bg-transparent">
-                            <button class="bg-green-300 hover:bg-green-400 opacity-80  w-full rounded-md shadow-xl" > 
-                                <p class="bg-transparent p-3 text-green-900 font-bold ">Cal Geotech Engineering Association</p>
+                            <button class="bg-green-300 hover:bg-green-400 opacity-80 xl:w-80 w-full rounded-md shadow-xl" > 
+                                <p class="bg-transparent p-3 text-green-900 font-semibod">Cal Geotech  </p>
                             </button>
                         </a>
                         <a class="bg-transparent ">
-                            <button class="bg-cyan-300 hover:bg-cyan-400 shadow-xl rounded-md w-full lg:w-80 opacity-80 ">
-                                <p class="bg-transparent p-3  text-cyan-800 font-bold">Concrete Canoe</p>
+                            <button class="bg-cyan-300 hover:bg-cyan-400 shadow-xl rounded-md xl:w-80 w-full lg:w-80 opacity-80 ">
+                                <p class="bg-transparent p-3  text-cyan-900 font-semibold">Concrete Canoe</p>
                             </button>
                         </a>
                         <a class="bg-transparent ">
-                            <button class="bg-green-800 hover:bg-green-900 shadow-xl opacity-80 w-full lg:w-80 rounded-md " >
-                            <p class="bg-transparent p-3 text-white font-bold">Institute of Transportation Engineers</p>
+                            <button class="bg-green-800 hover:bg-green-900 shadow-xl opacity-80 xl:w-80 w-full lg:w-80 rounded-md " >
+                            <p class="bg-transparent p-3 text-white font-semibold">Institute of Transportation Engineers</p>
                             </button>
                         </a>
                         <a class="bg-transparent ">
-                            <button class="rounded-md shadow-xl bg-green-300 hover:bg-green-400 w-full opacity-80 lg:w-80 " >
-                                <p class="text-green-800 mx-auto p-3 font-bold bg-transparent">Data Science</p>
+                            <button class="rounded-md shadow-xl bg-green-300 hover:bg-green-400 xl:w-80 w-full opacity-80 lg:w-80 " >
+                                <p class="text-green-800 mx-auto p-3 font-semibold bg-transparent">Data Science</p>
 
 
                             </button>
                         </a>
                         <a class="bg-transparent ">
-                            <button class="rounded-md  shadow-xl bg-cyan-300 hover:bg-cyan-400 w-full lg:w-80 opacity-80 " >
-                                <p class="bg-transparent p-3 text-cyan-800 font-bold">Hornet Racing</p>
+                            <button class="rounded-md  shadow-xl bg-cyan-300 hover:bg-cyan-400 xl:w-80 w-full lg:w-80 opacity-80 " >
+                                <p class="bg-transparent p-3 text-cyan-800 font-semibold">Hornet Racing</p>
                             </button>
                         </a>
                         <a class="bg-transparent ">
-                            <button class="bg-green-800 hover:bg-green-900 opacity-80 lg:w-80 w-full shadow-xl rounded-md " >
-                                <p class="bg-transparent p-3  text-white font-bold">Society of Women Engineers</p>
+                            <button class="bg-green-800 hover:bg-green-900 opacity-80 lg:w-80 xl:w-80 w-full shadow-xl rounded-md " >
+                                <p class="bg-transparent p-3  text-white font-semibold">Society of Women Engineers</p>
 
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button  class="bg-cyan-300 hover:bg-cyan-400 opacity-80 shadow-xl w-full lg:w-80 rounded-md text-white" >
-                            <p class="bg-transparen text-cyan-800  p-3 font-bold">National Society of Black Engineers</p>
+                            <button  class="bg-cyan-300 hover:bg-cyan-400 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white" >
+                            <p class="bg-transparen text-cyan-800  p-3 font-semibold">National Society of Black Engineers</p>
                             </button>
                         </a>
                         <a class="bg-transparent ">
-                            <button class="bg-green-800 hover:bg-green-900 opacity-80 shadow-xl w-full lg:w-80 rounded-md text-white grow" >   
+                            <button class="bg-green-800 hover:bg-green-900 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white grow" >   
                                 <div class="bg-transparent">
-                                    <p class="bg-transparent text-white p-3 font-bold ">SHPE</p>
+                                    <p class="bg-transparent text-white p-3 font-semibold ">SHPE</p>
                                 </div>
                             </button>
                         </a>
@@ -220,11 +220,11 @@ export default class Home extends React.Component {
                     </div>
                 <div class="m-0 w-full h-full bg-cover bg-transparent  bg-slate-700" >       
 
-                <div class="grid lg:grid-cols-2 grid-cols-1  bg-slate-700 lg:revealUp  ">
+                <div class="grid lg:grid-cols-2 grid-cols-1  bg-slate-700 lg:revealUp xl:revealUp  ">
                     
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-10">
                         <div class="bg-transparent lg:mx-auto " >
-                            <img class = "rounded-full shadow-xl w-40 h-40 mx-auto lg:border-2 border-slate-400 " style={{maxHeight:"350px"}} src="./boardmembers/tinkywinky.webp"/>     
+                            <img class = "rounded-full shadow-xl w-40 h-40 mx-auto lg:border-2 border-slate-400 " style={{maxHeight:"350px"}} />     
                         </div>
                         <div class=" text-center m-5 text-xl text-green-300">
                                <p class="pt-10 text-cyan-200">Garima Sharma</p>
