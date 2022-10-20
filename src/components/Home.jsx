@@ -127,7 +127,7 @@ export default class Home extends React.Component {
                             <div class="mx-auto w-full">
                                 <div class="mx-auto text-center revealUp " >
                                     <p class="text-green-300 lg:mt-10">Upcoming Event</p>
-                                    <img src="./events/ECSJC_Flyer.jpeg" class=" lg:mx-auto lg:h-96 lg:mt-5 lg:rounded-md" />
+                                    <img src="./ecsjcflyer2.jpeg" class=" lg:mx-auto lg:h-96 lg:mt-5 lg:rounded-md" />
                                 </div>
                             </div>
                         </div>
