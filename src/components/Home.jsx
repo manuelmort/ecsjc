@@ -8,7 +8,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
 
-
 export default class Home extends React.Component {
     constructor(props) {
         super(props)
@@ -238,6 +237,42 @@ export default class Home extends React.Component {
                         />
                         
                     </div>
+                    <div class=" bg-gray-800 lg:p-20 mx-0">
+                    <div class=" bg-transparent">
+                        <div class=" lg:grid grid-cols-2 gap-20 bg-transparent mx-0 md:mx-auto">
+                            <div class="bg-transparent lg:h-80 phonescreen ">
+                            <iframe  
+                                class= "lg:rounded-md shadow-md m-0 w-full h-full bg-cover lg:min-w-full lg:h-80  bg-transparent "
+                             src="https://www.youtube.com/embed/4UVci93XOSQ?autoplay=1&controls=0&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="bg-transparent  border-white mx-auto"> 
+                                <div class="bg-transparent inline-block mx-auto">
+
+                                   <div class="bg-transparent lg:flex">
+                                        <img  class=" lg:w-20 lg:h-20 lg:flex lg:mr-5 lg:rounded-xl  sm:mx-auto " src="./cpelogo.png"/>
+                                        
+                                        
+                                        <p class="bg-transparent  lg:mx-auto lg:text-left text-white font-semibold text-4xl lg:p-0 p-5"> 
+                                                Subscribe to the
+                                                Computer Engineering Youtube Channel!
+                                        </p>
+                                    </div>
+                                   
+                                    <p class="bg-transparent text-white lg:text-left mt-10">Channel offers: </p>
+
+                                    <ul class="bg-transparent  lg:text-left list-none lg:list-disc ml-5">
+                                        <li class="bg-transparent text-white">Homework Help for Math, Science and Engineering material</li>
+                                        <li class="bg-transparent text-white">Programming tutorials</li>
+                                        <li class="bg-transparent text-white">Cool drone aerial shots</li>
+                                        <li class="bg-transparent text-white">Cat videos </li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="m-0 w-full h-full bg-cover bg-transparent  bg-slate-700" >       
 
                 <div class="grid lg:grid-cols-2 grid-cols-1  bg-slate-700 lg:revealUp xl:revealUp  ">
