@@ -92,7 +92,7 @@ export default class Home extends React.Component {
                     
                     
                 </div>
-                <section class="panel">
+                <section class="">
 
                     <div class="bg-green-100  bg-opacity-70">
                         <p class="text-center bg-transparent text-green-800 p-4 revealUp">Upcoming Meeting: Valley Suite Room 7:00 - 8:30pm, Nov. 2</p>
@@ -147,7 +147,7 @@ export default class Home extends React.Component {
                         <p class="text-3xl text-green-600 opacity-90 bg-transparent pt-5" >Clubs and Organizations</p>
                     </div>
                     <div class='grid lg:grid-cols-4 grid-cols-1 2xl:ml-20 gap-4 p-10 bg-transparent '>
-                        <a href="/geotech" class="bg-transparent">
+                        <a href="https://calgeocsus.weebly.com/" _target="blank" class="bg-transparent">
                             <button class="bg-green-300 hover:bg-green-400 opacity-80 xl:w-80 w-full rounded-md shadow-xl" > 
                                 <p class="bg-transparent p-3 text-green-900 font-semibod">Cal Geotech  </p>
                             </button>
@@ -174,7 +174,7 @@ export default class Home extends React.Component {
                                 <p class="bg-transparent p-3 text-cyan-800 font-semibold">Hornet Racing</p>
                             </button>
                         </a>
-                        <a class="bg-transparent ">
+                        <a class="bg-transparent " href="/swe">
                             <button class="bg-green-800 hover:bg-green-900 opacity-80 lg:w-80 xl:w-80 w-full shadow-xl rounded-md " >
                                 <p class="bg-transparent p-3  text-white font-semibold">Society of Women Engineers</p>
 
@@ -214,12 +214,7 @@ export default class Home extends React.Component {
                                 titleColorActive: 'black',
                             }}
                             items={[
-                            {
-                            title: "Sept 22",
-                            cardTitle: "Joint Council Welcome Back BBQ",
-                            cardSubtitle:"This is a great opportunity to connect with other ECS students, meet officers of ECS clubs and organizations,  and learn about services provided by ECS Student Success Center.",
-                            cardDetailedText:""
-                            },
+                            
                             
                             {
                             title: "Oct 21",
@@ -230,7 +225,13 @@ export default class Home extends React.Component {
                                 title: "Oct 28 ",
                                 cardTitle:"Feel Good Friday: Harvest Festival + Open Climb",
                                 cardSubtitle: "Come get spooky at the Challenge Center! This harvest festival event will feature arts & crafts, games, booths, and climbing! Sac State Students can leave with a painted pumpkin courtesy of SEO and Feel Good Friday. The ropes course on campus (behind Yosemite Hall) will be open to climb from 4:00 pm - 7:00 pm. This open climb is free. If you are a non-student, canned food donations to support the ASI Food Pantry and Sac State Students are encouraged!",
-                                },
+                            },
+                            {
+                                title: "Nov 1st",
+                                cardTitle: "Meet with ECS Dean and Club",
+                                cardSubtitle:"This is a great opportunity to connect with other ECS students, meet officers of ECS clubs and organizations,  and learn about services provided by ECS Student Success Center.",
+                                cardDetailedText:""
+                                }
                             ]}
                             mode="VERTICAL"
                             hideControls="true"
