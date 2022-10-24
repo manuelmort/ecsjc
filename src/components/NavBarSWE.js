@@ -8,9 +8,9 @@ export default class NavBarSWE extends React.Component {
     render() {
         return(
             <div class="container lg:mx-auto  bg-transparent">
-            <nav class="flex justify-between bg-transparent   text-green-300 pb-6 flex-wrap   lg:m-30 pt-6" >
+            <nav class="flex justify-between bg-transparent pb-6 flex-wrap  text-indigo-300 lg:m-30 pt-6" >
                     <a  
-                        href="/" class="font-semibold text-3xl bg-transparent tracking-tight 
+                        href="/" class="text-green-300 font-semibold text-3xl bg-transparent tracking-tight 
                         hover:underline underline-offset-4 ">
                         ECSJC</a>
                 <div class="  lg:flex text-right  bg-transparent lg:items-center lg:w-auto ">

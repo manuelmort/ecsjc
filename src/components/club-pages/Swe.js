@@ -58,7 +58,7 @@ export default class Swe extends React.Component {
         
         return(
             <div class="">
-                <div class="m-0 w-full h-full bg-cover bg-transparent border-2 border-transparent <----???" style={{backgroundImage:"url('./sweforest2.jpg')"}}>
+                <div class="m-0 w-full h-full bg-cover bg-transparent border-2 border-transparent <----???" style={{backgroundImage:"url('./swecircuit.png')"}}>
                     
     
                     <NavBarSWE class="bg-transparent "/>
@@ -77,7 +77,7 @@ export default class Swe extends React.Component {
                 <div class="bg-indigo-100  bg-opacity-70">
                     <p class="text-center bg-transparent text-indigo-800 p-4 revealUp">Upcoming Meeting: TBA</p>
                 </div>
-                <div className="bg-transparent grid lg:grid-cols-2 bg-slate-800 opacity-90 ">
+                    <div className="bg-transparent grid lg:grid-cols-2 bg-slate-800 opacity-90 ">
                         
                         <div class="bg-transparent lg:mt-20 m-5">
                             <div class ="text-left bg-transparent ml-10">
@@ -100,11 +100,12 @@ export default class Swe extends React.Component {
                         <div class="mx-auto w-full" to="Events">
                             <div class="mx-auto text-center revealUp " >
                                 <p class="text-indigo-300 lg:mt-10">Upcoming Event</p>
-                                <img src="./events/ECSJC_Flyer.jpeg" class=" lg:mx-auto lg:mb-10 lg:h-96 lg:mt-5 lg:rounded-md" />
+                                <img src="./spookyTreats.png" class=" lg:mx-auto lg:mb-10 lg:h-96 lg:mt-5 lg:rounded-md" />
                             </div>
                         </div>
-                    </div>                
-                    <div class=" bg-slate-700 lg:revealUp xl:revealUp bg-transparent" id="Follow Us">   
+                    </div>
+                  
+                    <div class=" bg-slate-800 lg:revealUp xl:revealUp bg-transparent" id="Follow Us">   
                         <p class="mx-auto text-center text-indigo-200 text-3xl revealUp pt-5">SWE 2022-2023 Officers</p>
 
                     <div class="grid lg:grid-cols-2 grid-cols-1 ">
@@ -126,7 +127,8 @@ export default class Swe extends React.Component {
                                 <p class="text-center text-indigo-300 text-lg">Vice President</p> 
                             </div>
                         </div>
-                        <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1   mt-10 rounded-md ">
+                        
+                        <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1   mt-20 rounded-md ">
                             <div class="bg-transparent lg:border-rounded lg:mx-auto" >
                                 <img class = "rounded-full shadow-xl mx-auto w-40 h-40 lg:border-2 border-slate-400" style={{maxHeight:"350px"}} src="../boardmembers/heaman.png"/>
                             </div>
@@ -137,7 +139,7 @@ export default class Swe extends React.Component {
                         </div>
                         <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
                             <div class="bg-transparent  lg:mx-auto " >
-                                <img class = "rounded-full  shadow-xl mx-auto h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} />    
+                                <img class = "rounded-full  shadow-xl mx-auto h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} src="./Bhupinder.png"/>    
                             </div>
                             <div class=" text-center m-5 text-xl ">
                                     <p class="pt-10 text-purple-200">Bhupinder jit Mehton</p>
@@ -151,7 +153,7 @@ export default class Swe extends React.Component {
                             </div>
                             <div class=" text-center m-5 text-xl ">
                                 <p class="pt-10 text-purple-200">Maritz Juarez</p>
-                                <p class="text-center text-indigo-300 ">Professional-Coordinator</p> 
+                                <p class="text-center text-violet-300 ">Professional-Coordinator</p> 
                             </div>
                         </div>
                         <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
@@ -159,7 +161,7 @@ export default class Swe extends React.Component {
                                 <img class = "rounded-full lg:border-2 mx-auto h-40 w-40 lg:shadow-xl border-slate-400 " style={{maxHeight:"350px"}} />     
                             </div>
                             <div class=" text-center m-5 text-xl ">
-                                <p class="pt-10 text-purple-200">Heamandeep Kaur</p>
+                                <p class="pt-10 text-purple-200">Anthony Neidhardt</p>
                                 <p class="text-center text-indigo-300 ">Event-Coordinator</p> 
                             </div>
                         </div>

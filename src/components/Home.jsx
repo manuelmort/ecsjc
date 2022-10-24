@@ -243,7 +243,7 @@ export default class Home extends React.Component {
                             <div class="bg-transparent lg:h-80 phonescreen ">
                             <iframe  
                                 class= "lg:rounded-md shadow-md m-0 w-full h-full bg-cover lg:min-w-full lg:h-80  bg-transparent "
-                             src="https://www.youtube.com/embed/4UVci93XOSQ?autoplay=1&controls=0&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                             src="https://www.youtube.com/embed/4UVci93XOSQ?autoplay=1&controls=0&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;loop" allowfullscreen></iframe>
                             </div>
                             <div class="bg-transparent  border-white mx-auto"> 
                                 <div class="bg-transparent inline-block mx-auto">
@@ -321,7 +321,7 @@ export default class Home extends React.Component {
                         </div>
                         <div class=" text-center m-5 text-xl ">
                                 <p class="pt-10 text-cyan-200">Manny Morteo</p>
-                               <p class="text-center text-lime-300  ">ECSJC Webdev</p> 
+                               <p class="text-center text-lime-300  ">Webmaster</p> 
                         </div>
                     </div>
 
