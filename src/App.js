@@ -4,7 +4,7 @@ import Warpzone from './components/Warpzone';
 import NavigationBar from './components/NavigationBar';
 import Swe from './components/club-pages/Swe';
 import {Routes, Route} from 'react-router-dom'
-import Footer from './components/Footer';
+import Footer from './components/club-pages/SWEFooter';
 import "./App.css"
 import GeoTech from "./components/club-pages/GeoTech";
 import { extend } from 'dayjs';
@@ -37,7 +37,6 @@ class App extends React.Component {
           <Route path ='home' element={<Home/>}/>
           <Route path="/swe" element={<Swe/>}/>
         </Routes>
-        <Footer/>
         
         
 

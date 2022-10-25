@@ -2,6 +2,7 @@ import React from "react";
 import NavBarSWE from "../NavBarSWE";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import SWEFooter from "./SWEFooter";
 
 export default class Swe extends React.Component {
     componentDidMount() {
@@ -58,14 +59,14 @@ export default class Swe extends React.Component {
         
         return(
             <div class="">
-                <div class="m-0 w-full h-full bg-cover bg-transparent border-2 border-transparent <----???" style={{backgroundImage:"url('./swecircuit.png')"}}>
+                <div class="m-0 w-full h-full bg-cover opacity-90 bg-transparent border-2 border-transparent <----???" style={{backgroundImage:"url('./swecircuit.png')"}}>
                     
     
                     <NavBarSWE class="bg-transparent "/>
 
                     <div class="sac-state-gold mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent ">
 
-                        <p class="text-violet-100 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl revealUp">Society of Women Engineers</p>
+                        <p class="text-violet-100 font-semibold text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl revealUp">Society of Women Engineers</p>
                         
 
                     </div>
@@ -75,13 +76,15 @@ export default class Swe extends React.Component {
             <section class="">
 
                 <div class="bg-indigo-100  bg-opacity-70">
-                    <p class="text-center bg-transparent text-indigo-800 p-4 revealUp">Upcoming Meeting: TBA</p>
+                    <p class="text-center bg-transparent text-indigo-800 p-4 revealUp">Upcoming Meeting: This Thursday, October 27th at 5pm on Zoom! (See flyer below)</p>
                 </div>
                     <div className="bg-transparent grid lg:grid-cols-2 bg-slate-800 opacity-90 ">
                         
-                        <div class="bg-transparent lg:mt-20 m-5">
+                        <div class="bg-transparent lg:mt-10 m-5">
                             <div class ="text-left bg-transparent ml-10">
-                                
+
+                                <img class="h-20 revealUp"src="./swelogo.png"/>
+
                                 <h1 class ="text-indigo-300 font-semibold text-lg pt-5 bg-transparent line-1 anim-typewriter2-ecsjc revealUp">
                                             Society of Women Engineers
 
@@ -90,7 +93,7 @@ export default class Swe extends React.Component {
                                 <h2 className=" text-md text-dark bg-transparent text-indigo-100 revealUp">The Society of Women Engineers was founded in 1950 and is a non-profit educational organization for professional engineers and engineering students. Professional and student chapters are found world-wide, and membership is open to both men and women. SWE's mission is to encourage men and women to achieve his or her full potential in careers as engineers and leaders, to expand the image of the engineering profession as a positive force in improving the quality of life, and to demonstrate the value of diversity.</h2>
                                
                                 <p class="bg-transparent text-indigo-300 mt-5 ">
-                                Club Email: swe@csus.edu</p>
+                                Club Email: swe.sacstate@gmail.com</p>
                                
                             
 
@@ -106,7 +109,7 @@ export default class Swe extends React.Component {
                     </div>
                   
                     <div class=" bg-slate-800 lg:revealUp xl:revealUp bg-transparent" id="Follow Us">   
-                        <p class="mx-auto text-center text-indigo-200 text-3xl revealUp pt-5">SWE 2022-2023 Officers</p>
+                        <p class="mx-auto text-center text-indigo-200 text-3xl revealUp pt-5">SWE Fall 2022  Officers</p>
 
                     <div class="grid lg:grid-cols-2 grid-cols-1 ">
                         <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-10">
@@ -152,8 +155,8 @@ export default class Swe extends React.Component {
                                 <img class = "rounded-full lg:border-2 mx-auto h-40 w-40 lg:shadow-xl border-slate-400 " style={{maxHeight:"350px"}} />     
                             </div>
                             <div class=" text-center m-5 text-xl ">
-                                <p class="pt-10 text-purple-200">Maritz Juarez</p>
-                                <p class="text-center text-violet-300 ">Professional-Coordinator</p> 
+                                <p class="pt-10 text-purple-200">Maritza Juarez</p>
+                                <p class="text-center text-violet-300 ">Professional Coordinator</p> 
                             </div>
                         </div>
                         <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
@@ -162,7 +165,7 @@ export default class Swe extends React.Component {
                             </div>
                             <div class=" text-center m-5 text-xl ">
                                 <p class="pt-10 text-purple-200">Anthony Neidhardt</p>
-                                <p class="text-center text-indigo-300 ">Event-Coordinator</p> 
+                                <p class="text-center text-indigo-300 ">Event Coordinator</p> 
                             </div>
                         </div>
                         
@@ -178,9 +181,12 @@ export default class Swe extends React.Component {
                         </div>
 
                     </div> 
+                    <div>
+                    </div>
 
                 </div>
             </section>
+            <SWEFooter/>
             </div>
         )
     }
