@@ -6,7 +6,7 @@ export default class SWEFooter extends React.Component {
         return(
             <div>
               <div class="bg-indigo-100  bg-opacity-70">
-                <div class=" grid lg:grid-cols-4 grid-cols-1 ">
+                <div class=" grid lg:grid-cols-3 grid-cols-1 ">
 
                   <div class="text-center mt-20 ">
                     <div class="text-center ">
@@ -14,24 +14,20 @@ export default class SWEFooter extends React.Component {
                     </div>
                   </div>
 
-
-                  <div>
-
+                  <div class="mt-10">
+                    <img src="./sacstatelogo.png"/>
                   </div>
 
-                  <div>
-
-                  </div>
-
-                  <div class="mt-20">
-                    <div class="text-indigo-800 text-center " >
-                        <div class="text-xl">
-                          <p>Follow Us!</p>
+                  <div class="mt-20 ">
+                    <div class="text-indigo-800 text-center lg:pl-20 " >
+                        <div class="text-xl lg:text-left">
+                          <p>Contact Us</p>
+                        <a><p>swe.sacstate@gmail.com</p></a>
                         <a href="https://instagram.com/swe_sacstate?igshid=MDE2OWE1N2Q=" target="_blank">
-                          <BsInstagram class="inline-block hover:text-indigo-600  m-5"/>
+                          <BsInstagram class="inline-block hover:text-indigo-600  m-2 text-2xl"/>
                         </a>
                         <a href="https://discord.gg/tCDUGFaZSG" target="_blank">
-                          <BsDiscord class="inline-block hover:text-indigo-600 m-5"/>
+                          <BsDiscord class="inline-block hover:text-indigo-600 m-2 text-2xl"/>
                         </a>
                         </div>
                     </div>

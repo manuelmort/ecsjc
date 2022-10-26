@@ -6,6 +6,8 @@ import "./Home.css"
 import { Chrono } from "react-chrono";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import {Link} from 'react-scroll'
+
 
 
 export default class Home extends React.Component {
@@ -85,6 +87,12 @@ export default class Home extends React.Component {
                     <div class="sac-state-gold mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent ">
 
                             <p class="text-green-200 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl revealUp">Engineering and Computer Science Joint Council</p>
+                            <div class=" opacity-90 text-center lg:mt-5 mt-10 mb-10 revealUp">
+                                <Link  to="Events"   smooth={true}
+                                    class="bg-transparent text-xl text-green-100  p-2 rounded-md border-2 border-green-100/90    hover:text-green-300  hover:bg-opacity-30 hover:bg-green-300  ">
+                                    Upcoming Events
+                                </Link>
+                            </div>
                         
 
                     </div>
@@ -125,12 +133,31 @@ export default class Home extends React.Component {
                                 </div>
                             </div>
                             <div class="mx-auto w-full">
-                                <div class="mx-auto text-center revealUp " >
-                                    <p class="text-green-300 lg:mt-10">Upcoming Event</p>
-                                    <img src="./ecsjcflyer2.jpeg" class=" lg:mx-auto lg:h-96 lg:mt-5 lg:rounded-md" />
+                                <div class="mx-auto text-center revealUp " id="Events">
+                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">ECSJC Event</p>
+                                    <img src="./ecsjcflyer2.jpeg" class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
                                 </div>
                             </div>
                         </div>
+                </section>
+                <section class="" >
+
+                    
+                    <div className="bg-transparent grid lg:grid-cols-2 bg-slate-800 opacity-90 pb-20 ">
+                            
+                    <div class="mx-auto w-full">
+                            <div class="mx-auto text-center revealUp " >
+                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">SWE Event</p>
+                                    <img src="./spookyTreats.png" class=" lg:mx-auto lg:h-96  lg:w-72 lg:mt-5 lg:rounded-md" />
+                                </div>
+                            </div>
+                            <div class="mx-auto w-full">
+                                <div class="mx-auto text-center revealUp " >
+                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">DSA Event</p>
+                                    <img src="./IntroToBinary.png" class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
+                                </div>
+                            </div>
+                    </div>
                 </section>
                 
                 <div class="hidden mt-20  ml-20 mr-20 ">
@@ -194,8 +221,11 @@ export default class Home extends React.Component {
                         <a class="bg-transparent " href="https://csus.acm.org/">
                             <button class="rounded-md shadow-xl bg-green-300 hover:bg-green-400 xl:w-80 w-full opacity-80 lg:w-80 " >
                                 <p class="text-green-800 mx-auto p-3 font-semibold bg-transparent">ACM</p>
-
-
+                            </button>
+                        </a>
+                        <a class="bg-transparent">
+                            <button  class="bg-cyan-300 hover:bg-cyan-400 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white" >
+                            <p class="bg-transparen text-cyan-800  p-3 font-semibold">Data Structs & Algorithms</p>
                             </button>
                         </a>
                     </div>

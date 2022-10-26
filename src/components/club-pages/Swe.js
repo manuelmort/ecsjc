@@ -3,6 +3,8 @@ import NavBarSWE from "../NavBarSWE";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import SWEFooter from "./SWEFooter";
+import { BsInstagram,BsDiscord } from "react-icons/bs";
+
 
 export default class Swe extends React.Component {
     componentDidMount() {
@@ -59,7 +61,7 @@ export default class Swe extends React.Component {
         
         return(
             <div class="">
-                <div class="m-0 w-full h-full bg-cover opacity-90 bg-transparent border-2 border-transparent <----???" style={{backgroundImage:"url('./swecircuit.png')"}}>
+                <div class="m-0 w-full h-full bg-cover  bg-transparent border-2 border-transparent <----???" style={{backgroundImage:"url('./swecircuit.png')"}}>
                     
     
                     <NavBarSWE class="bg-transparent "/>
@@ -94,6 +96,12 @@ export default class Swe extends React.Component {
                                
                                 <p class="bg-transparent text-indigo-300 mt-5 ">
                                 Club Email: swe.sacstate@gmail.com</p>
+                                <a href="https://instagram.com/swe_sacstate?igshid=MDE2OWE1N2Q=" target="_blank">
+                                    <BsInstagram class="inline-block hover:text-indigo-600 text-indigo-300 text-2xl m-2"/>
+                                </a>
+                                <a href="https://discord.gg/tCDUGFaZSG" target="_blank">
+                                    <BsDiscord class="inline-block hover:text-indigo-600 text-indigo-300  text-2xl m-2"/>
+                                </a>
                                
                             
 
