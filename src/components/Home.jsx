@@ -133,7 +133,7 @@ export default class Home extends React.Component {
                                 </div>
                             </div>
                             <div class="mx-auto w-full">
-                                <div class="mx-auto text-center revealUp " id="Events">
+                                <div class="mx-auto text-center lg:revealUp " id="Events">
                                     <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">ECSJC Event</p>
                                     <img src="./ecsjcflyer2.jpeg" class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
                                 </div>
@@ -146,13 +146,13 @@ export default class Home extends React.Component {
                     <div className="bg-transparent grid lg:grid-cols-2 bg-slate-800 opacity-90 pb-20 ">
                             
                     <div class="mx-auto w-full">
-                            <div class="mx-auto text-center revealUp " >
+                            <div class="mx-auto text-center lg:revealUp " >
                                     <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">SWE Event</p>
                                     <img src="./spookyTreats.png" class=" lg:mx-auto lg:h-96  lg:w-72 lg:mt-5 lg:rounded-md" />
                                 </div>
                             </div>
                             <div class="mx-auto w-full">
-                                <div class="mx-auto text-center revealUp " >
+                                <div class="mx-auto text-center lg:revealUp " >
                                     <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">DSA Event</p>
                                     <img src="./IntroToBinary.png" class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
                                 </div>
