@@ -173,58 +173,58 @@ export default class Home extends React.Component {
                         <p class="text-3xl text-green-600 opacity-90 bg-transparent pt-5" >Clubs and Organizations</p>
                     </div>
                     <div class='grid lg:grid-cols-4 grid-cols-1 2xl:ml-20 gap-4 p-10 bg-transparent '>
-                        <a href="https://calgeocsus.weebly.com/" _target="blank" class="bg-transparent">
-                            <button class="bg-green-300 hover:bg-green-400 opacity-80 xl:w-80 w-full rounded-md shadow-xl" > 
+                        <a href="https://calgeocsus.weebly.com/" _target="blank" class="bg-transparent ">
+                            <button class="bg-green-300 hover:bg-green-400 opacity-80 xl:w-80 w-full rounded-md shadow-xl border-2 border-gray-800/70" > 
                                 <p class="bg-transparent p-3 text-green-900 font-semibod">Cal Geotech  </p>
                             </button>
                         </a>
                         <a class="bg-transparent ">
-                            <button class="bg-cyan-300 hover:bg-cyan-400 shadow-xl rounded-md xl:w-80 w-full lg:w-80 opacity-80 ">
+                            <button class="bg-cyan-300 hover:bg-cyan-400 shadow-xl rounded-md xl:w-80 w-full lg:w-80 opacity-80  border-2 border-gray-800/70">
                                 <p class="bg-transparent p-3  text-cyan-900 font-semibold">Concrete Canoe</p>
                             </button>
                         </a>
                         <a class="bg-transparent ">
-                            <button class="bg-green-800 hover:bg-green-900 shadow-xl opacity-80 xl:w-80 w-full lg:w-80 rounded-md " >
-                            <p class="bg-transparent p-3 text-white font-semibold">Institute of Transportation Engineers</p>
+                            <button class="bg-green-800 hover:bg-green-900 shadow-xl opacity-80 xl:w-80 w-full lg:w-80 rounded-md  border-2 border-gray-800/70 " >
+                            <p class="bg-transparent p-3 text-white font-semibold">Institute of Transport. Engineers</p>
                             </button>
                         </a>
                         <a class="bg-transparent ">
-                            <button class="rounded-md shadow-xl bg-green-300 hover:bg-green-400 xl:w-80 w-full opacity-80 lg:w-80 " >
+                            <button class="rounded-md shadow-xl bg-green-300 hover:bg-green-400 xl:w-80 w-full opacity-80 lg:w-80  border-2 border-gray-800/70" >
                                 <p class="text-green-800 mx-auto p-3 font-semibold bg-transparent">Data Science</p>
 
 
                             </button>
                         </a>
                         <a class="bg-transparent ">
-                            <button class="rounded-md  shadow-xl bg-cyan-300 hover:bg-cyan-400 xl:w-80 w-full lg:w-80 opacity-80 " >
+                            <button class="rounded-md  shadow-xl bg-cyan-300 hover:bg-cyan-400 xl:w-80 w-full lg:w-80 opacity-80  border-2 border-gray-800/70" >
                                 <p class="bg-transparent p-3 text-cyan-800 font-semibold">Hornet Racing</p>
                             </button>
                         </a>
                         <a class="bg-transparent " href="/swe">
-                            <button class="bg-green-800 hover:bg-green-900 opacity-80 lg:w-80 xl:w-80 w-full shadow-xl rounded-md " >
+                            <button class="bg-green-800 hover:bg-green-900 opacity-80 lg:w-80 xl:w-80 w-full shadow-xl rounded-md  border-2 border-gray-800/70" >
                                 <p class="bg-transparent p-3  text-white font-semibold">Society of Women Engineers</p>
 
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button  class="bg-cyan-300 hover:bg-cyan-400 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white" >
+                            <button  class="bg-cyan-300 hover:bg-cyan-400 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white  border-2 border-gray-800/70" >
                             <p class="bg-transparen text-cyan-800  p-3 font-semibold">National Society of Black Engineers</p>
                             </button>
                         </a>
                         <a class="bg-transparent ">
-                            <button class="bg-green-800 hover:bg-green-900 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white grow" >   
+                            <button class="bg-green-800 hover:bg-green-900 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white grow  border-2 border-gray-800/70" >   
                                 <div class="bg-transparent">
                                     <p class="bg-transparent text-white p-3 font-semibold ">SHPE</p>
                                 </div>
                             </button>
                         </a>
                         <a class="bg-transparent " href="https://csus.acm.org/">
-                            <button class="rounded-md shadow-xl bg-green-300 hover:bg-green-400 xl:w-80 w-full opacity-80 lg:w-80 " >
+                            <button class="rounded-md shadow-xl bg-green-300 hover:bg-green-400 xl:w-80 w-full opacity-80 lg:w-80  border-2 border-gray-800/70 " >
                                 <p class="text-green-800 mx-auto p-3 font-semibold bg-transparent">ACM</p>
                             </button>
                         </a>
                         <a class="bg-transparent">
-                            <button  class="bg-cyan-300 hover:bg-cyan-400 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white" >
+                            <button  class="bg-cyan-300 hover:bg-cyan-400 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white  border-2 border-gray-800/70" >
                             <p class="bg-transparen text-cyan-800  p-3 font-semibold">Data Structs & Algorithms</p>
                             </button>
                         </a>
