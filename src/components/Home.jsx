@@ -86,7 +86,7 @@ export default class Home extends React.Component {
 
                     <div class="sac-state-gold mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent ">
 
-                            <p class="text-green-200 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl revealUp">Engineering and Computer Science Joint Council</p>
+                            <p  class="text-green-200 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl revealUp">Engineering and Computer Science Joint Council</p>
                             <div class=" opacity-90 text-center lg:mt-5 mt-10 mb-10 revealUp">
                                 <Link  to="Events"   smooth={true}
                                     class="bg-transparent text-xl text-green-100  p-2 rounded-md border-2 border-green-100/90    hover:text-green-300  hover:bg-opacity-30 hover:bg-green-300  ">
@@ -166,64 +166,64 @@ export default class Home extends React.Component {
                     </div>
                 </div>
 
-                <div class="m-0 w-full h-full bg-cover bg-transparent " >       
+                <div class="m-0 w-full h-full bg-cover bg-transparent border-2 border-transparent "  style={{backgroundImage:"url('./ecsjcmeetwithdean.jpeg')"}}>       
 
-                <div class="bg-transparent   mb-20 revealUp" id="Clubs">
+                <div class="bg-transparent   lg:mb-40 lg:mt-20 " id="Clubs">
                     <div class="bg-transparent mx-auto text-center">
-                        <p class="text-3xl text-green-600 opacity-90 bg-transparent pt-5" >Clubs and Organizations</p>
+                        <p class="text-3xl text-green-100 opacity-90 bg-transparent pt-5" >Clubs and Organizations</p>
                     </div>
                     <div class='grid lg:grid-cols-4 grid-cols-1 2xl:ml-20 gap-4 p-10 bg-transparent '>
-                        <a href="https://calgeocsus.weebly.com/" _target="blank" class="bg-transparent ">
+                        <a href="https://calgeocsus.weebly.com/" _target="blank" class="bg-transparent revealUp ">
                             <button class="bg-green-300 hover:bg-green-400 opacity-80 xl:w-80 w-full rounded-md shadow-xl border-2 border-gray-800/70" > 
                                 <p class="bg-transparent p-3 text-green-900 font-semibod">Cal Geotech  </p>
                             </button>
                         </a>
-                        <a class="bg-transparent ">
+                        <a class="bg-transparent revealUp">
                             <button class="bg-cyan-300 hover:bg-cyan-400 shadow-xl rounded-md xl:w-80 w-full lg:w-80 opacity-80  border-2 border-gray-800/70">
                                 <p class="bg-transparent p-3  text-cyan-900 font-semibold">Concrete Canoe</p>
                             </button>
                         </a>
-                        <a class="bg-transparent ">
+                        <a class="bg-transparent revealUp">
                             <button class="bg-green-800 hover:bg-green-900 shadow-xl opacity-80 xl:w-80 w-full lg:w-80 rounded-md  border-2 border-gray-800/70 " >
                             <p class="bg-transparent p-3 text-white font-semibold">Institute of Transport. Engineers</p>
                             </button>
                         </a>
-                        <a class="bg-transparent ">
+                        <a class="bg-transparent revealUp">
                             <button class="rounded-md shadow-xl bg-green-300 hover:bg-green-400 xl:w-80 w-full opacity-80 lg:w-80  border-2 border-gray-800/70" >
                                 <p class="text-green-800 mx-auto p-3 font-semibold bg-transparent">Data Science</p>
 
 
                             </button>
                         </a>
-                        <a class="bg-transparent ">
+                        <a class="bg-transparent revealUp ">
                             <button class="rounded-md  shadow-xl bg-cyan-300 hover:bg-cyan-400 xl:w-80 w-full lg:w-80 opacity-80  border-2 border-gray-800/70" >
                                 <p class="bg-transparent p-3 text-cyan-800 font-semibold">Hornet Racing</p>
                             </button>
                         </a>
-                        <a class="bg-transparent " href="/swe">
+                        <a class="bg-transparent revealUp" href="/swe">
                             <button class="bg-green-800 hover:bg-green-900 opacity-80 lg:w-80 xl:w-80 w-full shadow-xl rounded-md  border-2 border-gray-800/70" >
                                 <p class="bg-transparent p-3  text-white font-semibold">Society of Women Engineers</p>
 
                             </button>
                         </a>
-                        <a class="bg-transparent">
+                        <a class="bg-transparent revealUp">
                             <button  class="bg-cyan-300 hover:bg-cyan-400 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white  border-2 border-gray-800/70" >
                             <p class="bg-transparen text-cyan-800  p-3 font-semibold">National Society of Black Engineers</p>
                             </button>
                         </a>
-                        <a class="bg-transparent ">
+                        <a class="bg-transparent revealUp">
                             <button class="bg-green-800 hover:bg-green-900 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white grow  border-2 border-gray-800/70" >   
                                 <div class="bg-transparent">
                                     <p class="bg-transparent text-white p-3 font-semibold ">SHPE</p>
                                 </div>
                             </button>
                         </a>
-                        <a class="bg-transparent " href="https://csus.acm.org/">
+                        <a class="bg-transparent revealUp " href="https://csus.acm.org/">
                             <button class="rounded-md shadow-xl bg-green-300 hover:bg-green-400 xl:w-80 w-full opacity-80 lg:w-80  border-2 border-gray-800/70 " >
                                 <p class="text-green-800 mx-auto p-3 font-semibold bg-transparent">ACM</p>
                             </button>
                         </a>
-                        <a class="bg-transparent">
+                        <a class="bg-transparent revealUp">
                             <button  class="bg-cyan-300 hover:bg-cyan-400 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white  border-2 border-gray-800/70" >
                             <p class="bg-transparen text-cyan-800  p-3 font-semibold">Data Structs & Algorithms</p>
                             </button>
@@ -267,42 +267,7 @@ export default class Home extends React.Component {
                         />
                         
                     </div>
-                    <div class=" bg-gray-800 lg:p-20 mx-0">
-                    <div class=" bg-transparent">
-                        <div class=" lg:grid grid-cols-2 gap-20 bg-transparent mx-0 md:mx-auto">
-                            <div class="bg-transparent lg:h-80 phonescreen ">
-                            <iframe  
-                                class= "lg:rounded-md shadow-md m-0 w-full h-full bg-cover lg:min-w-full lg:h-80  bg-transparent "
-                             src="https://www.youtube.com/embed/4UVci93XOSQ?autoplay=1&controls=0&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;loop" allowfullscreen></iframe>
-                            </div>
-                            <div class="bg-transparent  border-white mx-auto"> 
-                                <div class="bg-transparent inline-block mx-auto">
 
-                                   <div class="bg-transparent lg:flex">
-                                        <img  class=" lg:w-20 lg:h-20 lg:flex lg:mr-5 lg:rounded-xl  sm:mx-auto " src="./cpelogo.png"/>
-                                        
-                                        
-                                        <p class="bg-transparent  lg:mx-auto lg:text-left text-white font-semibold text-4xl lg:p-0 p-5"> 
-                                                Subscribe to the
-                                                Computer Engineering Youtube Channel!
-                                        </p>
-                                    </div>
-                                   
-                                    <p class="bg-transparent text-white lg:text-left mt-10">Channel offers: </p>
-
-                                    <ul class="bg-transparent  lg:text-left list-none lg:list-disc ml-5">
-                                        <li class="bg-transparent text-white">Homework Help for Math, Science and Engineering material</li>
-                                        <li class="bg-transparent text-white">Programming tutorials</li>
-                                        <li class="bg-transparent text-white">Cool drone aerial shots</li>
-                                        <li class="bg-transparent text-white">Cat videos </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="m-0 w-full h-full bg-cover bg-transparent  bg-slate-700" >       
 
                 <div class="grid lg:grid-cols-2 grid-cols-1  bg-slate-700 lg:revealUp xl:revealUp  ">
