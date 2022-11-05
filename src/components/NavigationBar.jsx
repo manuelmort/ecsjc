@@ -52,7 +52,7 @@ export default class NavigationBar extends React.Component {
                         <div class=" absolute bg-gray-800/90 rounded-lg  mt-5 w-full z-10 mx-auto">
                         <div class=" grid lg:grid-cols-4 grid-cols-1">
 
-                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><Link to={swe} class=" mx-auto">Society of Women Engineers</Link></button>
+                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><Link  class=" mx-auto">Society of Women Engineers</Link></button>
                         <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><a href="/dsa" >Concrete Canoe</a></button>
 
                         <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><a href="/dsa" >Data Structure and Algo</a></button>
