@@ -10,6 +10,7 @@ import {Link} from 'react-scroll'
 
 
 
+
 export default class Home extends React.Component {
     constructor(props) {
         super(props)
@@ -22,10 +23,7 @@ export default class Home extends React.Component {
         console.log("text is now visible")
     }
     componentDidMount() {
-   
-
-
-        //gsap is fucking amazing!
+         //gsap is fucking amazing!
         gsap.registerPlugin(ScrollTrigger);
         //reveal
         gsap.utils.toArray(".revealUp").forEach(function (elem) {
@@ -72,7 +70,25 @@ export default class Home extends React.Component {
     }
       
     render(){
-        
+   
+        const getData=()=>{
+            fetch('public/data/data.json'
+            ,{
+              headers : { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+               }
+            }
+            )
+              .then(function(response){
+                console.log(response)
+                return response.json();
+              })
+              .then(function(myJson) {
+                console.log(myJson);
+              });
+          }
+        getData();
        
 
         return(
@@ -128,14 +144,16 @@ export default class Home extends React.Component {
                                         
                                             ECSJC members are selected officers from clubs recognized by the College of Engineering and Computer Science and SO&L.
                                     </p>
+                                    <p class="bg-transparent text-green-300 mt-5 ">
+                                    Email: ecsjc@csus.edu</p>
 
                                 
                                 </div>
                             </div>
                             <div class="mx-auto w-full">
                                 <div class="mx-auto text-center lg:revealUp " id="Events">
-                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">ECSJC Event</p>
-                                    <img src="./ecsjcflyer2.jpeg" class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
+                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">ECS Event</p>
+                                    <img src="./events/ManagingStress.jpeg" class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
                                 </div>
                             </div>
                         </div>
@@ -154,7 +172,7 @@ export default class Home extends React.Component {
                             <div class="mx-auto w-full">
                                 <div class="mx-auto text-center lg:revealUp " >
                                     <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">DSA Event</p>
-                                    <img src="./IntroToBinary.png" class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
+                                    <img src="./DSA/DSAblitz.png" class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
                                 </div>
                             </div>
                     </div>
@@ -172,7 +190,7 @@ export default class Home extends React.Component {
                     <div class="bg-transparent mx-auto text-center">
                         <p class="text-3xl text-green-100 opacity-90 bg-transparent pt-5" >Clubs and Organizations</p>
                     </div>
-                    <div class='grid lg:grid-cols-4 grid-cols-1 2xl:ml-20 gap-4 p-10 bg-transparent '>
+                    <div class='grid lg:grid-cols-3 grid-cols-1 2xl:ml-20 gap-4 p-10 bg-transparent text-center '>
                         <a href="https://calgeocsus.weebly.com/" _target="blank" class="bg-transparent revealUp ">
                             <button class="bg-green-300 hover:bg-green-400 opacity-80 xl:w-80 w-full rounded-md shadow-xl border-2 border-gray-800/70" > 
                                 <p class="bg-transparent p-3 text-green-900 font-semibod">Cal Geotech  </p>
@@ -223,7 +241,7 @@ export default class Home extends React.Component {
                                 <p class="text-green-800 mx-auto p-3 font-semibold bg-transparent">ACM</p>
                             </button>
                         </a>
-                        <a class="bg-transparent revealUp">
+                        <a  href="/dsa" class="bg-transparent revealUp">
                             <button  class="bg-cyan-300 hover:bg-cyan-400 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white  border-2 border-gray-800/70" >
                             <p class="bg-transparen text-cyan-800  p-3 font-semibold">Data Structs & Algorithms</p>
                             </button>
@@ -279,6 +297,8 @@ export default class Home extends React.Component {
                         <div class=" text-center m-5 text-xl text-green-300">
                                <p class="pt-10 text-cyan-200">Garima Sharma</p>
                                <p class="text-center text-lime-300 text-lg">President</p> 
+                               <p class="bg-transparent text-green-300 mt-2 text-sm">
+                               garimasharma@csus.edu</p>
                         </div>
                     </div>
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1   mt-10 rounded-md ">
@@ -288,6 +308,8 @@ export default class Home extends React.Component {
                         <div class=" text-center m-5 text-xl  text-green-300">
                                <p class="pt-10 text-cyan-200">Tej Panchal</p>
                                <p class="text-center text-lime-300 text-lg">Vice President</p> 
+                               <p class="bg-transparent text-green-300 mt-2 text-sm">
+                               hkaur@csus.edu</p>
                         </div>
                     </div>
 
@@ -298,6 +320,8 @@ export default class Home extends React.Component {
                         <div class=" text-center m-5 text-xl ">
                             <p class="pt-10 text-cyan-200">Heamandeep Kaur</p>
                             <p class="text-center text-lime-300 ">Expo Chair</p> 
+                            <p class="bg-transparent text-green-300 mt-2 text-sm">
+                            asiecsdirector@csus.edu</p>
                         </div>
                     </div>
                     
@@ -308,6 +332,8 @@ export default class Home extends React.Component {
                         <div class=" text-center m-5 text-xl ">
                                 <p class="pt-10 text-cyan-200">Tala Jaber</p>
                                <p class="text-center text-lime-300  ">Treasurer</p> 
+                               <p class="bg-transparent text-green-300 mt-2 text-sm">
+                               tjaber@csus.edu</p>
                         </div>
                     </div>
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
@@ -317,6 +343,8 @@ export default class Home extends React.Component {
                         <div class=" text-center m-5 text-xl ">
                                 <p class="pt-10 text-cyan-200">Manny Morteo</p>
                                <p class="text-center text-lime-300  ">Webmaster</p> 
+                               <p class="bg-transparent text-green-300 mt-2 text-sm">
+                                mmorteo@csus.edu</p>
                         </div>
                     </div>
 

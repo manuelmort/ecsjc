@@ -6,9 +6,8 @@ import Swe from './components/club-pages/Swe';
 import {Routes, Route} from 'react-router-dom'
 import Footer from './components/club-pages/SWEFooter';
 import "./App.css"
-import GeoTech from "./components/club-pages/GeoTech";
 import { extend } from 'dayjs';
-
+import DSA from './components/DSA/DSA';
 
 class App extends React.Component {
   constructor(props) {
@@ -36,6 +35,8 @@ class App extends React.Component {
           <Route path ='/' element={<Home/>}/>
           <Route path ='home' element={<Home/>}/>
           <Route path="/swe" element={<Swe/>}/>
+          <Route path="/dsa" element={<DSA/>}/>
+
         </Routes>
         
         
