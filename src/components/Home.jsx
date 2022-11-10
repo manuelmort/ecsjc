@@ -12,6 +12,7 @@ import {Link} from 'react-scroll'
 
 
 export default class Home extends React.Component {
+    
     constructor(props) {
         super(props)
         
@@ -68,11 +69,9 @@ export default class Home extends React.Component {
         });
 
     }
-      
-    render(){
-   
+    useEffect() {
         const getData=()=>{
-            fetch('public/data/data.json'
+            fetch('./public/DSA/data.json'
             ,{
               headers : { 
                 'Content-Type': 'application/json',
@@ -87,8 +86,14 @@ export default class Home extends React.Component {
               .then(function(myJson) {
                 console.log(myJson);
               });
-          }
+        }
         getData();
+
+    }
+      
+    render(){
+   
+
        
 
         return(
@@ -172,7 +177,7 @@ export default class Home extends React.Component {
                             <div class="mx-auto w-full">
                                 <div class="mx-auto text-center lg:revealUp " >
                                     <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">DSA Event</p>
-                                    <img src="./DSA/DSAblitz.png" class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
+                                    <img src="./DSAblitz.png" class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
                                 </div>
                             </div>
                     </div>
@@ -191,7 +196,7 @@ export default class Home extends React.Component {
                         <p class="text-3xl text-green-100 opacity-90 bg-transparent pt-5" >Clubs and Organizations</p>
                     </div>
                     <div class='grid lg:grid-cols-3 grid-cols-1 2xl:ml-20 gap-4 p-10 bg-transparent text-center '>
-                        <a href="https://calgeocsus.weebly.com/" _target="blank" class="bg-transparent revealUp ">
+                        <a href="https://calgeocsus.weebly.com/" target="_blank" class="bg-transparent revealUp ">
                             <button class="bg-green-300 hover:bg-green-400 opacity-80 xl:w-80 w-full rounded-md shadow-xl border-2 border-gray-800/70" > 
                                 <p class="bg-transparent p-3 text-green-900 font-semibod">Cal Geotech  </p>
                             </button>
@@ -213,12 +218,12 @@ export default class Home extends React.Component {
 
                             </button>
                         </a>
-                        <a class="bg-transparent revealUp ">
+                        <a class="bg-transparent revealUp " href = "https://www.hornetracing.net/" target="_blank">
                             <button class="rounded-md  shadow-xl bg-cyan-300 hover:bg-cyan-400 xl:w-80 w-full lg:w-80 opacity-80  border-2 border-gray-800/70" >
                                 <p class="bg-transparent p-3 text-cyan-800 font-semibold">Hornet Racing</p>
                             </button>
                         </a>
-                        <a class="bg-transparent revealUp" href="/swe">
+                        <a class="bg-transparent revealUp" href="/swe" target="_blank">
                             <button class="bg-green-800 hover:bg-green-900 opacity-80 lg:w-80 xl:w-80 w-full shadow-xl rounded-md  border-2 border-gray-800/70" >
                                 <p class="bg-transparent p-3  text-white font-semibold">Society of Women Engineers</p>
 
@@ -236,12 +241,12 @@ export default class Home extends React.Component {
                                 </div>
                             </button>
                         </a>
-                        <a class="bg-transparent revealUp " href="https://csus.acm.org/">
+                        <a class="bg-transparent revealUp " href="https://csus.acm.org/" target="_blank">
                             <button class="rounded-md shadow-xl bg-green-300 hover:bg-green-400 xl:w-80 w-full opacity-80 lg:w-80  border-2 border-gray-800/70 " >
                                 <p class="text-green-800 mx-auto p-3 font-semibold bg-transparent">ACM</p>
                             </button>
                         </a>
-                        <a  href="/dsa" class="bg-transparent revealUp">
+                        <a  href="/dsa" target ="_blank" class="bg-transparent revealUp">
                             <button  class="bg-cyan-300 hover:bg-cyan-400 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white  border-2 border-gray-800/70" >
                             <p class="bg-transparen text-cyan-800  p-3 font-semibold">Data Structs & Algorithms</p>
                             </button>
@@ -307,9 +312,10 @@ export default class Home extends React.Component {
                         </div>
                         <div class=" text-center m-5 text-xl  text-green-300">
                                <p class="pt-10 text-cyan-200">Tej Panchal</p>
-                               <p class="text-center text-lime-300 text-lg">Vice President</p> 
+                               <p class="text-center text-lime-300 text-lg">Vice President</p>
                                <p class="bg-transparent text-green-300 mt-2 text-sm">
-                               hkaur@csus.edu</p>
+                            asiecsdirector@csus.edu</p> 
+                    
                         </div>
                     </div>
 
@@ -321,7 +327,7 @@ export default class Home extends React.Component {
                             <p class="pt-10 text-cyan-200">Heamandeep Kaur</p>
                             <p class="text-center text-lime-300 ">Expo Chair</p> 
                             <p class="bg-transparent text-green-300 mt-2 text-sm">
-                            asiecsdirector@csus.edu</p>
+                                hkaur19@csus.edu</p>
                         </div>
                     </div>
                     
@@ -345,6 +351,17 @@ export default class Home extends React.Component {
                                <p class="text-center text-lime-300  ">Webmaster</p> 
                                <p class="bg-transparent text-green-300 mt-2 text-sm">
                                 mmorteo@csus.edu</p>
+                        </div>
+                    </div>
+                    <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
+                        <div class="bg-transparent  lg:mx-auto " >
+                            <img class = "rounded-full mx-auto shadow-xl h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} />    
+                        </div>
+                        <div class=" text-center m-5 text-xl ">
+                                <p class="pt-10 text-cyan-200">Emma Docto</p>
+                               <p class="text-center text-lime-300  ">Social Media Coordinator</p> 
+                               <p class="bg-transparent text-green-300 mt-2 text-sm">
+                                edocto@csus.edu</p>
                         </div>
                     </div>
 

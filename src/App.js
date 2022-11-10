@@ -7,7 +7,7 @@ import {Routes, Route} from 'react-router-dom'
 import Footer from './components/club-pages/SWEFooter';
 import "./App.css"
 import { extend } from 'dayjs';
-import DSA from './components/DSA/DSA';
+import DSA from './components/DSA';
 
 class App extends React.Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import React from "react";
 import * as THREE from 'three';
-import NavBarSWE from "../NavBarSWE";
+import NavBarSWE from "./NavBarSWE";
 import { Link } from "react-scroll";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
@@ -92,7 +92,7 @@ export default class DSA extends React.Component {
                                         We will provide a forum to exchange ideas and foster discussions for all students interested in the technical pursuit of this core computing concept. In addition, this club will provide technical interview practice, networking opportunities, and growth opportunities for any students interested. The club will foster social interaction for members through hosting of events such as programming workshops, group projects, weekly problem discussions and leetcode contests. It will coordinate events and lectures with the Computer Science Department at Sac State but is open to all students. 
                                     </p>
                                     <p class="bg-transparent text-sky-300 mt-5 ">
-                                    Email: ecsjc@csus.edu</p>
+                                    Email: dsa@csus.edu</p>
 
                                 
                                 </div>
