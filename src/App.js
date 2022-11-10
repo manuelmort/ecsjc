@@ -8,6 +8,7 @@ import Footer from './components/club-pages/SWEFooter';
 import "./App.css"
 import { extend } from 'dayjs';
 import DSA from './components/DSA';
+import CalGeo from './components/CalGeo';
 
 class App extends React.Component {
   constructor(props) {
@@ -36,6 +37,8 @@ class App extends React.Component {
           <Route path ='home' element={<Home/>}/>
           <Route path="/swe" element={<Swe/>}/>
           <Route path="/dsa" element={<DSA/>}/>
+          <Route path="/calgeo" element={<CalGeo/>}/>
+
 
         </Routes>
         

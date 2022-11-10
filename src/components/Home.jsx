@@ -103,14 +103,14 @@ export default class Home extends React.Component {
                 <div class="m-0 w-full h-full bg-cover bg-transparent border-2 border-transparent <----???" style={{backgroundImage:"url('./topView.jpg')"}}>
                     
     
-                        <NavigationBar class="bg-transparent "/>
+                        <NavigationBar class="bg-transparent  "/>
 
                     <div class="sac-state-gold mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent ">
 
-                            <p  class="text-green-200 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl revealUp">Engineering and Computer Science Joint Council</p>
+                            <p  class="text-green-200 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl z-0 revealUp">Engineering and Computer Science Joint Council</p>
                             <div class=" opacity-90 text-center lg:mt-5 mt-10 mb-10 revealUp">
                                 <Link  to="Events"   smooth={true}
-                                    class="bg-transparent text-xl text-green-100  p-2 rounded-md border-2 border-green-100/90    hover:text-green-300  hover:bg-opacity-30 hover:bg-green-300  ">
+                                    class="bg-transparent text-xl text-green-100   p-2 rounded-md border-2 border-green-100/90    hover:text-green-300  hover:bg-opacity-30 hover:bg-green-300  ">
                                     Upcoming Events
                                 </Link>
                             </div>
@@ -130,7 +130,7 @@ export default class Home extends React.Component {
                             <div class="bg-transparent lg:mt-20 m-5">
                                 <div class ="text-left bg-transparent ml-10">
                                     
-                                    <h1 class ="text-green-300 font-semibold text-lg pt-5 bg-transparent line-1 anim-typewriter2-ecsjc revealUp">
+                                    <h1 class ="text-green-300 font-semibold text-lg pt-5 bg-transparent line-1 anim-typewriter2-ecsjc -z-10 revealUp">
                                                 Engineering & Computer Science Joint Council
 
                                     </h1>
@@ -176,8 +176,8 @@ export default class Home extends React.Component {
                             </div>
                             <div class="mx-auto w-full">
                                 <div class="mx-auto text-center lg:revealUp " >
-                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">DSA Event</p>
-                                    <img src="./DSAblitz.png" class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
+                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">ECSJC Event</p>
+                                    <img src="./rockclimbingecsjc.png" class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
                                 </div>
                             </div>
                     </div>
@@ -196,7 +196,7 @@ export default class Home extends React.Component {
                         <p class="text-3xl text-green-100 opacity-90 bg-transparent pt-5" >Clubs and Organizations</p>
                     </div>
                     <div class='grid lg:grid-cols-3 grid-cols-1 2xl:ml-20 gap-4 p-10 bg-transparent text-center '>
-                        <a href="https://calgeocsus.weebly.com/" target="_blank" class="bg-transparent revealUp ">
+                        <a href="/calgeo" target="_blank" class="bg-transparent revealUp ">
                             <button class="bg-green-300 hover:bg-green-400 opacity-80 xl:w-80 w-full rounded-md shadow-xl border-2 border-gray-800/70" > 
                                 <p class="bg-transparent p-3 text-green-900 font-semibod">Cal Geotech  </p>
                             </button>
@@ -249,6 +249,13 @@ export default class Home extends React.Component {
                         <a  href="/dsa" target ="_blank" class="bg-transparent revealUp">
                             <button  class="bg-cyan-300 hover:bg-cyan-400 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white  border-2 border-gray-800/70" >
                             <p class="bg-transparen text-cyan-800  p-3 font-semibold">Data Structs & Algorithms</p>
+                            </button>
+                        </a>
+                        <a class="bg-transparent revealUp" target ="_blank" href="https://www.asce.org/communities/find-a-group/regions/region-9/sacramento-section/california-state-university--sacramento--student-chapter">
+                            <button class="rounded-md shadow-xl bg-green-300 hover:bg-green-400 xl:w-80 w-full opacity-80 lg:w-80  border-2 border-gray-800/70" >
+                                <p class="text-green-800 mx-auto p-3 font-semibold bg-transparent">ASCE</p>
+
+
                             </button>
                         </a>
                     </div>
@@ -355,7 +362,7 @@ export default class Home extends React.Component {
                     </div>
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
                         <div class="bg-transparent  lg:mx-auto " >
-                            <img class = "rounded-full mx-auto shadow-xl h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} />    
+                            <img class = "rounded-full mx-auto shadow-xl h-40 w-40 lg:border-2    border-slate-400 " style={{maxHeight:"350px"}} src="./emma_pfp.png" />    
                         </div>
                         <div class=" text-center m-5 text-xl ">
                                 <p class="pt-10 text-cyan-200">Emma Docto</p>
