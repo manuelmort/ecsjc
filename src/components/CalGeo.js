@@ -73,7 +73,7 @@ export default class CalGeo extends React.Component {
                 <section class="">
 
                     <div class="bg-emerald-100  bg-opacity-70">
-                        <p class="text-center bg-transparent text-emerald-800 p-4 revealUp">Meetings: Tuesdays 2:30pm - 3:30pm weekly</p>
+                        <p class="text-center bg-transparent text-emerald-800 p-4 revealUp">Upcoming Hiking Social: This Saturday, Nov 12th at 10AM  Flyer with details below</p>
                     </div>
                     <div className="bg-transparent grid lg:grid-cols-2 bg-slate-800 opacity-90 ">
                             
