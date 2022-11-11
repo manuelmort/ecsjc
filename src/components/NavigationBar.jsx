@@ -70,7 +70,7 @@ export default class NavigationBar extends React.Component {
 
                     <div class="text-right ">
                         <button class="text-right" onClick={this.handleSideMenu} >
-                            <GiHamburgerMenu class="text-right text-green-300/90 hover:text-green-500/90" size={30}/>
+                            <GiHamburgerMenu class="text-right text-green-300/90 hover:text-green-500/90" size={40}/>
                         </button>
                     </div>
                 </div>
@@ -115,13 +115,13 @@ export default class NavigationBar extends React.Component {
                                 <div class="  lg:bg-gray-800/90 md:bg-gray-800/90 bg-gray-800 rounded-lg  mt-5 w-full  mx-auto">
                                     <div class=" grid lg:grid-cols-4 grid-cols-1 sideMenu">
 
-                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full  p-5" ><Link  class=" mx-auto">Society of Women Engineers</Link></button>
+                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full  p-5" ><a href="/swe" class=" mx-auto">Society of Women Engineers</a></button>
                                         <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><a href="/dsa" >Concrete Canoe</a></button>
 
                                         <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><a href="/dsa" >Data Structure and Algo</a></button>
                                         <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a href="/calgeo">CAL GEO</a></button>
                                         <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>Institue of Transportation Engineers</a></button>
-                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><a href="/swe" class=" mx-auto">Nat. Society of Black Engineers</a></button>
+                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><a href="" class=" mx-auto">Nat. Society of Black Engineers</a></button>
                                         <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>ACM</a></button>
                                         <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>Society Of Hispanic Engineers</a></button>
                                         <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>Data Science</a></button>
