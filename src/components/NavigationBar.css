@@ -24,7 +24,7 @@
 
 @media screen and (max-width: 768px) {
     .mobile-nav {
-        display: block;
+        display: flex;
     }
     .web-nav{
         display: none;

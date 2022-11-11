@@ -19,6 +19,7 @@ export default class NavigationBar extends React.Component {
         this.setState({drop:!this.state.drop})
     }
     handleSideMenu() {
+        this.setState({drop:!this.state.side})
 
     }
     
@@ -51,15 +52,15 @@ export default class NavigationBar extends React.Component {
                 </nav> 
             <div class="mobile-nav">
                 
-                <div class="text-white border-2  p-5 inline-block">
-                    <a  
-                        href="/" class="font-semibold text-3xl bg-transparent tracking-tight 
-                        hover:underline underline-offset-4 text-left ">
-                    ECSJC</a>
+                <div class="flex justify-between text-white border-2 p-5  w-full">
+                        <a  
+                            href="/" class="font-semibold text-3xl text-green-300/90  bg-transparent tracking-tight 
+                            hover:underline underline-offset-4 text-left ">
+                        ECSJC</a>
 
-                    <div class="text-right inline-block">
-                        <button class="text-rght">
-                            <GiHamburgerMenu class="text-right" size={30}/>
+                    <div class="text-right ">
+                        <button class="text-right" onClick={this.handleSideMenu}>
+                            <GiHamburgerMenu class="text-right text-green-300/90 hover:text-green-500/90" size={30}/>
                         </button>
                     </div>
                 </div>
@@ -67,6 +68,33 @@ export default class NavigationBar extends React.Component {
             </div>
                 <div class="text-green-100 smoothDrop ">
                 {this.state.drop ? (
+                        
+                        <div class=" absolute lg:bg-gray-800/90 md:bg-gray-800/90 bg-gray-800 rounded-lg  mt-5 w-full  mx-auto">
+                        <div class=" grid lg:grid-cols-4 grid-cols-1">
+
+                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full  p-5" ><Link  class=" mx-auto">Society of Women Engineers</Link></button>
+                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><a href="/dsa" >Concrete Canoe</a></button>
+
+                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><a href="/dsa" >Data Structure and Algo</a></button>
+                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a href="/calgeo">CAL GEO</a></button>
+                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>Institue of Transportation Engineers</a></button>
+                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><a href="/swe" class=" mx-auto">Nat. Society of Black Engineers</a></button>
+                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>ACM</a></button>
+                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>Society Of Hispanic Engineers</a></button>
+                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>Data Science</a></button>
+
+
+                        </div>
+                         
+
+                        </div>
+                       
+                        ): null
+
+                        }
+                </div>
+                <div class="text-green-100 smoothDrop ">
+                {this.state.side ? (
                         
                         <div class=" absolute lg:bg-gray-800/90 md:bg-gray-800/90 bg-gray-800 rounded-lg  mt-5 w-full  mx-auto">
                         <div class=" grid lg:grid-cols-4 grid-cols-1">
@@ -95,7 +123,8 @@ export default class NavigationBar extends React.Component {
 
                         }
                 </div>
-                </div>
+            </div>
+            
         
         )
 

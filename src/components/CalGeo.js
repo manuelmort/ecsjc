@@ -148,7 +148,7 @@ export default class CalGeo extends React.Component {
 
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
                         <div class="bg-transparent lg:mx-auto" >
-                            <img class = "rounded-full lg:border-2 mx-auto h-40 w-40 lg:shadow-xl border-slate-400 " style={{maxHeight:"350px"}} />     
+                            <img class = "rounded-full lg:border-2 mx-auto h-40 w-40 lg:shadow-xl border-slate-400 " style={{maxHeight:"350px"}} src="./CALGEO officers/mannal.png" />     
                         </div>
                         <div class=" text-center m-5 text-xl ">
                             <p class="pt-10 text-cyan-200">Mannal Chowdhury</p>
