@@ -81,7 +81,7 @@ export default class CalGeo extends React.Component {
                                 <div class ="text-left bg-transparent ml-10">
                                     <img class="h-20 revealUp"src="./CALGEO officers/calgeologo.png"/>
 
-                                    <h1 class ="text-emerald-600 font-semibold text-lg pt-5 bg-transparent line-1 anim-typewriter2-ecsjc revealUp">
+                                    <h1 class ="text-emerald-600 font-semibold text-lg pt-5 bg-transparent line-1  revealUp">
                                                 California GeoTechnical Engineering Association CSUS Chapter
 
                                     </h1>
@@ -107,6 +107,8 @@ export default class CalGeo extends React.Component {
                         </div>
                     </section>
 
+                    <div class="bg-slate-800">
+                    <p class="mx-auto text-center text-green-200 text-3xl revealUp pt-5">CALGEO Fall 2022  Officers</p>
 
                     <div class="grid lg:grid-cols-2 grid-cols-1  bg-slate-800 lg:revealUp xl:revealUp   " id="About Us">
                     
@@ -206,6 +208,7 @@ export default class CalGeo extends React.Component {
 
                     
 
+                </div>
                 </div>
                 
             </div>

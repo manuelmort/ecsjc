@@ -13,16 +13,26 @@ export default class NavigationBar extends React.Component {
             side:false
         }
         this.handleDrop = this.handleDrop.bind(this);
+        this.handleSideMenu= this.handleSideMenu.bind(this);
+        this.closeClubMenu = this.closeClubMenu.bind(this);
+
     }
     handleDrop() {
         
         this.setState({drop:!this.state.drop})
     }
     handleSideMenu() {
-        this.setState({drop:!this.state.side})
+        this.setState({side:!this.state.side})
 
     }
+    closeClubMenu() {
+        this.setState({drop:false})
+    }
     
+    useEffect() {
+    
+
+    }
     render() {
         return(
             <div class="z-10">
@@ -52,20 +62,20 @@ export default class NavigationBar extends React.Component {
                 </nav> 
             <div class="mobile-nav">
                 
-                <div class="flex justify-between text-white border-2 p-5  w-full">
+                <div class="flex justify-between text-white p-5  w-full">
                         <a  
                             href="/" class="font-semibold text-3xl text-green-300/90  bg-transparent tracking-tight 
                             hover:underline underline-offset-4 text-left ">
                         ECSJC</a>
 
                     <div class="text-right ">
-                        <button class="text-right" onClick={this.handleSideMenu}>
+                        <button class="text-right" onClick={this.handleSideMenu} >
                             <GiHamburgerMenu class="text-right text-green-300/90 hover:text-green-500/90" size={30}/>
                         </button>
                     </div>
                 </div>
             </div>
-            </div>
+            <div>
                 <div class="text-green-100 smoothDrop ">
                 {this.state.drop ? (
                         
@@ -93,30 +103,34 @@ export default class NavigationBar extends React.Component {
 
                         }
                 </div>
-                <div class="text-green-100 smoothDrop ">
+            </div>
+            <div>
+                <div class="text-green-100 sideMenu ">
                 {this.state.side ? (
-                        
-                        <div class=" absolute lg:bg-gray-800/90 md:bg-gray-800/90 bg-gray-800 rounded-lg  mt-5 w-full  mx-auto">
-                        <div class=" grid lg:grid-cols-4 grid-cols-1">
 
-                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full  p-5" ><Link  class=" mx-auto">Society of Women Engineers</Link></button>
-                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><a href="/dsa" >Concrete Canoe</a></button>
+                        <div class="w-full h-full z-10 bg-slate-800 sideMenu">
+                            <div>
+                                
 
-                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><a href="/dsa" >Data Structure and Algo</a></button>
-                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a href="/calgeo">CAL GEO</a></button>
-                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>Institue of Transportation Engineers</a></button>
-                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><a href="/swe" class=" mx-auto">Nat. Society of Black Engineers</a></button>
-                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>ACM</a></button>
-                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>Society Of Hispanic Engineers</a></button>
-                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>Data Science</a></button>
+                                <div class="  lg:bg-gray-800/90 md:bg-gray-800/90 bg-gray-800 rounded-lg  mt-5 w-full  mx-auto">
+                                    <div class=" grid lg:grid-cols-4 grid-cols-1 sideMenu">
 
+                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full  p-5" ><Link  class=" mx-auto">Society of Women Engineers</Link></button>
+                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><a href="/dsa" >Concrete Canoe</a></button>
 
+                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><a href="/dsa" >Data Structure and Algo</a></button>
+                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a href="/calgeo">CAL GEO</a></button>
+                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>Institue of Transportation Engineers</a></button>
+                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><a href="/swe" class=" mx-auto">Nat. Society of Black Engineers</a></button>
+                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>ACM</a></button>
+                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>Society Of Hispanic Engineers</a></button>
+                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>Data Science</a></button>
+                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a href="https://www.hornetracing.net/">Hornet Racing</a></button>
 
-
-
-                        </div>
+                                    </div>
+                                </div>
+                            </div>
                          
-
                         </div>
                        
                         ): null
@@ -124,6 +138,8 @@ export default class NavigationBar extends React.Component {
                         }
                 </div>
             </div>
+            </div>
+        </div>
             
         
         )

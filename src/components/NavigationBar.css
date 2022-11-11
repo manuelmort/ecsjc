@@ -21,12 +21,20 @@
     display: none;
 }
 
-
+.sideMenu {
+    z-index: 100;
+}
 @media screen and (max-width: 768px) {
     .mobile-nav {
         display: flex;
+        
+
     }
     .web-nav{
         display: none;
+    }
+
+    .sideMenu {
+        z-index: 100;
     }
 }

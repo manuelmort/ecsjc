@@ -69,6 +69,7 @@ export default class Home extends React.Component {
         });
 
     }
+
     useEffect() {
         const getData=()=>{
             fetch('./public/DSA/data.json'
@@ -107,10 +108,10 @@ export default class Home extends React.Component {
 
                     <div class="sac-state-gold mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent ">
 
-                            <p  class="text-green-200 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl z-0 revealUp">Engineering and Computer Science Joint Council</p>
+                            <p  class="text-green-200 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl -z-10 revealUp">Engineering and Computer Science Joint Council</p>
                             <div class=" opacity-90 text-center lg:mt-5 mt-10 mb-10 revealUp">
                                 <Link  to="Events"   smooth={true}
-                                    class="bg-transparent text-xl text-green-100   p-2 rounded-md border-2 border-green-100/90    hover:text-green-300  hover:bg-opacity-30 hover:bg-green-300  ">
+                                    class="bg-transparent  text-xl text-green-100   p-2 rounded-md border-2 border-green-100/90    hover:text-green-300  hover:bg-opacity-30 hover:bg-green-300  ">
                                     Upcoming Events
                                 </Link>
                             </div>
@@ -196,62 +197,62 @@ export default class Home extends React.Component {
                         <p class="text-3xl text-green-100 opacity-90 bg-transparent pt-5" >Clubs and Organizations</p>
                     </div>
                     <div class='grid lg:grid-cols-3 grid-cols-1 2xl:ml-20 gap-4 p-10 bg-transparent text-center '>
-                        <a href="/calgeo" target="_blank" class="bg-transparent revealUp ">
+                        <a href="/calgeo" target="_blank" class="bg-transparent lg:revealUp ">
                             <button class="bg-green-300 hover:bg-green-400 opacity-80 xl:w-80 w-full rounded-md shadow-xl border-2 border-gray-800/70" > 
                                 <p class="bg-transparent p-3 text-green-900 font-semibod">Cal Geotech  </p>
                             </button>
                         </a>
-                        <a class="bg-transparent revealUp">
+                        <a class="bg-transparent lg:revealUp">
                             <button class="bg-cyan-300 hover:bg-cyan-400 shadow-xl rounded-md xl:w-80 w-full lg:w-80 opacity-80  border-2 border-gray-800/70">
                                 <p class="bg-transparent p-3  text-cyan-900 font-semibold">Concrete Canoe</p>
                             </button>
                         </a>
-                        <a class="bg-transparent revealUp">
+                        <a class="bg-transparent lg:revealUp">
                             <button class="bg-green-800 hover:bg-green-900 shadow-xl opacity-80 xl:w-80 w-full lg:w-80 rounded-md  border-2 border-gray-800/70 " >
                             <p class="bg-transparent p-3 text-white font-semibold">Institute of Transport. Engineers</p>
                             </button>
                         </a>
-                        <a class="bg-transparent revealUp">
+                        <a class="bg-transparent lg:revealUp">
                             <button class="rounded-md shadow-xl bg-green-300 hover:bg-green-400 xl:w-80 w-full opacity-80 lg:w-80  border-2 border-gray-800/70" >
                                 <p class="text-green-800 mx-auto p-3 font-semibold bg-transparent">Data Science</p>
 
 
                             </button>
                         </a>
-                        <a class="bg-transparent revealUp " href = "https://www.hornetracing.net/" target="_blank">
+                        <a class="bg-transparent lg:revealUp " href = "https://www.hornetracing.net/" target="_blank">
                             <button class="rounded-md  shadow-xl bg-cyan-300 hover:bg-cyan-400 xl:w-80 w-full lg:w-80 opacity-80  border-2 border-gray-800/70" >
                                 <p class="bg-transparent p-3 text-cyan-800 font-semibold">Hornet Racing</p>
                             </button>
                         </a>
-                        <a class="bg-transparent revealUp" href="/swe" target="_blank">
+                        <a class="bg-transparent lg:revealUp" href="/swe" target="_blank">
                             <button class="bg-green-800 hover:bg-green-900 opacity-80 lg:w-80 xl:w-80 w-full shadow-xl rounded-md  border-2 border-gray-800/70" >
                                 <p class="bg-transparent p-3  text-white font-semibold">Society of Women Engineers</p>
 
                             </button>
                         </a>
-                        <a class="bg-transparent revealUp">
+                        <a class="bg-transparent lg:revealUp">
                             <button  class="bg-cyan-300 hover:bg-cyan-400 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white  border-2 border-gray-800/70" >
                             <p class="bg-transparen text-cyan-800  p-3 font-semibold">National Society of Black Engineers</p>
                             </button>
                         </a>
-                        <a class="bg-transparent revealUp">
+                        <a class="bg-transparent lg:revealUp">
                             <button class="bg-green-800 hover:bg-green-900 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white grow  border-2 border-gray-800/70" >   
                                 <div class="bg-transparent">
                                     <p class="bg-transparent text-white p-3 font-semibold ">SHPE</p>
                                 </div>
                             </button>
                         </a>
-                        <a class="bg-transparent revealUp " href="https://csus.acm.org/" target="_blank">
+                        <a class="bg-transparent lg:revealUp " href="https://csus.acm.org/" target="_blank">
                             <button class="rounded-md shadow-xl bg-green-300 hover:bg-green-400 xl:w-80 w-full opacity-80 lg:w-80  border-2 border-gray-800/70 " >
                                 <p class="text-green-800 mx-auto p-3 font-semibold bg-transparent">ACM</p>
                             </button>
                         </a>
-                        <a  href="/dsa" target ="_blank" class="bg-transparent revealUp">
+                        <a  href="/dsa" target ="_blank" class="bg-transparent lg:revealUp">
                             <button  class="bg-cyan-300 hover:bg-cyan-400 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white  border-2 border-gray-800/70" >
                             <p class="bg-transparen text-cyan-800  p-3 font-semibold">Data Structs & Algorithms</p>
                             </button>
                         </a>
-                        <a class="bg-transparent revealUp" target ="_blank" href="https://www.asce.org/communities/find-a-group/regions/region-9/sacramento-section/california-state-university--sacramento--student-chapter">
+                        <a class="bg-transparent lg:revealUp" target ="_blank" href="https://www.asce.org/communities/find-a-group/regions/region-9/sacramento-section/california-state-university--sacramento--student-chapter">
                             <button class="rounded-md shadow-xl bg-green-300 hover:bg-green-400 xl:w-80 w-full opacity-80 lg:w-80  border-2 border-gray-800/70" >
                                 <p class="text-green-800 mx-auto p-3 font-semibold bg-transparent">ASCE</p>
 

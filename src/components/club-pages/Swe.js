@@ -180,7 +180,7 @@ export default class Swe extends React.Component {
 
                         <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
                             <div class="bg-transparent  lg:mx-auto " >
-                                <img class = "rounded-full mx-auto shadow-xl h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} />    
+                                <img class = "rounded-full mx-auto shadow-xl h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} src ="./emma_pfp.png" />    
                             </div>
                             <div class=" text-center m-5 text-xl ">
                                     <p class="pt-10 text-purple-200">Emma Docto</p>
