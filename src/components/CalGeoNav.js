@@ -43,6 +43,10 @@ export default class CalGeoNav extends React.Component {
                             class="bg-transparent text-xl block mt-4 p-2 rounded-md lg:inline-block hover:text-emerald-300 md:inline-block hover:bg-opacity-20 hover:bg-emerald-700 lg:mt-0 text-emerald-800">
                             About Us
                         </Link>
+                        <a href="/" smooth={true}
+                            class="bg-transparent text-xl block mt-4 p-2 rounded-md lg:inline-block hover:text-emerald-300 md:inline-block hover:bg-opacity-20 hover:bg-emerald-700 lg:mt-0 text-emerald-800">
+                            ECSJC
+                        </a>
                     </div>
                     
                 </div>
