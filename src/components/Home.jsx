@@ -7,7 +7,7 @@ import { Chrono } from "react-chrono";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import {Link} from 'react-scroll'
-
+import data from "./data/data.json"
 
 
 
@@ -15,6 +15,15 @@ export default class Home extends React.Component {
     
     constructor(props) {
         super(props)
+        this.state = {
+            ecsjc: data.pages[0].ecsjc,
+            ECSJC:0,
+            ECS:1,
+            CALGEO:2,
+            DSA:3,
+            SWE:4,
+            page:"ecsjc"
+        }
         
         this.showText = this.showText.bind(this)
 
@@ -24,6 +33,7 @@ export default class Home extends React.Component {
         console.log("text is now visible")
     }
     componentDidMount() {
+
          //gsap is fucking amazing!
         gsap.registerPlugin(ScrollTrigger);
         //reveal
@@ -70,35 +80,13 @@ export default class Home extends React.Component {
 
     }
 
-    useEffect() {
-        const getData=()=>{
-            fetch('./public/DSA/data.json'
-            ,{
-              headers : { 
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-               }
-            }
-            )
-              .then(function(response){
-                console.log(response)
-                return response.json();
-              })
-              .then(function(myJson) {
-                console.log(myJson);
-              });
-        }
-        getData();
 
-    }
       
     render(){
-   
-
-       
+        
 
         return(
-            
+           
             <div class="bg-transparent">
                 
                 <div class="m-0 w-full h-full bg-cover bg-transparent border-2 border-transparent <----???" style={{backgroundImage:"url('./topView.jpg')"}}>
@@ -158,8 +146,8 @@ export default class Home extends React.Component {
                             </div>
                             <div class="mx-auto w-full">
                                 <div class="mx-auto text-center lg:revealUp " id="Events">
-                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">ECS Event</p>
-                                    <img src="./events/ManagingStress.jpeg" class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
+                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">{this.state.ecsjc.events[this.state.ECSJC].clubname} Event</p>
+                                    <img src = {this.state.ecsjc.events[this.state.ECSJC].flyer}  class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
                                 </div>
                             </div>
                         </div>
@@ -167,18 +155,24 @@ export default class Home extends React.Component {
                 <section class="" >
 
                     
-                    <div className="bg-transparent grid lg:grid-cols-2 bg-slate-800 opacity-90 pb-20 ">
+                    <div className="bg-transparent grid lg:grid-cols-3 bg-slate-800 opacity-90 pb-20 ">
                             
                     <div class="mx-auto w-full">
                             <div class="mx-auto text-center lg:revealUp " >
-                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">SWE Event</p>
-                                    <img src="./spookyTreats.png" class=" lg:mx-auto lg:h-96  lg:w-72 lg:mt-5 lg:rounded-md" />
+                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">{this.state.ecsjc.events[this.state.ECS].clubname} Event</p>
+                                    <img src={this.state.ecsjc.events[this.state.ECS].flyer} class=" lg:mx-auto lg:h-96  lg:w-72 lg:mt-5 lg:rounded-md" />
                                 </div>
                             </div>
                             <div class="mx-auto w-full">
                                 <div class="mx-auto text-center lg:revealUp " >
-                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">ECSJC Event</p>
-                                    <img src="./rockclimbingecsjc.png" class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
+                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">{this.state.ecsjc.events[this.state.DSA].clubname} Event</p>
+                                    <img src={this.state.ecsjc.events[this.state.DSA].flyer} class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
+                                </div>
+                            </div>
+                            <div class="mx-auto w-full">
+                                <div class="mx-auto text-center lg:revealUp " >
+                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">{this.state.ecsjc.events[this.state.CALGEO].clubname} Event</p>
+                                    <img src= {this.state.ecsjc.events[this.state.CALGEO].flyer}  class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
                                 </div>
                             </div>
                     </div>
@@ -308,54 +302,54 @@ export default class Home extends React.Component {
                             <img class = "rounded-full shadow-xl w-40 h-40 mx-auto lg:border-2 border-slate-400 " style={{maxHeight:"350px"}} />     
                         </div>
                         <div class=" text-center m-5 text-xl text-green-300">
-                               <p class="pt-10 text-cyan-200">Garima Sharma</p>
+                               <p class="pt-10 text-cyan-200">{this.state.ecsjc.officers.president.name}</p>
                                <p class="text-center text-lime-300 text-lg">President</p> 
                                <p class="bg-transparent text-green-300 mt-2 text-sm">
-                               garimasharma@csus.edu</p>
+                               {this.state.ecsjc.officers.president.email}</p>
                         </div>
                     </div>
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1   mt-10 rounded-md ">
                         <div class="bg-transparent lg:border-rounded lg:mx-auto" >
-                            <img class = "rounded-full shadow-xl mx-auto w-40 h-40 lg:border-2 border-slate-400" style={{maxHeight:"350px"}} src="./boardmembers/tej.png"/>
+                            <img class = "rounded-full shadow-xl mx-auto w-40 h-40 lg:border-2 border-slate-400" style={{maxHeight:"350px"}} src={this.state.ecsjc.officers.vicepresident.picture}/>
                         </div>
                         <div class=" text-center m-5 text-xl  text-green-300">
-                               <p class="pt-10 text-cyan-200">Tej Panchal</p>
+                               <p class="pt-10 text-cyan-200">{this.state.ecsjc.officers.vicepresident.name}</p>
                                <p class="text-center text-lime-300 text-lg">Vice President</p>
                                <p class="bg-transparent text-green-300 mt-2 text-sm">
-                            asiecsdirector@csus.edu</p> 
+                            {this.state.ecsjc.officers.vicepresident.email}</p> 
                     
                         </div>
                     </div>
 
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
                         <div class="bg-transparent lg:mx-auto" >
-                            <img class = "rounded-full lg:border-2 mx-auto h-40 w-40 lg:shadow-xl border-slate-400 " style={{maxHeight:"350px"}} src="./boardmembers/heaman.png"/>     
+                            <img class = "rounded-full lg:border-2 mx-auto h-40 w-40 lg:shadow-xl border-slate-400 " style={{maxHeight:"350px"}} src={this.state.ecsjc.officers.expochair.picture}/>     
                         </div>
                         <div class=" text-center m-5 text-xl ">
-                            <p class="pt-10 text-cyan-200">Heamandeep Kaur</p>
+                            <p class="pt-10 text-cyan-200">{this.state.ecsjc.officers.expochair.name}</p>
                             <p class="text-center text-lime-300 ">Expo Chair</p> 
                             <p class="bg-transparent text-green-300 mt-2 text-sm">
-                                hkaur19@csus.edu</p>
+                                {this.state.ecsjc.officers.expochair.email}</p>
                         </div>
                     </div>
                     
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
                         <div class="bg-transparent  lg:mx-auto " >
-                            <img class = "rounded-full  shadow-xl mx-auto h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} src="./boardmembers/tala3.png"/>    
+                            <img class = "rounded-full  shadow-xl mx-auto h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} src={this.state.ecsjc.officers.treasurer.picture}/>    
                         </div>
                         <div class=" text-center m-5 text-xl ">
-                                <p class="pt-10 text-cyan-200">Tala Jaber</p>
+                                <p class="pt-10 text-cyan-200">{this.state.ecsjc.officers.treasurer.name}</p>
                                <p class="text-center text-lime-300  ">Treasurer</p> 
                                <p class="bg-transparent text-green-300 mt-2 text-sm">
-                               tjaber@csus.edu</p>
+                               {this.state.ecsjc.officers.treasurer.email}</p>
                         </div>
                     </div>
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
                         <div class="bg-transparent  lg:mx-auto " >
-                            <img class = "rounded-full mx-auto shadow-xl h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} src="./boardmembers/manny4.png"/>    
+                            <img class = "rounded-full mx-auto shadow-xl h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} src={this.state.ecsjc.officers.webmaster.picture}/>    
                         </div>
                         <div class=" text-center m-5 text-xl ">
-                                <p class="pt-10 text-cyan-200">Manny Morteo</p>
+                                <p class="pt-10 text-cyan-200">{this.state.ecsjc.officers.webmaster.name}</p>
                                <p class="text-center text-lime-300  ">Webmaster</p> 
                                <p class="bg-transparent text-green-300 mt-2 text-sm">
                                 mmorteo@csus.edu</p>
@@ -363,7 +357,7 @@ export default class Home extends React.Component {
                     </div>
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
                         <div class="bg-transparent  lg:mx-auto " >
-                            <img class = "rounded-full mx-auto shadow-xl h-40 w-40 lg:border-2    border-slate-400 " style={{maxHeight:"350px"}} src="./emma_pfp.png" />    
+                            <img class = "rounded-full mx-auto shadow-xl h-40 w-40 lg:border-2    border-slate-400 " style={{maxHeight:"350px"}} src={this.state.ecsjc.officers.social.picture} />    
                         </div>
                         <div class=" text-center m-5 text-xl ">
                                 <p class="pt-10 text-cyan-200">Emma Docto</p>

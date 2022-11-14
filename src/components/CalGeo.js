@@ -5,7 +5,16 @@ import { Link } from "react-scroll";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import CalGeoNav from "./CalGeoNav";
+import data from "./data/data.json"
+
 export default class CalGeo extends React.Component {
+    constructor(props){
+        super(props)
+
+        this.state = {
+            calgeo: data.pages[2].calgeo
+        }
+    }
     componentDidMount() {
         //gsap is fucking amazing!
        gsap.registerPlugin(ScrollTrigger);
@@ -101,7 +110,7 @@ export default class CalGeo extends React.Component {
                             <div class="mx-auto w-full">
                                 <div class="mx-auto text-center lg:revealUp " id="Events">
                                     <p class="text-amber-600 lg:mt-20 text-lg p-5 lg:p-0">CalGeo Event</p>
-                                    <img src="./hikingsocial.png" class="lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
+                                    <img src={this.state.calgeo.events} class="lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
                                 </div>
                             </div>
                         </div>
@@ -125,61 +134,61 @@ export default class CalGeo extends React.Component {
                     </div>
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1   mt-10 rounded-md ">
                         <div class="bg-transparent lg:border-rounded lg:mx-auto" >
-                            <img class = "rounded-full shadow-xl mx-auto w-40 h-40 lg:border-2 border-slate-400" style={{maxHeight:"350px"}} src="./CALGEO officers/christian.png"/>
+                            <img class = "rounded-full shadow-xl mx-auto w-40 h-40 lg:border-2 border-slate-400" style={{maxHeight:"350px"}} src={this.state.calgeo.officers.vicepresident.picture}/>
                         </div>
                         <div class=" text-center m-5 text-xl  text-green-300">
-                               <p class="pt-10 text-cyan-200">Christian Raganit</p>
-                               <p class="text-center text-lime-300 text-lg">Vice President</p>
+                               <p class="pt-10 text-cyan-200">{this.state.calgeo.officers.vicepresident.name}</p>
+                               <p class="text-center text-lime-300 text-lg">{this.state.calgeo.officers.vicepresident.role}</p>
                                <p class="bg-transparent text-green-300 mt-2 text-sm">
-                            craganit@csus.edu</p> 
+                               {this.state.calgeo.officers.vicepresident.email}</p> 
                     
                         </div>
                     </div>
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1   mt-20 rounded-md ">
                         <div class="bg-transparent lg:border-rounded lg:mx-auto" >
-                            <img class = "rounded-full shadow-xl mx-auto w-40 h-40 lg:border-2 border-slate-400" style={{maxHeight:"350px"}} src="./CALGEO officers/cody.png"/>
+                            <img class = "rounded-full shadow-xl mx-auto w-40 h-40 lg:border-2 border-slate-400" style={{maxHeight:"350px"}} src={this.state.calgeo.officers.secretary.picture}/>
                         </div>
                         <div class=" text-center m-5 text-xl  text-green-300">
-                               <p class="pt-10 text-cyan-200">Cody Montoya</p>
-                               <p class="text-center text-lime-300 text-lg">Secretary</p>
+                               <p class="pt-10 text-cyan-200">{this.state.calgeo.officers.secretary.name}</p>
+                               <p class="text-center text-lime-300 text-lg">{this.state.calgeo.officers.secretary.role}</p>
                                <p class="bg-transparent text-green-300 mt-2 text-sm">
-                               codymontoya@csus.edu</p> 
+                               {this.state.calgeo.officers.secretary.email}</p> 
                     
                         </div>
                     </div>
 
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
                         <div class="bg-transparent lg:mx-auto" >
-                            <img class = "rounded-full lg:border-2 mx-auto h-40 w-40 lg:shadow-xl border-slate-400 " style={{maxHeight:"350px"}} src="./CALGEO officers/mannal.png" />     
+                            <img class = "rounded-full lg:border-2 mx-auto h-40 w-40 lg:shadow-xl border-slate-400 " style={{maxHeight:"350px"}} src={this.state.calgeo.officers.treasurer.picture} />     
                         </div>
                         <div class=" text-center m-5 text-xl ">
-                            <p class="pt-10 text-cyan-200">Mannal Chowdhury</p>
-                            <p class="text-center text-lime-300 ">Treasurer</p> 
+                            <p class="pt-10 text-cyan-200">{this.state.calgeo.officers.treasurer.name}</p>
+                            <p class="text-center text-lime-300 ">{this.state.calgeo.officers.treasurer.role}</p> 
                             <p class="bg-transparent text-green-300 mt-2 text-sm">
-                            mchowdhury@csus.edu</p>
+                            {this.state.calgeo.officers.treasurer.email}</p>
                         </div>
                     </div>
                     
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
                         <div class="bg-transparent  lg:mx-auto " >
-                            <img class = "rounded-full  shadow-xl mx-auto h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} src="./CALGEO officers/sara.png"/>    
+                            <img class = "rounded-full  shadow-xl mx-auto h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} src={this.state.calgeo.officers.eventscoordinator.picture}/>    
                         </div>
                         <div class=" text-center m-5 text-xl ">
-                                <p class="pt-10 text-cyan-200">Sarah Yaqoob</p>
-                               <p class="text-center text-lime-300  ">Events Coordinator</p> 
+                                <p class="pt-10 text-cyan-200">{this.state.calgeo.officers.eventscoordinator.name}</p>
+                               <p class="text-center text-lime-300  ">{this.state.calgeo.officers.eventscoordinator.role}</p> 
                                <p class="bg-transparent text-green-300 mt-2 text-sm">
-                               sarahyaqoob@csus.edu</p>
+                               {this.state.calgeo.officers.eventscoordinator.email}</p>
                         </div>
                     </div>
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
                         <div class="bg-transparent  lg:mx-auto " >
-                            <img class = "rounded-full mx-auto shadow-xl h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} src="./CALGEO officers/maryam.png"/>    
+                            <img class = "rounded-full mx-auto shadow-xl h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} src={this.state.calgeo.officers.platformschair.picture}/>    
                         </div>
                         <div class=" text-center m-5 text-xl ">
-                                <p class="pt-10 text-cyan-200">Maryam Yaqoob</p>
-                               <p class="text-center text-lime-300  ">Platforms Chair</p> 
+                                <p class="pt-10 text-cyan-200">{this.state.calgeo.officers.platformschair.name}</p>
+                               <p class="text-center text-lime-300  ">{this.state.calgeo.officers.platformschair.role}</p> 
                                <p class="bg-transparent text-green-300 mt-2 text-sm">
-                               maryamyaqoob@csus.edu</p>
+                               {this.state.calgeo.officers.platformschair.email}</p>
                         </div>
                     </div>
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
@@ -198,10 +207,10 @@ export default class CalGeo extends React.Component {
                             <img class = "rounded-full mx-auto shadow-xl h-40 w-40 lg:border-2    border-slate-400 " style={{maxHeight:"350px"}} src="./CALGEO officers/rudy.png" />    
                         </div>
                         <div class=" text-center m-5 text-xl ">
-                                <p class="pt-10 text-cyan-200">Rodaina (Rudy) Abdelhafiz</p>
-                               <p class="text-center text-lime-300  ">Shadow Officer</p> 
+                                <p class="pt-10 text-cyan-200">{this.state.calgeo.officers.shadowofficer.name}</p>
+                               <p class="text-center text-lime-300  ">{this.state.calgeo.officers.shadowofficer.role}</p> 
                                <p class="bg-transparent text-green-300 mt-2 text-sm">
-                               rmabdelhafiz@csus.edu</p>
+                               {this.state.calgeo.officers.shadowofficer.email}</p>
                         </div>
                     </div>
                     
