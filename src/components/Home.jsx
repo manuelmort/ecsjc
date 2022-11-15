@@ -7,6 +7,8 @@ import { Chrono } from "react-chrono";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import {Link} from 'react-scroll'
+
+
 import data from "./data/data.json"
 
 
@@ -22,7 +24,8 @@ export default class Home extends React.Component {
             CALGEO:2,
             DSA:3,
             SWE:4,
-            page:"ecsjc"
+            page:"ecsjc",
+            date:new Date()
         }
         
         this.showText = this.showText.bind(this)
@@ -246,7 +249,7 @@ export default class Home extends React.Component {
                             <p class="bg-transparen text-cyan-800  p-3 font-semibold">Data Structs & Algorithms</p>
                             </button>
                         </a>
-                        <a class="bg-transparent lg:revealUp" target ="_blank" href="https://www.asce.org/communities/find-a-group/regions/region-9/sacramento-section/california-state-university--sacramento--student-chapter">
+                        <a class="bg-transparent lg:revealUp" target ="_blank" href="/asce">
                             <button class="rounded-md shadow-xl bg-green-300 hover:bg-green-400 xl:w-80 w-full opacity-80 lg:w-80  border-2 border-gray-800/70" >
                                 <p class="text-green-800 mx-auto p-3 font-semibold bg-transparent">ASCE</p>
 
@@ -256,42 +259,6 @@ export default class Home extends React.Component {
                     </div>
                 </div>
                 </div>
-                    <div class="bg-transparent mx-auto opacity-90 " id="Calendar" >
-                        
-                        <Chrono class="bg-transparent"
-                            theme={{
-                                primary: 'green',
-                                secondary: 'transparent',
-                                cardBgColor: 'transparent',
-                                cardForeColor: 'black',
-                                titleColor: 'black',
-                                titleColorActive: 'black',
-                            }}
-                            items={[
-                            
-                            
-                            {
-                            title: "Oct 21",
-                            cardTitle: "ECS Career Fair",
-                            cardSubtitle:"This event is for ECS students and alumni seeking a career opportunity, internship, co-op or part-time experience in the field of engineering, computer science or construction management. A career fair is an opportunity for you to present yourself professionally in person to a potential employer, while showcasing your communication skills.  The keys to a successful job fair experience are preparation and follow up."
-                            },
-                            {
-                                title: "Oct 28 ",
-                                cardTitle:"Feel Good Friday: Harvest Festival + Open Climb",
-                                cardSubtitle: "Come get spooky at the Challenge Center! This harvest festival event will feature arts & crafts, games, booths, and climbing! Sac State Students can leave with a painted pumpkin courtesy of SEO and Feel Good Friday. The ropes course on campus (behind Yosemite Hall) will be open to climb from 4:00 pm - 7:00 pm. This open climb is free. If you are a non-student, canned food donations to support the ASI Food Pantry and Sac State Students are encouraged!",
-                            },
-                            {
-                                title: "Nov 1st",
-                                cardTitle: "Meet with ECS Dean and Club",
-                                cardSubtitle:"This is a great opportunity to connect with other ECS students, meet officers of ECS clubs and organizations,  and learn about services provided by ECS Student Success Center.",
-                                cardDetailedText:""
-                                }
-                            ]}
-                            mode="VERTICAL"
-                            hideControls="true"
-                        />
-                        
-                    </div>
 
                 <div class="m-0 w-full h-full bg-cover bg-transparent  bg-slate-700" >       
 
@@ -350,9 +317,9 @@ export default class Home extends React.Component {
                         </div>
                         <div class=" text-center m-5 text-xl ">
                                 <p class="pt-10 text-cyan-200">{this.state.ecsjc.officers.webmaster.name}</p>
-                               <p class="text-center text-lime-300  ">Webmaster</p> 
+                               <p class="text-center text-lime-300  ">{this.state.ecsjc.officers.webmaster.role}</p> 
                                <p class="bg-transparent text-green-300 mt-2 text-sm">
-                                mmorteo@csus.edu</p>
+                                {this.state.ecsjc.officers.webmaster.email}</p>
                         </div>
                     </div>
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
@@ -360,10 +327,10 @@ export default class Home extends React.Component {
                             <img class = "rounded-full mx-auto shadow-xl h-40 w-40 lg:border-2    border-slate-400 " style={{maxHeight:"350px"}} src={this.state.ecsjc.officers.social.picture} />    
                         </div>
                         <div class=" text-center m-5 text-xl ">
-                                <p class="pt-10 text-cyan-200">Emma Docto</p>
-                               <p class="text-center text-lime-300  ">Social Media Coordinator</p> 
+                                <p class="pt-10 text-cyan-200">{this.state.ecsjc.officers.social.name}</p>
+                               <p class="text-center text-lime-300  ">{this.state.ecsjc.officers.social.role}</p> 
                                <p class="bg-transparent text-green-300 mt-2 text-sm">
-                                edocto@csus.edu</p>
+                                {this.state.ecsjc.officers.social.email}</p>
                         </div>
                     </div>
 

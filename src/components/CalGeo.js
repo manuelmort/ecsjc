@@ -119,7 +119,7 @@ export default class CalGeo extends React.Component {
                     <div class="bg-slate-800">
                     <p class="mx-auto text-center text-green-200 text-3xl revealUp pt-5">CALGEO Fall 2022  Officers</p>
 
-                    <div class="grid lg:grid-cols-2 grid-cols-1  bg-slate-800 lg:revealUp xl:revealUp   " id="About Us">
+                    <div class="grid lg:grid-cols-3 grid-cols-1  bg-slate-800 lg:revealUp xl:revealUp   " id="About Us">
                     
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-10">
                         <div class="bg-transparent lg:mx-auto " >
@@ -144,7 +144,7 @@ export default class CalGeo extends React.Component {
                     
                         </div>
                     </div>
-                    <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1   mt-20 rounded-md ">
+                    <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1   mt-10 rounded-md ">
                         <div class="bg-transparent lg:border-rounded lg:mx-auto" >
                             <img class = "rounded-full shadow-xl mx-auto w-40 h-40 lg:border-2 border-slate-400" style={{maxHeight:"350px"}} src={this.state.calgeo.officers.secretary.picture}/>
                         </div>

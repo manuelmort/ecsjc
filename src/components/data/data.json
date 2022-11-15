@@ -23,6 +23,7 @@
                     "flyer":"./events/swe/"
                 }
             ],
+            "meeting": "Upcoming Meeting :Valley Suite Room 7:00 - 8:30pm, Dec 3rd",
             
             "officers": {
                 
@@ -50,6 +51,7 @@
                 "webmaster": {
                     
                     "name":"Manny Morteo",
+                    "role":"Webmaster",
                     "email":"mmorteo@csus.edu",
                     "picture":"./boardmembers/manny4.png"
                 },
@@ -80,6 +82,7 @@
     {
         "calgeo":{
             "events":"./events/calgeo/hikingsocial.png",
+            "logo":"",
             "officers":{
                 
                 "president":{
@@ -114,7 +117,7 @@
                     "name":"Sarah Yaqoob",
                     "role":"Events Coordinator",
                     "email":"sarahyaqoob@csus.edu",
-                    "picture":"./CALGEO officers/sara.png"
+                    "picture":"./CALGEO officers/sarah.jpg"
                     
                 },
                 "platformschair":{
@@ -144,11 +147,99 @@
         }
     },
     {
-        "dsa":{
-            "events":"",
+        
+        "asce":{
+            "events":"./ASCE officers/ASCE Events/asce2023elections.png",
+            "meeting": "Upcoming Meeting :TBA",
+            "logo":"./ASCE officers/ascelogo.png",
             "officers":{
                 
-                "president":""
+                "president":{
+                    "name":"Bryan Docto",
+                    "role":"President",
+                    "email":"bdocto@csus.edu",
+                    "picture":"./CALGEO officers/bryan.png"
+                    
+                },
+                "vicepresidentInternal":{
+                    "name":"Emma Docto",
+                    "role": "Vice President Internal",
+                    "email":"edocto@csus.edu",
+                    "picture":"./ASCE officers/emma_pfp.png"
+                    
+                },
+                "vicepresidentExternal":{
+                    "name":"Cody Montoya",
+                    "role": "Vice President External",
+                    "email":"codymontoya@csus.edu",
+                    "picture":"./CALGEO officers/cody.png"
+                    
+                },
+                "treasurer":{
+                    "name":"Zubaida Alzubaidi",
+                    "role":"Treasurer",
+                    "email":"csusascetreasurer@gmail.com",
+                    "picture":"./ASCE officers/zubaida.png"
+                    
+                },
+                "secretary":{
+                    "name":"Manaal Chowdhury",
+                    "role":"Secretary",
+                    "email":"mchowdhury@csus.edu",
+                    "picture":"./CALGEO officers/manaal.png"
+                    
+                },
+                "midpaccoordinator":{
+                    "name":"Erwin Gonzalez",
+                    "role":"Mid-Pac Cooridinator",
+                    "email":"",
+                    "picture":"./ASCE officers/erwin.png"
+                    
+                },
+                "eventschair":{
+                    "name":"Sarah Yaqoob",
+                    "role":"Events Chair",
+                    "email":"sarahyaqoob@csus.edu",
+                    "picture":"./ASCE officers/sarah.jpeg"
+                    
+                },
+                "platformschair":{
+                    "name":"Maryam Yaqoob",
+                    "role":"Platforms Chair",
+                    "email":"maryamyaqoob@csus.edu",
+                    "picture":"./CALGEO officers/maryam.png"
+                    
+                }, 
+                "membershipchair":{
+                    "name":"Rodaina Rudy Abdelhafiz ",
+                    "role": "Membership Chair",
+                    "email":"rmabdelhafiz@csus.edu",
+                    "picture":"./CALGEO officers/rudy.png"
+                    
+                },                
+                "alumnirelationschair":{
+                    "name":"Christian Raganit",
+                    "role": "Alumni-Relations Chair",
+                    "email":"craganit@csus.edu",
+                    "picture":"./CALGEO officers/christian.png"
+                    
+                },    
+                
+                "outreachChair":{
+                    "name":"Naveed Lorestany AKA Sexy Beast",
+                    "role": "Outreach Chair",
+                    "email":"",
+                    "picture":"./ASCE officers/naveed.png"
+                    
+                },  
+                
+                "shadowofficer":{
+                    "name":"Kassandra Valencia",
+                    "role": "First Year Representative / Shadow Officer",
+                    "email":"",
+                    "picture":"./ASCE officers/Kassandra.png"
+                    
+                }
                 
             }
         }

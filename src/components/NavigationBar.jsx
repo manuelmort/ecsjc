@@ -82,13 +82,14 @@ export default class NavigationBar extends React.Component {
                         <div class=" absolute lg:bg-gray-800/90 md:bg-gray-800/90 bg-gray-800 rounded-lg  mt-5 w-full  mx-auto">
                         <div class=" grid lg:grid-cols-4 grid-cols-1">
 
-                        <Link  class=" mx-auto"><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full  p-5" >Society of Women Engineers</button></Link>
+                        <a  class=" mx-auto w-full"><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full  p-5" >Society of Women Engineers</button></a>
                         <a><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" >Concrete Canoe</button></a>
+                        <a href="asce"><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" >ASCE</button></a>
 
                         <a href="/dsa"><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" >Data Structure and Algo</button></a>
                         <a href="/calgeo"><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5">CAL GEO</button></a>
-                        <a><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5">Institue of Transportation Engineers</button></a>
-                        <a href="/swe" class=" mx-auto"><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" >Nat. Society of Black Engineers</button></a>
+                        <a><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5">ITE</button></a>
+                        <a ><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" >Nat. Society of Black Engineers</button></a>
                         <a><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5">ACM</button></a>
                         <a><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5">Society Of Hispanic Engineers</button></a>
                         <a><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5">Data Science</button></a>
@@ -115,10 +116,11 @@ export default class NavigationBar extends React.Component {
                                 <div class="  lg:bg-gray-800/90 md:bg-gray-800/90 bg-gray-800 rounded-lg  mt-5 w-full  mx-auto">
                                     <div class=" grid lg:grid-cols-4 grid-cols-1 sideMenu">
 
-                                        <a href="/swe" class=" mx-auto"><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full  p-5" >Society of Women Engineers</button></a>
+                                        <a href="/swe " class="w-full" ><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg  p-5" >Society of Women Engineers</button></a>
                                         <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" >Concrete Canoe</button>
+                                        <a href="/asce" class="w-full" ><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg p-5" >ASCE</button></a>
 
-                                        <a href="/dsa" ><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" >Data Structure and Algo</button></a>
+                                        <a href="/dsa " class="w-full" ><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg p-5" >Data Structure and Algo</button></a>
                                         <a href="/calgeo"><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5">CAL GEO</button></a>
                                         <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>Institue of Transportation Engineers</a></button>
                                         <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><a href="" class=" mx-auto">Nat. Society of Black Engineers</a></button>

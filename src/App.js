@@ -9,7 +9,7 @@ import "./App.css"
 import { extend } from 'dayjs';
 import DSA from './components/DSA';
 import CalGeo from './components/CalGeo';
-
+import Asce from './components/Asce';
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -38,6 +38,8 @@ class App extends React.Component {
           <Route path="/swe" element={<Swe/>}/>
           <Route path="/dsa" element={<DSA/>}/>
           <Route path="/calgeo" element={<CalGeo/>}/>
+          <Route path="/asce" element={<Asce/>}/>
+
 
 
         </Routes>
