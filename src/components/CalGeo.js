@@ -126,10 +126,10 @@ export default class CalGeo extends React.Component {
                             <img class = "rounded-full shadow-xl w-40 h-40 mx-auto lg:border-2 border-slate-400 " style={{maxHeight:"350px"}} src="./CALGEO officers/bryan.png"/>     
                         </div>
                         <div class=" text-center m-5 text-xl text-emerald-300">
-                               <p class="pt-10 text-cyan-200">Bryan Docto</p>
-                               <p class="text-center text-lime-300 text-lg">President</p> 
+                               <p class="pt-10 text-cyan-200">{this.state.calgeo.officers.president.name}</p>
+                               <p class="text-center text-lime-300 text-lg">{this.state.calgeo.officers.president.role}</p> 
                                <p class="bg-transparent text-green-300 mt-2 text-sm">
-                               bdocto@csus.edu</p>
+                               {this.state.calgeo.officers.president.email}</p>
                         </div>
                     </div>
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1   mt-10 rounded-md ">
@@ -196,10 +196,10 @@ export default class CalGeo extends React.Component {
                             <img class = "rounded-full lg:border-2 mx-auto h-40 w-40 lg:shadow-xl border-slate-400 " style={{maxHeight:"350px"}} src="./CALGEO officers/angel.png" />     
                         </div>
                         <div class=" text-center m-5 text-xl ">
-                            <p class="pt-10 text-cyan-200">Angel</p>
-                            <p class="text-center text-lime-300 ">GeoWall Rep</p> 
+                            <p class="pt-10 text-cyan-200">{this.state.calgeo.officers.geowallrep.name}</p>
+                            <p class="text-center text-lime-300 ">{this.state.calgeo.officers.geowallrep.role}</p> 
                             <p class="bg-transparent text-green-300 mt-2 text-sm">
-                            angelwilson2@csus.edu</p>
+                            {this.state.calgeo.officers.geowallrep.email}</p>
                         </div>
                     </div>
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
