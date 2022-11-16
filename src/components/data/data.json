@@ -2,253 +2,301 @@
     "pages":[
         {
             "ecsjc":{
-                "events":[{
-                    "clubname":"ECSJC",
+                "specialEvent":{
+                    "clubname": "ECSJC",
                     "flyer":"./events/ecsjc/rockclimbingecsjc.png"
                 },
-                {
-                    "clubname":"ECS",
-                    "flyer":"./events/ecs/ManagingStress.jpeg" 
-                },
-                {
-                    "clubname":"CALGEO",
-                    "flyer":"./events/calgeo/hikingsocial.png"    
-                },
-                {
-                    "clubname":"DSA",
-                    "flyer":"./events/dsa/dsagraphs.png"  
-                },
-                {
-                    "clubname":"SWE",
-                    "flyer":"./events/swe/"
-                }
-            ],
-            "meeting": "Upcoming Meeting :Valley Suite Room 7:00 - 8:30pm, Dec 3rd",
-            
-            "officers": {
+                "events":[
+                    {
+                        "clubname":"ECS",
+                        "flyer":"./events/ecs/ManagingStress.jpeg" 
+                    },
+                    {
+                        "clubname":"PCI",
+                        "flyer":"./events/pci/PCI.png"    
+                    },
+                    {
+                        "clubname":"DSA",
+                        "flyer":"./events/dsa/dsagraphs.png"  
+                    }
+                ],
+                "meeting": "Upcoming Meeting :Valley Suite Room 7:00 - 8:30pm, Dec 3rd",
                 
-                "president": {
+                "officers": {
                     
-                    "name":"Garima Sharma",
+                    "president": {
+                        
+                        "name":"Garima Sharma",
+                        "role":"President",
+                        "email":"garimasharma@csus.edu",
+                        "picture":""
+                    },
+                    "vicepresident": {
+                        
+                        "name":"Tej Panchal",
+                        "role":"Vice President",
+                        "email":"asiecsdirector@csus.edu",
+                        "picture":"./boardmembers/tej.png"
+                    },
+                    "treasurer": {
+                        
+                        "name":"Tala Jaber",
+                        "role":"Treasurer",
+                        "email":"tjaber@csus.edu",
+                        "picture":"./boardmembers/tala3.png"
+                    },
+                    "webmaster": {
+                        
+                        "name":"Manny Morteo",
+                        "role":"Webmaster",
+                        "email":"mmorteo@csus.edu",
+                        "picture":"./boardmembers/manny4.png"
+                    },
+                    "expochair": {
+                        
+                        "name":"Heamandeep Kaur",
+                        "role":"Expo Chair",
+                        "email":"hkaur19@csus.edu",
+                        "picture":"./boardmembers/heaman.png"
+                    },
+                    "social":{
+                        "name":"Emma Docto",
+                        "role":"Social Media Coordinator",
+                        "email":"edocto@csus.edu",
+                        "picture":"./boardmembers/emma_pfp.png"  
+                    }
+                }
+            }
+        },
+        {
+            "swe":{
+                "event":"",
+                "officers": {
+                    
+                }
+            }
+        },
+        {
+            "calgeo":{
+                "events":"./events/calgeo/hikingsocial.png",
+                "logo":"",
+                "officers":{
+                    
+                    "president":{
+                        "name":"Bryan Docto",
+                        "role":"President",
+                        "email":"bdocto@csus.edu",
+                        "picture":"./CALGEO officers/bryan.png"
+                        
+                    },
+                    "vicepresident":{
+                        "name":"Christian Raganit",
+                        "role": "Vice President",
+                        "email":"craganit@csus.edu",
+                        "picture":"./CALGEO officers/christian.png"
+                        
+                    },
+                    "treasurer":{
+                        "name":"Manaal Chowdhury",
+                        "role":"Treasurer",
+                        "email":"mchowdhury@csus.edu",
+                        "picture":"./CALGEO officers/manaal.png"
+                        
+                    },
+                    "secretary":{
+                        "name":"Cody Montoya",
+                        "role":"Secretary",
+                        "email":"codymontoya@csus.edu",
+                        "picture":"./CALGEO officers/cody.png"
+                        
+                    },
+                    "eventscoordinator":{
+                        "name":"Sarah Yaqoob",
+                        "role":"Events Coordinator",
+                        "email":"sarahyaqoob@csus.edu",
+                        "picture":"./CALGEO officers/sarah.jpg"
+                        
+                    },
+                    "platformschair":{
+                        "name":"Maryam Yaqoob",
+                        "role":"Platforms Chair",
+                        "email":"maryamyaqoob@csus.edu",
+                        "picture":"./CALGEO officers/maryam.png"
+                        
+                    },
+                    "geowallrep":{
+                        "name":"Angel Wilson",
+                        "role":"Geowall Rep",
+                        "email":"angelwilson2@csus.edu",
+                        "picture":"./CALGEO officers/angel.png"
+                        
+                    },                
+                    "shadowofficer":{
+                        "name":"Rodaina (Rudy) Abdelhafiz",
+                        "role": "Shadow Officer",
+                        "email":"rmabdelhafiz@csus.edu",
+                        "picture":"./CALGEO officers/rudy.png"
+                        
+                    }
+                    
+                    
+                }
+            }
+        },
+        {
+            
+            "asce":{
+                "events":"./ASCE officers/ASCE Events/asce2023elections.png",
+                "meeting": "Upcoming Meeting :TBA",
+                "logo":"./ASCE officers/ascelogo.png",
+                "officers":{
+                    
+                    "president":{
+                        "name":"Bryan Docto",
+                        "role":"President",
+                        "email":"bdocto@csus.edu",
+                        "picture":"./CALGEO officers/bryan.png"
+                        
+                    },
+                    "vicepresidentInternal":{
+                        "name":"Emma Docto",
+                        "role": "Vice President Internal",
+                        "email":"edocto@csus.edu",
+                        "picture":"./ASCE officers/emma_pfp.png"
+                        
+                    },
+                    "vicepresidentExternal":{
+                        "name":"Cody Montoya",
+                        "role": "Vice President External",
+                        "email":"codymontoya@csus.edu",
+                        "picture":"./CALGEO officers/cody.png"
+                        
+                    },
+                    "treasurer":{
+                        "name":"Zubaida Alzubaidi",
+                        "role":"Treasurer",
+                        "email":"csusascetreasurer@gmail.com",
+                        "picture":"./ASCE officers/zubaida.png"
+                        
+                    },
+                    "secretary":{
+                        "name":"Manaal Chowdhury",
+                        "role":"Secretary",
+                        "email":"mchowdhury@csus.edu",
+                        "picture":"./CALGEO officers/manaal.png"
+                        
+                    },
+                    "midpaccoordinator":{
+                        "name":"Erwin Gonzalez",
+                        "role":"Mid-Pac Coordinator",
+                        "email":"",
+                        "picture":"./ASCE officers/erwin.png"
+                        
+                    },
+                    "eventschair":{
+                        "name":"Sarah Yaqoob",
+                        "role":"Events Chair",
+                        "email":"sarahyaqoob@csus.edu",
+                        "picture":"./ASCE officers/sarah.jpeg"
+                        
+                    },
+                    "platformschair":{
+                        "name":"Maryam Yaqoob",
+                        "role":"Platforms Chair",
+                        "email":"maryamyaqoob@csus.edu",
+                        "picture":"./CALGEO officers/maryam.png"
+                        
+                    }, 
+                    "membershipchair":{
+                        "name":"Rodaina Rudy Abdelhafiz ",
+                        "role": "Membership Chair",
+                        "email":"rmabdelhafiz@csus.edu",
+                        "picture":"./CALGEO officers/rudy.png"
+                        
+                    },                
+                    "alumnirelationschair":{
+                        "name":"Christian Raganit",
+                        "role": "Alumni-Relations Chair",
+                        "email":"craganit@csus.edu",
+                        "picture":"./CALGEO officers/christian.png"
+                        
+                    },    
+                    
+                    "outreachChair":{
+                        "name":"Naveed Lorestany AKA Sexy Beast",
+                        "role": "Outreach Chair",
+                        "email":"",
+                        "picture":"./ASCE officers/naveed.png"
+                        
+                    },  
+                    
+                    "shadowofficer":{
+                        "name":"Kassandra Valencia",
+                        "role": "First Year Representative / Shadow Officer",
+                        "email":"",
+                        "picture":"./ASCE officers/Kassandra.png"
+                        
+                    }
+                    
+                }
+            }
+        },
+        {
+            "dsa": { 
+            "meeting":"Meetings: Tuesdays 2:30pm - 3:30pm weekly",
+            "events":{
+                
+            },
+            "officers":{
+                "president": {
+                    "name":"Phuc Truong",
                     "role":"President",
-                    "email":"garimasharma@csus.edu",
+                    "email":"",
                     "picture":""
+                    
+                    
                 },
                 "vicepresident": {
-                    
-                    "name":"Tej Panchal",
+                    "name":"Konner Finney",
                     "role":"Vice President",
-                    "email":"asiecsdirector@csus.edu",
-                    "picture":"./boardmembers/tej.png"
+                    "email":"",
+                    "picture":""
+                },         
+                "vicepresident2": {
+                    "name":"Chris Mendez",
+                    "role":"Vice President",
+                    "email":"",
+                    "picture":""
                 },
-                "treasurer": {
-                    
-                    "name":"Tala Jaber",
+                "chaircommitee": {
+                    "name":"Fatima Fareen",
+                    "role":"Chair Committee",
+                    "email":"",
+                    "picture":""
+                },
+                "treasure": {
+                    "name":"Daryl Denaga",
                     "role":"Treasurer",
-                    "email":"tjaber@csus.edu",
-                    "picture":"./boardmembers/tala3.png"
-                },
-                "webmaster": {
-                    
-                    "name":"Manny Morteo",
-                    "role":"Webmaster",
-                    "email":"mmorteo@csus.edu",
-                    "picture":"./boardmembers/manny4.png"
-                },
-                "expochair": {
-                    
-                    "name":"Heamandeep Kaur",
-                    "role":"Expo Chair",
-                    "email":"hkaur19@csus.edu",
-                    "picture":"./boardmembers/heaman.png"
-                },
-                "social":{
-                    "name":"Emma Docto",
-                    "role":"Social Media Coordinator",
-                    "email":"edocto@csus.edu",
-                    "picture":"./boardmembers/emma_pfp.png"  
-                }
-            }
-        }
-    },
-    {
-        "swe":{
-            "event":"",
-            "officers": {
-                
-            }
-        }
-    },
-    {
-        "calgeo":{
-            "events":"./events/calgeo/hikingsocial.png",
-            "logo":"",
-            "officers":{
-                
-                "president":{
-                    "name":"Bryan Docto",
-                    "role":"President",
-                    "email":"bdocto@csus.edu",
-                    "picture":"./CALGEO officers/bryan.png"
-                    
-                },
-                "vicepresident":{
-                    "name":"Christian Raganit",
-                    "role": "Vice President",
-                    "email":"craganit@csus.edu",
-                    "picture":"./CALGEO officers/christian.png"
-                    
-                },
-                "treasurer":{
-                    "name":"Manaal Chowdhury",
-                    "role":"Treasurer",
-                    "email":"mchowdhury@csus.edu",
-                    "picture":"./CALGEO officers/manaal.png"
-                    
+                    "email":"",
+                    "picture":""
                 },
                 "secretary":{
-                    "name":"Cody Montoya",
+                    "name":"",
                     "role":"Secretary",
-                    "email":"codymontoya@csus.edu",
-                    "picture":"./CALGEO officers/cody.png"
-                    
-                },
-                "eventscoordinator":{
-                    "name":"Sarah Yaqoob",
-                    "role":"Events Coordinator",
-                    "email":"sarahyaqoob@csus.edu",
-                    "picture":"./CALGEO officers/sarah.jpg"
-                    
-                },
-                "platformschair":{
-                    "name":"Maryam Yaqoob",
-                    "role":"Platforms Chair",
-                    "email":"maryamyaqoob@csus.edu",
-                    "picture":"./CALGEO officers/maryam.png"
-                    
-                },
-                "geowallrep":{
-                    "name":"Angel Wilson",
-                    "role":"Geowall Rep",
-                    "email":"angelwilson2@csus.edu",
-                    "picture":"./CALGEO officers/angel.png"
-                    
-                },                
-                "shadowofficer":{
-                    "name":"Rodaina (Rudy) Abdelhafiz",
-                    "role": "Shadow Officer",
-                    "email":"rmabdelhafiz@csus.edu",
-                    "picture":"./CALGEO officers/rudy.png"
-                    
-                }
-                
-                
-            }
-        }
-    },
-    {
-        
-        "asce":{
-            "events":"./ASCE officers/ASCE Events/asce2023elections.png",
-            "meeting": "Upcoming Meeting :TBA",
-            "logo":"./ASCE officers/ascelogo.png",
-            "officers":{
-                
-                "president":{
-                    "name":"Bryan Docto",
-                    "role":"President",
-                    "email":"bdocto@csus.edu",
-                    "picture":"./CALGEO officers/bryan.png"
-                    
-                },
-                "vicepresidentInternal":{
-                    "name":"Emma Docto",
-                    "role": "Vice President Internal",
-                    "email":"edocto@csus.edu",
-                    "picture":"./ASCE officers/emma_pfp.png"
-                    
-                },
-                "vicepresidentExternal":{
-                    "name":"Cody Montoya",
-                    "role": "Vice President External",
-                    "email":"codymontoya@csus.edu",
-                    "picture":"./CALGEO officers/cody.png"
-                    
-                },
-                "treasurer":{
-                    "name":"Zubaida Alzubaidi",
-                    "role":"Treasurer",
-                    "email":"csusascetreasurer@gmail.com",
-                    "picture":"./ASCE officers/zubaida.png"
-                    
-                },
-                "secretary":{
-                    "name":"Manaal Chowdhury",
-                    "role":"Secretary",
-                    "email":"mchowdhury@csus.edu",
-                    "picture":"./CALGEO officers/manaal.png"
-                    
-                },
-                "midpaccoordinator":{
-                    "name":"Erwin Gonzalez",
-                    "role":"Mid-Pac Coordinator",
                     "email":"",
-                    "picture":"./ASCE officers/erwin.png"
-                    
-                },
-                "eventschair":{
-                    "name":"Sarah Yaqoob",
-                    "role":"Events Chair",
-                    "email":"sarahyaqoob@csus.edu",
-                    "picture":"./ASCE officers/sarah.jpeg"
-                    
-                },
-                "platformschair":{
-                    "name":"Maryam Yaqoob",
-                    "role":"Platforms Chair",
-                    "email":"maryamyaqoob@csus.edu",
-                    "picture":"./CALGEO officers/maryam.png"
-                    
-                }, 
-                "membershipchair":{
-                    "name":"Rodaina Rudy Abdelhafiz ",
-                    "role": "Membership Chair",
-                    "email":"rmabdelhafiz@csus.edu",
-                    "picture":"./CALGEO officers/rudy.png"
-                    
-                },                
-                "alumnirelationschair":{
-                    "name":"Christian Raganit",
-                    "role": "Alumni-Relations Chair",
-                    "email":"craganit@csus.edu",
-                    "picture":"./CALGEO officers/christian.png"
-                    
-                },    
-                
-                "outreachChair":{
-                    "name":"Naveed Lorestany AKA Sexy Beast",
-                    "role": "Outreach Chair",
-                    "email":"",
-                    "picture":"./ASCE officers/naveed.png"
-                    
-                },  
-                
-                "shadowofficer":{
-                    "name":"Kassandra Valencia",
-                    "role": "First Year Representative / Shadow Officer",
-                    "email":"",
-                    "picture":"./ASCE officers/Kassandra.png"
-                    
+                    "picture":""
                 }
                 
             }
-        }
+        } 
     }
     
+    
+    
 ]
-
-
-
-
-
 }
+
+
+
+
+

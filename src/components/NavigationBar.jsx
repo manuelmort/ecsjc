@@ -4,13 +4,15 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { GiHamburgerMenu } from "react-icons/gi"
 import "./NavigationBar.css";
+import clubs from "./data/clubs.json"
 
 export default class NavigationBar extends React.Component {
     constructor(props){
         super(props)
         this.state = {
             drop: false,
-            side:false
+            side:false,
+            clubs: clubs
         }
         this.handleDrop = this.handleDrop.bind(this);
         this.handleSideMenu= this.handleSideMenu.bind(this);
@@ -37,13 +39,13 @@ export default class NavigationBar extends React.Component {
         return(
             <div class="z-10">
             <div class="container lg:mx-auto  bg-transparent">
-            <nav class="flex justify-between bg-transparent web-nav   text-green-300 pb-6 flex-wrap   lg:m-30 pt-6" >
+            <nav class="flex justify-between bg-transparent web-nav   text-green-300 pb-6 flex-wrap md:text-center  lg:m-30 pt-6" >
                     <a  
                         href="/" class="font-semibold text-3xl bg-transparent tracking-tight 
                         hover:underline underline-offset-4 ">
                         ECSJC</a>
-                <div class="  lg:flex text-right  bg-transparent lg:items-center lg:w-auto z-10 ">
-                    <div class="text-md bg-transparent lg:flex-grow z-20 ">
+                <div class="  lg:flex md:flex text-right  bg-transparent lg:items-center md:items-center lg:w-auto z-10 ">
+                    <div class="text-md bg-transparent lg:flex-grow md:flex-grow z-20 ">
                         <Link onClick={this.handleDrop} smooth={true} class=" bg-transparent text-xl block mt-4 p-3 rounded-md md:inline-block lg:inline-block hover:text-green-300 hover:bg-opacity-20 hover:bg-green-300 lg:mt-0 text-green-100">
                             Clubs
 
@@ -81,28 +83,20 @@ export default class NavigationBar extends React.Component {
                         
                         <div class=" absolute lg:bg-gray-800/90 md:bg-gray-800/90 bg-gray-800 rounded-lg  mt-5 w-full  mx-auto">
                         <div class=" grid lg:grid-cols-4 grid-cols-1">
+                            {
+                                this.state.clubs.clubs.map((item)=> {
+                                    return(
+                                    <a href={item.pageLink} class=" mx-auto w-full"><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full  p-5" >{item.shortname}</button></a>
+                                    )
 
-                        <a  class=" mx-auto w-full"><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full  p-5" >Society of Women Engineers</button></a>
-                        <a><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" >Concrete Canoe</button></a>
-                        <a href="asce"><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" >ASCE</button></a>
-
-                        <a href="/dsa"><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" >Data Structure and Algo</button></a>
-                        <a href="/calgeo"><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5">CAL GEO</button></a>
-                        <a><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5">ITE</button></a>
-                        <a ><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" >Nat. Society of Black Engineers</button></a>
-                        <a><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5">ACM</button></a>
-                        <a><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5">Society Of Hispanic Engineers</button></a>
-                        <a><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5">Data Science</button></a>
-
-
+                                })
+                            }
                         </div>
-                         
-
                         </div>
                        
                         ): null
 
-                        }
+                }
                 </div>
             </div>
             <div>
@@ -116,19 +110,14 @@ export default class NavigationBar extends React.Component {
                                 <div class="  lg:bg-gray-800/90 md:bg-gray-800/90 bg-gray-800 rounded-lg  mt-5 w-full  mx-auto">
                                     <div class=" grid lg:grid-cols-4 grid-cols-1 sideMenu">
 
-                                        <a href="/swe " class="w-full" ><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg  p-5" >Society of Women Engineers</button></a>
-                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" >Concrete Canoe</button>
-                                        <a href="/asce" class="w-full" ><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg p-5" >ASCE</button></a>
+                                    {
+                                        this.state.clubs.clubs.map((item)=> {
+                                            return(
+                                            <a href={item.pageLink} class=" mx-auto w-full"><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full  p-5" >{item.shortname}</button></a>
+                                            )
 
-                                        <a href="/dsa " class="w-full" ><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg p-5" >Data Structure and Algo</button></a>
-                                        <a href="/calgeo"><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5">CAL GEO</button></a>
-                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>Institue of Transportation Engineers</a></button>
-                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5" ><a href="" class=" mx-auto">Nat. Society of Black Engineers</a></button>
-                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>ACM</a></button>
-                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>Society Of Hispanic Engineers</a></button>
-                                        <button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5"><a>Data Science</a></button>
-                                        <a href="https://www.hornetracing.net/"><button class="mx-auto text-left hover:bg-gray-800/90 border-2 border-gray-700 rounded-lg hover:rounded-lg w-full p-5">Hornet Racing</button></a>
-
+                                        })
+                                    }
                                     </div>
                                 </div>
                             </div>

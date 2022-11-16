@@ -1,0 +1,50 @@
+{
+    "clubs":[
+        {
+            "name":"Concrete Canoe",
+            "shortname":"Concrete Canoe",
+            "pageLink":""
+        },
+        {
+            "name":"Society of Women Engineers",
+            "shortname":"SWE",
+            "pageLink":"/swe"   
+        },
+        {
+            "name":"American Society of Civil Engineers",
+            "shortname":"ASCE",
+            "pageLink":"/asce"
+        },
+        {
+            "name":"Data Structures and Algorithms",
+            "shortname":"DSA",
+            "pageLink":"/dsa"
+        },
+        {
+            "name":"California Technical Engineering Association",
+            "shortname":"CALGEO",
+            "pageLink":"/calgeo"
+        },
+        {
+            "name":"Institue of Transportation Engineers",
+            "shortname":"ITE",
+            "pageLink":""
+        },
+        {
+            "name":"National Society of Black Engineers",
+            "shortname":"NSBE",
+            "pageLink":""
+        },
+        {
+            "name":"Hornet Racing",
+            "shortname":"Hornet Racing",
+            "pageLink":"https://www.hornetracing.net/"
+        },
+        {
+            "name":"Associaton of Computing Machinery",
+            "shortname":"ACM",
+            "pageLink":""
+        }
+        
+    ]      
+}

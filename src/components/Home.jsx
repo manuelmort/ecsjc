@@ -2,6 +2,7 @@ import React from "react";
 import ImageSlider from "./Slider/ImageSlider";
 import { SliderData } from "./Slider/SliderData";
 import NavigationBar from "./NavigationBar";
+import SideNavbar from "./SideBar";
 import "./Home.css"
 import { Chrono } from "react-chrono";
 import { gsap } from "gsap";
@@ -55,7 +56,8 @@ export default class Home extends React.Component {
                 y: 0,
                 autoAlpha: 1,
                 ease: "back",
-                overwrite: "auto"
+                overwrite: "auto",
+                
                 }
             );
             },
@@ -94,15 +96,14 @@ export default class Home extends React.Component {
                 
                 <div class="m-0 w-full h-full bg-cover bg-transparent border-2 border-transparent <----???" style={{backgroundImage:"url('./topView.jpg')"}}>
                     
-    
-                        <NavigationBar class="bg-transparent  "/>
+                    <SideNavbar class="revealUp"/>
 
-                    <div class="sac-state-gold mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent ">
+                    <div class=" mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent test ">
 
-                            <p  class="text-green-200 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl -z-10 revealUp">Engineering and Computer Science Joint Council</p>
+                            <p  class="text-green-200 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl revealUp">Engineering and Computer Science Joint Council</p>
                             <div class=" opacity-90 text-center lg:mt-5 mt-10 mb-10 revealUp">
                                 <Link  to="Events"   smooth={true}
-                                    class="bg-transparent  text-xl text-green-100   p-2 rounded-md border-2 border-green-100/90    hover:text-green-300  hover:bg-opacity-30 hover:bg-green-300  ">
+                                    class="bg-transparent  -z-10 text-xl text-green-100   p-2 rounded-md border-2 border-green-100/90    hover:text-green-300  hover:bg-opacity-30 hover:bg-green-300  ">
                                     Upcoming Events
                                 </Link>
                             </div>
@@ -149,8 +150,8 @@ export default class Home extends React.Component {
                             </div>
                             <div class="mx-auto w-full">
                                 <div class="mx-auto text-center lg:revealUp " id="Events">
-                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">{this.state.ecsjc.events[this.state.ECSJC].clubname} Event</p>
-                                    <img src = {this.state.ecsjc.events[this.state.ECSJC].flyer}  class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
+                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">{this.state.ecsjc.specialEvent.clubname}</p>
+                                    <img src = {this.state.ecsjc.specialEvent.flyer}  class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
                                 </div>
                             </div>
                         </div>
@@ -159,25 +160,18 @@ export default class Home extends React.Component {
 
                     
                     <div className="bg-transparent grid lg:grid-cols-3 bg-slate-800 opacity-90 pb-20 ">
-                            
-                    <div class="mx-auto w-full">
-                            <div class="mx-auto text-center lg:revealUp " >
-                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">{this.state.ecsjc.events[this.state.ECS].clubname} Event</p>
-                                    <img src={this.state.ecsjc.events[this.state.ECS].flyer} class=" lg:mx-auto lg:h-96  lg:w-72 lg:mt-5 lg:rounded-md" />
-                                </div>
-                            </div>
-                            <div class="mx-auto w-full">
-                                <div class="mx-auto text-center lg:revealUp " >
-                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">{this.state.ecsjc.events[this.state.DSA].clubname} Event</p>
-                                    <img src={this.state.ecsjc.events[this.state.DSA].flyer} class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
-                                </div>
-                            </div>
-                            <div class="mx-auto w-full">
-                                <div class="mx-auto text-center lg:revealUp " >
-                                    <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">{this.state.ecsjc.events[this.state.CALGEO].clubname} Event</p>
-                                    <img src= {this.state.ecsjc.events[this.state.CALGEO].flyer}  class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
-                                </div>
-                            </div>
+                        {
+                            this.state.ecsjc.events.map((item)=> {
+                                return(
+                                    
+                                    <div class="mx-auto text-center lg:revealUp " >
+                                        <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">{item.clubname} Event</p>
+                                        <img src={item.flyer} class=" lg:mx-auto lg:h-96  lg:w-72 lg:mt-5 lg:rounded-md" />
+                                    </div>
+                                )
+                                })  
+                        }
+
                     </div>
                 </section>
                 
