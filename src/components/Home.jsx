@@ -1,7 +1,6 @@
 import React from "react";
 import ImageSlider from "./Slider/ImageSlider";
 import { SliderData } from "./Slider/SliderData";
-import NavigationBar from "./NavigationBar";
 import SideNavbar from "./SideBar";
 import "./Home.css"
 import { Chrono } from "react-chrono";
@@ -57,6 +56,8 @@ export default class Home extends React.Component {
                 autoAlpha: 1,
                 ease: "back",
                 overwrite: "auto",
+                zIndex: -10
+
                 
                 }
             );
@@ -73,12 +74,14 @@ export default class Home extends React.Component {
                 y: 0,
                 autoAlpha: 1,
                 ease: "back",
-                overwrite: "auto"
+                overwrite: "auto",
+                zIndex: -10
                 }
             );
             },
             onLeaveBack: function () {
-            gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+            gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" ,zIndex: -10
+        });
             }
         });
         });
@@ -100,7 +103,7 @@ export default class Home extends React.Component {
 
                     <div class=" mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent test ">
 
-                            <p  class="text-green-200 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl revealUp">Engineering and Computer Science Joint Council</p>
+                            <p  class="text-green-200 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl lg:revealUp md:revealUp phonescreen">Engineering and Computer Science Joint Council</p>
                             <div class=" opacity-90 text-center lg:mt-5 mt-10 mb-10 revealUp">
                                 <Link  to="Events"   smooth={true}
                                     class="bg-transparent  -z-10 text-xl text-green-100   p-2 rounded-md border-2 border-green-100/90    hover:text-green-300  hover:bg-opacity-30 hover:bg-green-300  ">
@@ -189,7 +192,7 @@ export default class Home extends React.Component {
                     </div>
                     <div class='grid lg:grid-cols-3 grid-cols-1 2xl:ml-20 gap-4 p-10 bg-transparent text-center '>
                         <a href="/calgeo" target="_blank" class="bg-transparent lg:revealUp ">
-                            <button class="bg-green-300 hover:bg-green-400 opacity-80 xl:w-80 w-full rounded-md shadow-xl border-2 border-gray-800/70" > 
+                            <button class="bg-green-300 hover:bg-green-400 opacity-80 xl:w-80 w-full glow rounded-md shadow-xl border-2 border-gray-800/70" > 
                                 <p class="bg-transparent p-3 text-green-900 font-semibod">Cal Geotech  </p>
                             </button>
                         </a>
@@ -256,7 +259,7 @@ export default class Home extends React.Component {
 
                 <div class="m-0 w-full h-full bg-cover bg-transparent  bg-slate-700" >       
 
-                <div class="grid lg:grid-cols-2 grid-cols-1  bg-slate-700 lg:revealUp xl:revealUp  ">
+                <div id="About Us" class="grid lg:grid-cols-2 grid-cols-1  bg-slate-700 lg:revealUp xl:revealUp  ">
                     
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-10">
                         <div class="bg-transparent lg:mx-auto " >
