@@ -2,7 +2,8 @@ import React from "react";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import data from "./data/data.json"
-import AsceNav from "./AsceNav";
+import AsceNav from "./AsceSideBar";
+import AsceSideBar from "./AsceSideBar";
 export default class Asce extends React.Component {
     constructor(props){
         super(props)
@@ -63,7 +64,7 @@ export default class Asce extends React.Component {
         return(
             <div>
                 <div class="m-0 w-full h-full bg-cover bg-transparent border-2 border-transparent <----???" style={{backgroundImage:"url('./asce.jpg')"}}>
-                <AsceNav class="bg-transparent  "/>
+                <AsceSideBar class="bg-transparent  "/>
 
                 <div class="sac-state-gold mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 rounded-lg bg-slate-800/40 revealUp   ">
                         <p  class="revealUp text-sky-100 font-medium text-medium p-3 lg:text-5xl lg:mt-5 lg:text-center md:text-center md:text-4xl ">American Society Of Civil Engineers <p class="text-sm"> CSUS Student Chapter</p>
@@ -85,7 +86,7 @@ export default class Asce extends React.Component {
                                     <img class="h-20 revealUp"src="./ASCE officers/ascelogo.png"/>
 
                                     <h1 class ="text-sky-600 font-semibold text-lg pt-5 bg-transparent line-1  lg:revealUp">
-                                                California GeoTechnical Engineering Association CSUS Chapter
+                                        American Society Of Civil Engineers
 
                                     </h1>
                                     

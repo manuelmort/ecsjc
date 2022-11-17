@@ -8,21 +8,25 @@
         {
             "name":"Society of Women Engineers",
             "shortname":"SWE",
+            "logo":"./SWE officers/swelogowhite.png",
             "pageLink":"/swe"   
         },
         {
             "name":"American Society of Civil Engineers",
             "shortname":"ASCE",
+            "logo":"./ASCE officers/ascelogo.png",
             "pageLink":"/asce"
         },
         {
             "name":"Data Structures and Algorithms",
             "shortname":"DSA",
+            "logo":"./dsalogo.png",
             "pageLink":"/dsa"
         },
         {
             "name":"California Technical Engineering Association",
             "shortname":"CALGEO",
+            "logo":"./CALGEO officers/calgeologo.png",
             "pageLink":"/calgeo"
         },
         {

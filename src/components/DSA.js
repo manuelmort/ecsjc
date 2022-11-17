@@ -1,10 +1,8 @@
 import React from "react";
-import * as THREE from 'three';
-import NavBarSWE from "./NavBarSWE";
 import { Link } from "react-scroll";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
-import DSANavBar from "./DSANavBar";
+import DSASideBar from "./DSASideBar";
 
 export default class DSA extends React.Component {
     componentDidMount() {
@@ -59,8 +57,9 @@ export default class DSA extends React.Component {
         return(
             <div>
                 <div class="m-0 w-full h-full bg-cover bg-transparent border-2 border-transparent <----???" style={{backgroundImage:"url('./DSA.jpg')"}}>
-                 <DSANavBar/>
-                <div class="sac-state-gold mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent ">
+                <DSASideBar/>
+
+                <div class=" mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent ">
                         <p  class="text-sky-300 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl ">Data Structures and Algorithms Club</p>
                         <div class=" opacity-90 text-center lg:mt-5 mt-10 mb-10">
                  

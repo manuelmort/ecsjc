@@ -1,10 +1,8 @@
 import React from "react";
-import * as THREE from 'three';
-import NavBarSWE from "./NavBarSWE";
 import { Link } from "react-scroll";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
-import CalGeoNav from "./CalGeoNav";
+import CalGeoSideBar from "./CalGeoSideBar";
 import data from "./data/data.json"
 
 export default class CalGeo extends React.Component {
@@ -67,7 +65,7 @@ export default class CalGeo extends React.Component {
         return(
             <div>
                 <div class="m-0 w-full h-full bg-cover bg-transparent border-2 border-transparent <----???" style={{backgroundImage:"url('./calgeo.jpg')"}}>
-                <CalGeoNav class="bg-transparent  "/>
+                <CalGeoSideBar class="bg-transparent  "/>
 
                 <div class="sac-state-gold mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent ">
                         <p  class="revealUp text-emerald-100 font-medium text-medium p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl ">California GeoTechnical Engineering Association CSUS Chapter

@@ -1,12 +1,18 @@
 import React from "react";
-import NavBarSWE from "../NavBarSWE";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import SWEFooter from "./SWEFooter";
 import { BsInstagram,BsDiscord } from "react-icons/bs";
-
+import SWESideBar from "./SWESideBar";
 
 export default class Swe extends React.Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            club: "swe"
+        }
+    }
     componentDidMount() {
    
 
@@ -63,9 +69,8 @@ export default class Swe extends React.Component {
             <div class="">
                 <div class="m-0 w-full h-full bg-cover  bg-transparent border-2 border-transparent <----???" style={{backgroundImage:"url('./swecircuit.png')"}}>
                     
-    
-                    <NavBarSWE class="bg-transparent "/>
-
+                    <SWESideBar club={this.state.club}/>
+                    
                     <div class="sac-state-gold mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent ">
 
                         <p class="text-violet-100 font-semibold text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl revealUp">Society of Women Engineers</p>

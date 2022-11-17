@@ -1,8 +1,8 @@
 import React from 'react';
 import Home from './components/Home';
-import Swe from './components/club-pages/Swe';
+import Swe from './components/Swe';
 import {Routes, Route} from 'react-router-dom'
-import Footer from './components/club-pages/SWEFooter';
+
 import "./App.css"
 import DSA from './components/DSA';
 import CalGeo from './components/CalGeo';
