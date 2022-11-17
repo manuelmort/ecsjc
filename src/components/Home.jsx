@@ -56,7 +56,6 @@ export default class Home extends React.Component {
                 autoAlpha: 1,
                 ease: "back",
                 overwrite: "auto",
-                zIndex: -10
 
                 
                 }

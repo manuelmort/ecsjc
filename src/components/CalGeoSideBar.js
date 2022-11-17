@@ -53,6 +53,19 @@ export default class CalGeoSideBar extends React.Component {
                             <a href="/" onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-emerald-300 hover:bg-opacity-20 hover:bg-emerald-300 lg:mt-0 text-emerald-100">
                                 ECSJC
                             </a>
+                            <a href="/dsa"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
+                                DSA
+                            </a>
+                            <a href="/swe"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
+                                SWE
+                            </a>
+                            <a href="/calgeo"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
+                                CALGEO
+                            </a>
+                            <a href="/asce"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
+                                ASCE
+                            </a>
+                            
                             <Link  to="About Us" onClick={this.showSidebar}  smooth={true}
                                 class="bg-transparent  text-xl block mt-4 p-2 rounded-md  hover:text-emerald-300 hover:bg-opacity-20 hover:bg-emerald-300 lg:mt-0 text-emerald-100">
                                 About Us

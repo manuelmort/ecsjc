@@ -51,13 +51,28 @@ export default class SideNavbar extends React.Component {
 
                                 
                             </Link>
+                            <a href="/dsa"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
+                                DSA
+                            </a>
+                            <a href="/swe"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
+                                SWE
+                            </a>
+                            <a href="/calgeo"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
+                                CALGEO
+                            </a>
+                            <a href="/asce"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
+                                ASCE
+                            </a>
+                            
                             <Link to="Events" onClick={this.showSidebar} smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-green-300 hover:bg-opacity-20 hover:bg-green-300 lg:mt-0 text-green-100">
                                 Events
                             </Link>
+                            
                             <Link  to="About Us" onClick={this.showSidebar} smooth={true}
                                 class="bg-transparent text-xl block mt-4 p-2 rounded-md lg:inline-block hover:text-green-300  hover:bg-opacity-20 hover:bg-green-300 lg:mt-0 text-green-100">
                                 About Us
                             </Link>
+                            
                         </div>
               
                  
