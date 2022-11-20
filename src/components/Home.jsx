@@ -108,7 +108,7 @@ export default class Home extends React.Component {
                                     Upcoming Events
                                 </Link>
                             </div>
-                                <div class="animate-bounce text-center  mx-auto bg-amber-600 w-80  rounded-full lg:revealUp">
+                                <div class="animate-bounce text-center  mx-auto bg-amber-600 lg:w-80 md:w-80  rounded-full lg:revealUp">
                                     <p class="text-amber-100 p-2">Happy Thanksgiving </p>
 
                             </div>
@@ -123,7 +123,7 @@ export default class Home extends React.Component {
                 <section class="">
 
                     <div class="bg-green-100  bg-opacity-70">
-                        <p class="text-center bg-transparent text-green-800 p-4 revealUp">Upcoming Meeting: Valley Suite Room 7:00 - 8:30pm, Nov. 2</p>
+                        <p class="text-center bg-transparent text-green-800 p-4 revealUp">Upcoming Meeting: Valley Suite Room 7:00 - 8:30pm, 1st Wed of Dec</p>
                     </div>
                     <div className="bg-transparent grid lg:grid-cols-2 bg-slate-800 opacity-90 ">
                             
