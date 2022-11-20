@@ -4,7 +4,7 @@
             "ecsjc":{
                 "specialEvent":{
                     "clubname": "ECSJC",
-                    "flyer":"./events/ecsjc/rockclimbingecsjc.png"
+                    "flyer":"./events/ecsjc/ecsjcNSM.png"
                 },
                 "events":[
                     {

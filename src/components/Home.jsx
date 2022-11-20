@@ -98,10 +98,9 @@ export default class Home extends React.Component {
                 
                 <div class="m-0 w-full h-full bg-cover bg-transparent border-2 border-transparent <----???" style={{backgroundImage:"url('./topView.jpg')"}}>
                     
-                    <SideNavbar class="revealUp"/>
-
+                    <SideNavbar class="revealUp m-0"/>
                     <div class=" mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent test ">
-
+                        
                             <p  class="text-green-200 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl lg:revealUp md:revealUp phonescreen">Engineering and Computer Science Joint Council</p>
                             <div class=" opacity-90 text-center lg:mt-5 mt-10 mb-10 revealUp">
                                 <Link  to="Events"   smooth={true}
@@ -109,6 +108,12 @@ export default class Home extends React.Component {
                                     Upcoming Events
                                 </Link>
                             </div>
+                                <div class="animate-bounce text-center  mx-auto bg-amber-600 w-80  rounded-full lg:revealUp">
+                                    <p class="text-amber-100 p-2">Happy Thanksgiving </p>
+
+                            </div>
+
+
                         
 
                     </div>
@@ -153,7 +158,7 @@ export default class Home extends React.Component {
                             <div class="mx-auto w-full">
                                 <div class="mx-auto text-center lg:revealUp " id="Events">
                                     <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">{this.state.ecsjc.specialEvent.clubname}</p>
-                                    <img src = {this.state.ecsjc.specialEvent.flyer}  class=" lg:mx-auto lg:h-96 lg:w-72 lg:mt-5 lg:rounded-md" />
+                                    <img src = {this.state.ecsjc.specialEvent.flyer}  class=" lg:mx-auto lg:h-96 lg:w-96 lg:mt-5 lg:rounded-md" />
                                 </div>
                             </div>
                         </div>

@@ -1,12 +1,6 @@
 
 
-.menu-bars {
-  font-size: 2rem;
-  right:0;
-  justify-content: right;
 
-  background: none;
-}
 
 .nav-menu {
   width: 300px;
@@ -26,15 +20,4 @@
   transition: 350ms;
 }
 
-
-.navbar-toggle {
-  width: 100%;
-  height: 80px;
-  display: flex;
-  align-items: center;
-}
-
-span {
-  margin-right: 16px;
-}
 
