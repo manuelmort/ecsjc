@@ -6,6 +6,8 @@ import clubData from "./data/clubs.json"
 import {Link} from 'react-scroll'
 import React from 'react';
 import { CgWebsite,CgProfile } from "react-icons/cg"
+import { ImNewspaper} from "react-icons/im";
+import { IoPeopleCircleOutline } from "react-icons/io5"
 
 
 export default class SideNavbar extends React.Component {
@@ -47,12 +49,18 @@ export default class SideNavbar extends React.Component {
                   
                   
                         <div class="text-md bg-transparent lg:flex-grow md:flex-grow mt-5">
-                            <Link to="Clubs" onClick={this.showSidebar} smooth={true} class=" bg-transparent text-xl block mt-4 p-2 rounded-md   hover:text-green-300 hover:bg-opacity-20 hover:bg-green-300 lg:mt-0 text-green-100">
-                                Clubs
-
+                            <Link to="Clubs"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-3 rounded-md   hover:text-indigo-300 hover:bg-opacity-20 hover:bg-indigo-300 lg:mt-0 text-indigo-100">
+                                <span class="inline-block"><ImNewspaper/> </span>Clubs
                                 
                             </Link>
-                            <a href="/dsa"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
+                            <Link  to="About Us" onClick={this.showSidebar}  smooth={true}
+                                class="bg-transparent  text-xl block mt-4 p-2 rounded-md  hover:text-indigo-300 hover:bg-opacity-20 hover:bg-indigo-300 lg:mt-0 text-indigo-100">
+                                <span class="inline-block"><CgProfile/></span>About Us
+                            </Link>
+                            <a href="/"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-indigo-300 hover:bg-opacity-20 hover:bg-indigo-300 lg:mt-0 text-indigo-100">
+                                <span class="inline-block"><CgWebsite/></span>ECSJC
+                            </a>
+                            <a href="/dss"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
                                  <span class="inline-block"><CgWebsite/></span>DSA
                             </a>
                             <a href="/swe"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
@@ -65,14 +73,9 @@ export default class SideNavbar extends React.Component {
                                 <span class="inline-block"><CgWebsite/></span>ASCE
                             </a>
                             
-                            <Link to="Events" onClick={this.showSidebar} smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-green-300 hover:bg-opacity-20 hover:bg-green-300 lg:mt-0 text-green-100">
-                               Events
-                            </Link>
+
                             
-                            <Link  to="About Us" onClick={this.showSidebar} smooth={true}
-                                class="bg-transparent text-xl block mt-4 p-2 rounded-md lg:inline-block hover:text-green-300  hover:bg-opacity-20 hover:bg-green-300 lg:mt-0 text-green-100">
-                             <span class="inline-block"><CgProfile/></span>About Us
-                            </Link>
+  
                             
                         </div>
               

@@ -5,6 +5,9 @@ import * as AiIcons from 'react-icons/ai';
 import clubData from "./data/clubs.json"
 import {Link} from 'react-scroll'
 import "./ClubSideBar.css";
+import { CgWebsite,CgProfile } from "react-icons/cg"
+import { ImNewspaper} from "react-icons/im";
+import { IoPeopleCircleOutline } from "react-icons/io5"
 
 
 
@@ -44,32 +47,31 @@ export default class SWESideBar extends React.Component {
                     </li>
                   
                   
-                        <div class="text-md bg-transparent lg:flex-grow md:flex-grow ">
+                        <div class="text-md bg-transparent lg:flex-grow md:flex-grow mt-5">
                             <Link to="Clubs"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-3 rounded-md   hover:text-indigo-300 hover:bg-opacity-20 hover:bg-indigo-300 lg:mt-0 text-indigo-100">
-                                Events
-
+                                <span class="inline-block"><ImNewspaper/> </span>Events
                                 
                             </Link>
-                            <a href="/"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-indigo-300 hover:bg-opacity-20 hover:bg-indigo-300 lg:mt-0 text-indigo-100">
-                                ECSJC
-                            </a>
-                            <a href="/dsa"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
-                                DSA
-                            </a>
-                            <a href="/swe"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
-                                SWE
-                            </a>
-                            <a href="/calgeo"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
-                                CALGEO
-                            </a>
-                            <a href="/asce"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
-                                ASCE
-                            </a>
-                            
                             <Link  to="About Us" onClick={this.showSidebar}  smooth={true}
                                 class="bg-transparent  text-xl block mt-4 p-2 rounded-md  hover:text-indigo-300 hover:bg-opacity-20 hover:bg-indigo-300 lg:mt-0 text-indigo-100">
-                                About Us
+                                <span class="inline-block"><CgProfile/></span>About Us
                             </Link>
+                            <a href="/"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-indigo-300 hover:bg-opacity-20 hover:bg-indigo-300 lg:mt-0 text-indigo-100">
+                                <span class="inline-block"><CgWebsite/></span>ECSJC
+                            </a>
+                            <a href="/dss"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
+                                 <span class="inline-block"><CgWebsite/></span>DSA
+                            </a>
+                            <a href="/swe"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
+                                <span class="inline-block"><CgWebsite/></span>SWE
+                            </a>
+                            <a href="/calgeo"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
+                                <span class="inline-block"><CgWebsite/></span>CALGEO
+                            </a>
+                            <a href="/asce"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
+                                <span class="inline-block"><CgWebsite/></span>ASCE
+                            </a>
+
                         </div>
               
                  
