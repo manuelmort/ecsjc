@@ -233,7 +233,7 @@ export default class Home extends React.Component {
                             <p class="bg-transparen text-cyan-800  p-3 font-semibold">National Society of Black Engineers</p>
                             </button>
                         </a>
-                        <a class="bg-transparent lg:revealUp">
+                        <a href="https://sacshpe.org/" class="bg-transparent lg:revealUp">
                             <button class="bg-green-800 hover:bg-green-900 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white grow  border-2 border-gray-800/70" >   
                                 <div class="bg-transparent">
                                     <p class="bg-transparent text-white p-3 font-semibold ">SHPE</p>
