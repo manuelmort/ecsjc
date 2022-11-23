@@ -28,7 +28,7 @@ export default class SideNavbar extends React.Component {
   return (
             <div class="">
            
-                <div className='navbar text-green-500 mt-5'>
+                <div className='navbar text-green-500 mt-3 lg:mt-5'>
 
                 <a  
                         href="/" class="font-semibold text-4xl bg-transparent tracking-tight 
@@ -36,28 +36,28 @@ export default class SideNavbar extends React.Component {
                         ECSJC</a>
                 <button to='#' className='menu-bars float-right'>
 
-                    <FaBars onClick={this.showSidebar} class="bg-transparent  text-green-300 hover:text-green-500  lg:mr-20 md:mr-10  lg:mt-2  float-right" size={40}/>
+                    <FaBars onClick={this.showSidebar} class="bg-transparent  text-green-300 hover:text-green-100  lg:mr-20 md:mr-10  lg:mt-2  float-right" size={40}/>
                 </button>
                 </div>
                 <nav className={this.state.sidebar ? 'nav-menu active' : 'nav-menu'}>
                 <ul className='nav-menu-items bg-slate-800 w-full  ' onClick={this.showSidebar}>
                     <li className='navbar-toggle'>
                     <button to='#' className='menu-bars '>
-                        <AiIcons.AiOutlineClose class="text-green-300 mt-12  hover:text-green-500"size={45} />
+                        <AiIcons.AiOutlineClose class="text-green-300 mt-1  hover:text-green-100"size={45} />
                     </button>
                     </li>
                   
                   
                         <div class="text-md bg-transparent lg:flex-grow md:flex-grow mt-5">
-                            <Link to="Clubs"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-3 rounded-md   hover:text-indigo-300 hover:bg-opacity-20 hover:bg-indigo-300 lg:mt-0 text-indigo-100">
+                            <Link to="Clubs"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-3 rounded-md   hover:text-sky-300 hover:bg-sky-200 hover:bg-opacity-20 lg:mt-0 text-sky-100">
                                 <span class="inline-block"><ImNewspaper/> </span>Clubs
                                 
                             </Link>
                             <Link  to="About Us" onClick={this.showSidebar}  smooth={true}
-                                class="bg-transparent  text-xl block mt-4 p-2 rounded-md  hover:text-indigo-300 hover:bg-opacity-20 hover:bg-indigo-300 lg:mt-0 text-indigo-100">
+                                class="bg-transparent  text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
                                 <span class="inline-block"><CgProfile/></span>About Us
                             </Link>
-                            <a href="/"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-indigo-300 hover:bg-opacity-20 hover:bg-indigo-300 lg:mt-0 text-indigo-100">
+                            <a href="/"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-indigo-100">
                                 <span class="inline-block"><CgWebsite/></span>ECSJC
                             </a>
                             <a href="/dss"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
