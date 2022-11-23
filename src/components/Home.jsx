@@ -158,7 +158,7 @@ export default class Home extends React.Component {
                             <div class="mx-auto w-full">
                                 <div class="mx-auto text-center lg:revealUp " id="Events">
                                     <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">{this.state.ecsjc.specialEvent.clubname}</p>
-                                    <img src = {this.state.ecsjc.specialEvent.flyer}  class=" lg:mx-auto lg:h-96 lg:w-96 lg:mt-5 lg:rounded-md zoom" />
+                                    <img src = {this.state.ecsjc.specialEvent.flyer}  class=" lg:mx-auto lg:h-96 lg:w-96 lg:mt-5 lg:rounded-md lg:zoom" />
                                 </div>
                             </div>
                         </div>
@@ -173,7 +173,7 @@ export default class Home extends React.Component {
                                     
                                     <div class="mx-auto text-center lg:revealUp " >
                                         <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">{item.clubname} Event</p>
-                                        <img src={item.flyer} class=" lg:mx-auto lg:h-96  lg:w-72 lg:mt-5 lg:rounded-md zoom" />
+                                        <img src={item.flyer} class=" lg:mx-auto lg:h-96  lg:w-72 lg:mt-5 lg:rounded-md lg:zoom" />
                                     </div>
                                 )
                                 })  
