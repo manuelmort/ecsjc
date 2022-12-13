@@ -108,8 +108,8 @@ export default class Home extends React.Component {
                                     Upcoming Events
                                 </Link>
                             </div>
-                                <div class="animate-bounce text-center  mx-auto bg-amber-600 lg:w-80 md:w-80  rounded-full lg:revealUp">
-                                    <p class="text-amber-100 p-2">Happy Thanksgiving </p>
+                                <div class="animate-bounce text-center  mx-auto bg-rose-600 lg:w-80 md:w-80  rounded-full lg:revealUp">
+                                    <p class="text-green-100 p-2">Happy Holidays! </p>
 
                             </div>
 
