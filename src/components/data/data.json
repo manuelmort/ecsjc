@@ -4,7 +4,7 @@
             "ecsjc":{
                 "specialEvent":{
                     "clubname": "ECSJC",
-                    "flyer":"./events/ecsjc/turkeybowl.png"
+                    "flyer":"./events/ecsjc/SpringBBQ.jpg"
                 },
                 "events":[
                     {
@@ -289,10 +289,52 @@
                 
             }
         } 
+    },
+    {
+        "materialadvantage": { 
+        "meeting":"Meetings: Tuesdays 2:30pm - 3:30pm weekly",
+        "clubEmail":"Ecs-mac@csus.edu",
+        "events":{
+            
+        },
+        "officers":{
+            "president": {
+                "name":"Troy Topping",
+                "role":"President",
+                "email":"Troy.Topping@csus.edu",
+                "picture":""
+                
+                
+            }
+            
+            
+        }
+    } 
+},
+{
+    "nsbe": { 
+    "meeting":"Meetings: Tuesdays 2:30pm - 3:30pm weekly",
+    "clubEmail":"Ecs-mac@csus.edu",
+    "events":{
+        
+    },
+    "officers":{
+        "president": {
+            "name":"Troy Topping",
+            "role":"President",
+            "email":"Troy.Topping@csus.edu",
+            "picture":""
+            
+            
+        }
+        
+        
     }
-    
-    
-    
+} 
+}
+
+
+
 ]
 }
 

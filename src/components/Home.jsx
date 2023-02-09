@@ -1,7 +1,7 @@
 import React from "react";
 import ImageSlider from "./Slider/ImageSlider";
 import { SliderData } from "./Slider/SliderData";
-import SideNavbar from "./SideBar";
+import SideNavbar from "./HomeSideBar";
 import "./Home.css"
 import { Chrono } from "react-chrono";
 import { gsap } from "gsap";
@@ -10,6 +10,7 @@ import {Link} from 'react-scroll'
 
 
 import data from "./data/data.json"
+import HomeSideBar from "./HomeSideBar";
 
 
 
@@ -98,7 +99,7 @@ export default class Home extends React.Component {
                 
                 <div class="m-0 w-full h-full bg-cover bg-transparent border-2 border-transparent <----???" style={{backgroundImage:"url('./topView.jpg')"}}>
                     
-                    <SideNavbar class="revealUp m-0"/>
+                    <HomeSideBar class="revealUp m-0"/>
                     <div class=" mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent test ">
                         
                             <p  class="text-green-200 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl lg:revealUp md:revealUp phonescreen">Engineering and Computer Science Joint Council</p>
@@ -108,13 +109,9 @@ export default class Home extends React.Component {
                                     Upcoming Events
                                 </Link>
                             </div>
-                                <div class="animate-bounce text-center  mx-auto bg-rose-600 lg:w-80 md:w-80  rounded-full lg:revealUp">
-                                    <p class="text-green-100 p-2">Happy Holidays! </p>
-
-                            </div>
+                            <p  class="text-green-300 font-medium text-lg p-3 lg:text-3xl lg:mt-20 lg:text-center md:text-center md:text-4xl lg:revealUp md:revealUp phonescreen">Spring 2023</p>
 
 
-                        
 
                     </div>
                     
@@ -158,7 +155,7 @@ export default class Home extends React.Component {
                             <div class="mx-auto w-full">
                                 <div class="mx-auto text-center lg:revealUp " id="Events">
                                     <p class="text-green-300 lg:mt-10 text-lg p-5 lg:p-0">{this.state.ecsjc.specialEvent.clubname}</p>
-                                    <img src = {this.state.ecsjc.specialEvent.flyer}  class=" lg:mx-auto lg:h-96 lg:w-96 lg:mt-5 lg:rounded-md lg:zoom" />
+                                    <img src = {this.state.ecsjc.specialEvent.flyer}  class=" lg:mx-auto lg:h-96 lg:w-80 lg:mt-5 lg:rounded-md lg:zoom" />
                                 </div>
                             </div>
                         </div>
@@ -228,7 +225,7 @@ export default class Home extends React.Component {
 
                             </button>
                         </a>
-                        <a class="bg-transparent lg:revealUp">
+                        <a class="bg-transparent lg:revealUp" href="/nsbe">
                             <button  class="bg-cyan-300 hover:bg-cyan-400 opacity-80 shadow-xl w-full xl:w-80 lg:w-80 rounded-md text-white  border-2 border-gray-800/70" >
                             <p class="bg-transparen text-cyan-800  p-3 font-semibold">National Society of Black Engineers</p>
                             </button>
@@ -255,6 +252,11 @@ export default class Home extends React.Component {
                                 <p class="text-green-800 mx-auto p-3 font-semibold bg-transparent">ASCE</p>
 
 
+                            </button>
+                        </a>
+                        <a class="bg-transparent lg:revealUp " href = "/material-advantage" target="_blank">
+                            <button class="rounded-md  shadow-xl bg-cyan-300 hover:bg-cyan-400 xl:w-80 w-full lg:w-80 opacity-80  border-2 border-gray-800/70" >
+                                <p class="bg-transparent p-3 text-cyan-800 font-semibold">Material Advantage</p>
                             </button>
                         </a>
                     </div>
@@ -323,17 +325,7 @@ export default class Home extends React.Component {
                                 {this.state.ecsjc.officers.webmaster.email}</p>
                         </div>
                     </div>
-                    <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
-                        <div class="bg-transparent  lg:mx-auto " >
-                            <img class = "rounded-full mx-auto shadow-xl h-40 w-40 lg:border-2    border-slate-400 " style={{maxHeight:"350px"}} src={this.state.ecsjc.officers.social.picture} />    
-                        </div>
-                        <div class=" text-center m-5 text-xl ">
-                                <p class="pt-10 text-cyan-200">{this.state.ecsjc.officers.social.name}</p>
-                               <p class="text-center text-lime-300  ">{this.state.ecsjc.officers.social.role}</p> 
-                               <p class="bg-transparent text-green-300 mt-2 text-sm">
-                                {this.state.ecsjc.officers.social.email}</p>
-                        </div>
-                    </div>
+
 
                     
 

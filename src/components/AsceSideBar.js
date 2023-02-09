@@ -71,6 +71,9 @@ export default class AsceSideBar extends React.Component {
                             <a href="/asce"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
                                 <span class="inline-block"><CgWebsite/></span>ASCE
                             </a>
+                            <a href="/material-advantage"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
+                                <span class="inline-block"><CgWebsite/></span>Material Advantage
+                            </a>
                         </div>
               
                  

@@ -48,6 +48,11 @@
             "name":"Associaton of Computing Machinery",
             "shortname":"ACM",
             "pageLink":""
+        },
+        {
+            "name":"Material Advantage",
+            "shortname":"Mat-Advantage",
+            "pageLink":"http://materialadvantage.org/"
         }
         
     ]      

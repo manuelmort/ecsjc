@@ -7,7 +7,8 @@ import "./App.css"
 import DSA from './components/DSA';
 import CalGeo from './components/CalGeo';
 import Asce from './components/Asce';
-import Calendar from './components/Calendar/Calendar';
+import MaterialAdvantage from './components/MaterialAdvantage';
+import NSBE from './components/NSBE';
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -37,7 +38,11 @@ class App extends React.Component {
           <Route path="/dsa" element={<DSA/>}/>
           <Route path="/calgeo" element={<CalGeo/>}/>
           <Route path="/asce" element={<Asce/>}/>
-          <Route path="/calendar" element={<Calendar/>}/>
+          <Route path="/nsbe" element={<NSBE/>}/>
+
+          <Route path="/material-advantage" element={<MaterialAdvantage/>}/>
+
+
 
 
         </Routes>
