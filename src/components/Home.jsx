@@ -120,7 +120,7 @@ export default class Home extends React.Component {
                 <section class="">
 
                     <div class="bg-green-100  bg-opacity-70">
-                        <p class="text-center bg-transparent text-green-800 p-4 revealUp">Upcoming Meeting: Valley Suite Room 7:00 - 8:30pm, 1st Wed of Dec</p>
+                        <p class="text-center bg-transparent text-green-800 p-4 revealUp">Upcoming Meeting: Valley Suite Room 7:00 - 8:30pm, March 1st</p>
                     </div>
                     <div className="bg-transparent grid lg:grid-cols-2 bg-slate-800 opacity-90 ">
                             
@@ -161,8 +161,6 @@ export default class Home extends React.Component {
                         </div>
                 </section>
                 <section class="" >
-
-                    
                     <div className="bg-transparent grid lg:grid-cols-3 bg-slate-800 opacity-90 pb-20 ">
                         {
                             this.state.ecsjc.events.map((item)=> {
@@ -178,6 +176,7 @@ export default class Home extends React.Component {
 
                     </div>
                 </section>
+
                 
                 <div class="hidden mt-20  ml-20 mr-20 ">
                     <div class="">
@@ -262,11 +261,42 @@ export default class Home extends React.Component {
                     </div>
                 </div>
                 </div>
+                <section class="" >
+
+                    <div class=" bg-green-900/90 text-center text-3xl text-cyan-200 pt-10">Meet the ECS Director</div>
+                    <div className="grid lg:grid-cols-2 bg-green-900/90  pb-20 ">
+                        
+                    
+                        
+                        <div class="mx-auto text-center lg:revealUp " >
+                            <p class="text-green-300  lg:mt-10 text-lg p-5 lg:p-0">Tej Panchal</p>
+                            <img src={"./tej.jpeg"} class=" border-2 border-slate-400 shadow-xl lg:mx-auto lg:h-96  lg:w-72 lg:mt-5 lg:rounded-md lg:zoom" />
+                        </div>
+                        <div class="mx-auto lg:revealUp mt-20 p-5">
+                            <p class="text-slate-800 text-lg">Major: <span class="text-green-300">Computer Science</span></p>
+                            <p class="text-slate-800 text-lg">1. What is your favorite class that you have took throughout your college career and why?</p>
+                            <p class="text-green-300 text-md pl-5 pb-2">"CSC 135, It was challenging but it has a lot to learn from. The logic and some of the math behind made the class intuitively intresting"</p>
+
+                            <p class="text-slate-800 text-lg">2.Favorite Place to Study?</p>
+                            <p class="text-green-300 text-md pl-5 pb-2">Backside Library 3rd floor</p>
+                            <p class="text-slate-800 text-lg">3.Favorite Place to get Coffee</p>
+
+                            <p class="text-green-300 text-md pl-5 pb-2">"Coffee shops offer a uniquely calm atmosphere where people can gather with their friends to catch up over a cup of something warm so I won't say Starbucks, but a proper coffee shop in the downtown."</p>
+
+                            <p class="text-slate-800 text-lg">4.Your perfect idea for a date</p>
+                            <p class="text-green-300 text-md pl-5 pb-2">"Anywhere to salsa, preferably on a terrace"</p>
+
+
+
+                        </div>
+
+
+                    </div>
+                </section>
 
                 <div class="m-0 w-full h-full bg-cover bg-transparent  bg-slate-700" >       
-
+                        <h2 class="text-green-300 text-3xl pt-10 text-center">Joint Council Members</h2>
                 <div id="About Us" class="grid lg:grid-cols-2 grid-cols-1  bg-slate-700 lg:revealUp xl:revealUp  ">
-                    
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-10">
                         <div class="bg-transparent lg:mx-auto " >
                             <img class = "rounded-full shadow-xl w-40 h-40 mx-auto lg:border-2 border-slate-400 " style={{maxHeight:"350px"}} src={this.state.ecsjc.officers.president.picture} />     
