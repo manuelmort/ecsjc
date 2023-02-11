@@ -269,7 +269,7 @@ export default class Home extends React.Component {
                     
                     <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-10">
                         <div class="bg-transparent lg:mx-auto " >
-                            <img class = "rounded-full shadow-xl w-40 h-40 mx-auto lg:border-2 border-slate-400 " style={{maxHeight:"350px"}} />     
+                            <img class = "rounded-full shadow-xl w-40 h-40 mx-auto lg:border-2 border-slate-400 " style={{maxHeight:"350px"}} src={this.state.ecsjc.officers.president.picture} />     
                         </div>
                         <div class=" text-center m-5 text-xl text-green-300">
                                <p class="pt-10 text-cyan-200">{this.state.ecsjc.officers.president.name}</p>

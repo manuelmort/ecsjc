@@ -3,8 +3,15 @@ import { Link } from "react-scroll";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import DSASideBar from "./DSASideBar";
+import data from "./data/data.json"
 
 export default class DSA extends React.Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            dsa:data.pages[4].dsa
+        }
+    }
     componentDidMount() {
         //gsap is fucking amazing!
        gsap.registerPlugin(ScrollTrigger);
@@ -59,7 +66,7 @@ export default class DSA extends React.Component {
                 <div class="m-0 w-full h-full bg-cover bg-transparent border-2 border-transparent <----???" style={{backgroundImage:"url('./DSA.jpg')"}}>
                     <DSASideBar/>
                 <div class=" mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent ">
-                        <p  class="text-sky-300 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl ">Data Structures and Algorithms Club</p>
+                        <p  class="text-sky-200 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl ">Data Structures and Algorithms Club</p>
                         <div class=" opacity-90 text-center lg:mt-5 mt-10 mb-10">
                  
                         </div>
@@ -103,6 +110,85 @@ export default class DSA extends React.Component {
                             </div>
                         </div>
                     </section>
+                    <div id="About Us" class="grid lg:grid-cols-2 grid-cols-1  bg-slate-700 lg:revealUp xl:revealUp  ">
+                    
+                    <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-10">
+                        <div class="bg-transparent lg:mx-auto " >
+                            <img class = "rounded-full shadow-xl w-40 h-40 mx-auto lg:border-2 border-slate-400 " style={{maxHeight:"350px"}} src={this.state.dsa.officers.president.picture} />     
+                        </div>
+                        <div class=" text-center m-5 text-xl text-green-300">
+                               <p class="pt-10 text-cyan-200">{this.state.dsa.officers.president.name}</p>
+                               <p class="text-center text-lime-300 text-lg">President</p> 
+                               <p class="bg-transparent text-green-300 mt-2 text-sm">
+                               {this.state.dsa.officers.president.email}</p>
+                        </div>
+                    </div>
+                    <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1   mt-10 rounded-md ">
+                        <div class="bg-transparent lg:border-rounded lg:mx-auto" >
+                            <img class = "rounded-full shadow-xl mx-auto w-40 h-40 lg:border-2 border-slate-400" style={{maxHeight:"350px"}} src={this.state.dsa.officers.vicepresident.picture}/>
+                        </div>
+                        <div class=" text-center m-5 text-xl  text-green-300">
+                               <p class="pt-10 text-cyan-200">{this.state.dsa.officers.vicepresident.name}</p>
+                               <p class="text-center text-lime-300 text-lg">Vice President</p>
+                               <p class="bg-transparent text-green-300 mt-2 text-sm">
+                            {this.state.dsa.officers.vicepresident.email}</p> 
+                    
+                        </div>
+                    </div>
+                    <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1   mt-10 rounded-md ">
+                        <div class="bg-transparent lg:border-rounded lg:mx-auto" >
+                            <img class = "rounded-full shadow-xl mx-auto w-40 h-40 lg:border-2 border-slate-400" style={{maxHeight:"350px"}} src={this.state.dsa.officers.vicepresident2.picture}/>
+                        </div>
+                        <div class=" text-center m-5 text-xl  text-green-300">
+                               <p class="pt-10 text-cyan-200">{this.state.dsa.officers.vicepresident2.name}</p>
+                               <p class="text-center text-lime-300 text-lg">Vice President</p>
+                               <p class="bg-transparent text-green-300 mt-2 text-sm">
+                            {this.state.dsa.officers.vicepresident2.email}</p> 
+                    
+                        </div>
+                    </div>
+                    <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1   mt-10 rounded-md ">
+                        <div class="bg-transparent lg:border-rounded lg:mx-auto" >
+                            <img class = "rounded-full shadow-xl mx-auto w-40 h-40 lg:border-2 border-slate-400" style={{maxHeight:"350px"}} src={this.state.dsa.officers.chaircommitee.picture}/>
+                        </div>
+                        <div class=" text-center m-5 text-xl  text-green-300">
+                               <p class="pt-10 text-cyan-200">{this.state.dsa.officers.chaircommitee.name}</p>
+                               <p class="text-center text-lime-300 text-lg">Chair Commitee</p>
+                               <p class="bg-transparent text-green-300 mt-2 text-sm">
+                            {this.state.dsa.officers.chaircommitee.email}</p> 
+                    
+                        </div>
+                    </div>
+
+                    <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
+                        <div class="bg-transparent lg:mx-auto" >
+                            <img class = "rounded-full lg:border-2 mx-auto h-40 w-40 lg:shadow-xl border-slate-400 " style={{maxHeight:"350px"}} src={this.state.dsa.officers.secretary.picture}/>     
+                        </div>
+                        <div class=" text-center m-5 text-xl ">
+                            <p class="pt-10 text-cyan-200">{this.state.dsa.officers.secretary.name}</p>
+                            <p class="text-center text-lime-300 ">Secretary</p> 
+                            <p class="bg-transparent text-green-300 mt-2 text-sm">
+                                {this.state.dsa.officers.secretary.email}</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-transparent grid lg:grid-cols-2 grid-cols-1 mt-20 mb-10">
+                        <div class="bg-transparent  lg:mx-auto " >
+                            <img class = "rounded-full  shadow-xl mx-auto h-40 w-40 lg:border-2   border-slate-400 " style={{maxHeight:"350px"}} src={this.state.dsa.officers.treasurer.picture}/>    
+                        </div>
+                        <div class=" text-center m-5 text-xl ">
+                                <p class="pt-10 text-cyan-200">{this.state.dsa.officers.treasurer.name}</p>
+                               <p class="text-center text-lime-300  ">Treasurer</p> 
+                               <p class="bg-transparent text-green-300 mt-2 text-sm">
+                               {this.state.dsa.officers.treasurer.email}</p>
+                        </div>
+                    </div>
+       
+
+
+                    
+
+                </div>
                 
             </div>
         )

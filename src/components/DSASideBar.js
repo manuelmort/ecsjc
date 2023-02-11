@@ -33,7 +33,7 @@ export default class DSASideBar extends React.Component {
                 <div className='navbar text-sky-500 mt-10'>
 
                 <img  src={this.state.clubs.clubs[3].logo} 
-                        href="/dsa" class="w-28 inline ml-2 lg:ml-10"/>
+                        href="/dsa" class="w-28 rounded-full inline ml-2 lg:ml-10"/>
                 <button to='#' className='menu-bars float-right'>
 
                     <FaBars onClick={this.showSidebar} class="bg-transparent  text-sky-100 hover:text-sky-500  lg:mr-10 md:mr-10  lg:mt-2  float-right" size={40}/>

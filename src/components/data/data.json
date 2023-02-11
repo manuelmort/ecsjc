@@ -29,7 +29,7 @@
                         "name":"Garima Sharma",
                         "role":"President",
                         "email":"garimasharma@csus.edu",
-                        "picture":""
+                        "picture":"./garima.jpg"
                     },
                     "vicepresident": {
                         
@@ -249,42 +249,42 @@
             },
             "officers":{
                 "president": {
-                    "name":"Phuc Truong",
+                    "name":"Stetten Fessler",
                     "role":"President",
-                    "email":"",
-                    "picture":""
+                    "email":"sfessler@csus.edu",
+                    "picture":"./blankPerson.jpg"
                     
                     
                 },
                 "vicepresident": {
-                    "name":"Konner Finney",
+                    "name":"Daryl Denaga",
                     "role":"Vice President",
                     "email":"",
-                    "picture":""
+                    "picture":"./blankPerson.jpg"
                 },         
                 "vicepresident2": {
-                    "name":"Chris Mendez",
+                    "name":"Keerat Khandpur",
                     "role":"Vice President",
                     "email":"",
-                    "picture":""
+                    "picture":"./blankPerson.jpg"
                 },
                 "chaircommitee": {
-                    "name":"Fatima Fareen",
+                    "name":"Ryan Mello",
                     "role":"Chair Committee",
                     "email":"",
-                    "picture":""
+                    "picture":"./blankPerson.jpg"
                 },
-                "treasure": {
-                    "name":"Daryl Denaga",
+                "treasurer": {
+                    "name":"Eric Brown",
                     "role":"Treasurer",
                     "email":"",
-                    "picture":""
+                    "picture":"./blankPerson.jpg"
                 },
                 "secretary":{
-                    "name":"",
+                    "name":"Matt Christiansen",
                     "role":"Secretary",
                     "email":"",
-                    "picture":""
+                    "picture":"./blankPerson.jpg"
                 }
                 
             }
