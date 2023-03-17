@@ -2,13 +2,12 @@ import React from 'react';
 import Home from './components/Home';
 import Swe from './components/Swe';
 import {Routes, Route} from 'react-router-dom'
-
+import Expo from './components/Expo';
 import "./App.css"
 import DSA from './components/DSA';
 import CalGeo from './components/CalGeo';
 import Asce from './components/Asce';
 import MaterialAdvantage from './components/MaterialAdvantage';
-import NSBE from './components/NSBE';
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -38,9 +37,9 @@ class App extends React.Component {
           <Route path="/dsa" element={<DSA/>}/>
           <Route path="/calgeo" element={<CalGeo/>}/>
           <Route path="/asce" element={<Asce/>}/>
-          <Route path="/nsbe" element={<NSBE/>}/>
 
           <Route path="/material-advantage" element={<MaterialAdvantage/>}/>
+          <Route path= "/expo" element = {<Expo/>}/>
 
 
 

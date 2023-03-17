@@ -60,29 +60,10 @@ export default class HomeSideBar extends React.Component {
                             <a href="/"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-indigo-100">
                                 <span class="inline-block"><CgWebsite/></span>ECSJC
                             </a>
-                            <a href="/dsa"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
-                                 <span class="inline-block"><CgWebsite/></span>DSA
+                            <a href="/expo"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
+                                 <span class="inline-block"><CgWebsite/></span>EXPO
                             </a>
-                            <a href="/swe"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
-                                <span class="inline-block"><CgWebsite/></span>SWE
-                            </a>
-                            <a href="/calgeo"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
-                                <span class="inline-block"><CgWebsite/></span>CALGEO
-                            </a>
-                            <a href="/asce"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
-                                <span class="inline-block"><CgWebsite/></span>ASCE
-                            </a>
-                            <a href="/nsbe"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
-                                <span class="inline-block"><CgWebsite/></span>NSBE
-                            </a>
-                            <a href="/material-advantage"  onClick={this.showSidebar}  smooth={true} class="bg-transparent text-xl block mt-4 p-2 rounded-md  hover:text-sky-300 hover:bg-opacity-20 hover:bg-sky-300 lg:mt-0 text-sky-100">
-                                <span class="inline-block"><CgWebsite/></span>Material Advantage
-                            </a>
-                            
-
-                            
-  
-                            
+         
                         </div>
               
                  

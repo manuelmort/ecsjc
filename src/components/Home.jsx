@@ -103,6 +103,7 @@ export default class Home extends React.Component {
                     <div class=" mx-auto  2xl:m-96 lg:m-80 lg:mr-20 lg:ml-20 bg-transparent test ">
                         
                             <p  class="text-green-200 font-medium text-lg p-3 lg:text-5xl lg:mt-20 lg:text-center md:text-center md:text-4xl lg:revealUp md:revealUp phonescreen">Engineering and Computer Science Joint Council</p>
+                            
                             <div class=" opacity-90 text-center lg:mt-5 mt-10 mb-10 revealUp">
                                 <Link  to="Events"   smooth={true}
                                     class="bg-transparent  -z-10 text-xl text-green-100   p-2 rounded-md border-2 border-green-100/90    hover:text-green-300  hover:bg-opacity-30 hover:bg-green-300  ">
